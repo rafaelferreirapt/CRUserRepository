@@ -5,13 +5,12 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 
 
 entity iterative_sorter is
-    generic(     wordCount: integer := 32;
-                wordLength :integer := 8);
-
+    generic(     how_many_words : integer := 32;
+                word_length :integer := 8);
     port (    clk  : in std_logic;
             reset  : in std_logic;
-          data_in  : in std_logic_vector(wordCount*wordLength-1 downto 0);
-          data_out : out std_logic_vector(wordCount*wordLength-1 downto 0));
+          data_in  : in std_logic_vector(how_many_words*word_length-1 downto 0);
+          data_out : out std_logic_vector(how_many_words*word_length-1 downto 0));
 end entity iterative_sorter;
 
 architecture Behavioral of iterative_sorter is
@@ -19,12 +18,11 @@ architecture Behavioral of iterative_sorter is
     type state_type is (initial_state, even, odd, completed);
 
     signal C_S, N_S             : state_type;
-    type in_data is array (0 to wordCount-1) of std_logic_vector(wordLength-1 downto 0);
+    type in_data is array (0 to how_many_words-1) of std_logic_vector(word_length-1 downto 0);
     signal MyAr, N_MyAr : in_data;
 
-    signal cycle, N_cycle:  integer range 0 to wordCount-1 := 0;
+    signal cycle, N_cycle:  integer range 0 to how_many_words-1 := 0;
 begin
-
     process (clk)
     begin
         if rising_edge(clk) then
@@ -50,18 +48,18 @@ begin
             when initial_state =>
                 N_S <= even;
                 N_cycle <= 0;
-                for i in wordCount-1 downto 0 loop
-                    N_MyAr(i) <= data_in(wordLength*(i+1)-1 downto wordLength*i);
+                for i in how_many_words-1 downto 0 loop
+                    N_MyAr(i) <= data_in(word_length*(i+1)-1 downto word_length*i);
                 end loop;
 
             when even =>
-                if cycle = wordCount-1 then
+                if cycle = how_many_words-1 then
                     N_S <= completed;
                 else
                     N_S <= odd;
                     N_cycle <= cycle+1;
                 end if;
-                for i in 0 to wordCount/2-1 loop
+                for i in 0 to how_many_words/2-1 loop
                     if MyAr(2*i) > MyAr(2*i+1) then
                         N_MyAr(2*i) <= MyAr(2*i+1);
                         N_MyAr(2*i+1) <= MyAr(2*i);
@@ -70,14 +68,14 @@ begin
                 end loop;
 
             when odd =>
-                if cycle = wordCount-1 then
+                if cycle = how_many_words-1 then
                     N_S <= completed;
                 else
                     N_S <= even;
                     N_cycle <= cycle+1;
                 end if;
 
-                for i in 0 to wordCount/2-2 loop
+                for i in 0 to how_many_words/2-2 loop
                     if MyAr(2*i+1) > MyAr(2*i+2) then
                         N_MyAr(2*i+1) <= MyAr(2*i+2);
                         N_MyAr(2*i+2) <= MyAr(2*i+1);
@@ -95,10 +93,8 @@ begin
 
     process (MyAr)
     begin
-        for i in wordCount-1 downto 0 loop
-            data_out(wordLength*(i+1)-1 downto wordLength*i) <= N_MyAr(i);
+        for i in how_many_words-1 downto 0 loop
+            data_out(word_length*(i+1)-1 downto word_length*i) <= N_MyAr(i);
         end loop;
     end process;
-
-
 end Behavioral;
