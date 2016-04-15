@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/Iterative_sorter_final/Iterative_sorter_final.xpr">
+<Project Version="7" Minor="10" Path="/media/psf/Home/Development/ect_ua/UserRepository/Repository/Iterative_sorter_final/Iterative_sorter_final.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a688bcfc63814d8986a66501245e6a2e"/>
