@@ -1,0 +1,6 @@
+memory_initialization_radix = 16;
+memory_initialization_vector =
+5b5a, 61c7, 1879, 2902, 3842, fbee, 6e44, 7d73,
+5b5a, 61c7, 1879, 2902, 3842, fbee, 6e44, 7d73,
+5b5a, 61c7, 1879, 2902, 3842, fbee, 6e44, 7d73,
+5b5a, 61c7, 1879, 2902, 3842, fbee, 6e44, 7d73;

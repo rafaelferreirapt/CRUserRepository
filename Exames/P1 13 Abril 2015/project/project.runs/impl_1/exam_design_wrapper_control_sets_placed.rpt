@@ -1,0 +1,59 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Fri Apr 15 23:11:30 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : report_control_sets -verbose -file exam_design_wrapper_control_sets_placed.rpt
+| Design       : exam_design_wrapper
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     6 |
+| Minimum Number of register sites lost to control set restrictions |    25 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              78 |           31 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               8 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------+------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal            |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------+------------------------------------------------------+------------------+----------------+
+| ~clk_IBUF_BUFG | exam_design_i/ROM_Reader1_1/U0/E[0] | btnC_IBUF                                            |                1 |              4 |
+| ~clk_IBUF_BUFG | exam_design_i/ROM_Reader1_0/U0/E[0] | btnC_IBUF                                            |                1 |              4 |
+|  clk_IBUF_BUFG |                                     |                                                      |                5 |             17 |
+|  clk_IBUF_BUFG |                                     | exam_design_i/iterative_sorter_1/U0/cycle[1]_i_1_n_0 |               10 |             20 |
+|  clk_IBUF_BUFG |                                     | exam_design_i/iterative_sorter_0/U0/cycle[1]_i_1_n_0 |                8 |             20 |
+| ~clk_IBUF_BUFG |                                     | btnC_IBUF                                            |               13 |             38 |
++----------------+-------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

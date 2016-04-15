@@ -1,0 +1,42 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port btnC -pg 1 -y 260 -defaultsOSRD
+preplace port clk -pg 1 -y 220 -defaultsOSRD
+preplace portBus sw -pg 1 -y 510 -defaultsOSRD -right
+preplace portBus an -pg 1 -y 630 -defaultsOSRD
+preplace portBus seg -pg 1 -y 650 -defaultsOSRD
+preplace inst EightDisplayControl_0 -pg 1 -lvl 5 -y 640 -defaultsOSRD
+preplace inst ROM_Reader1_0 -pg 1 -lvl 1 -y 390 -defaultsOSRD
+preplace inst smart_mux_0 -pg 1 -lvl 4 -y 720 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -y 710 -defaultsOSRD
+preplace inst ROM_Reader1_1 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 3 -y 730 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 410 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst mux2p_0 -pg 1 -lvl 3 -y 620 -defaultsOSRD
+preplace inst iterative_sorter_0 -pg 1 -lvl 2 -y 250 -defaultsOSRD
+preplace inst iterative_sorter_1 -pg 1 -lvl 2 -y 580 -defaultsOSRD
+preplace netloc iterative_sorter_1_data_out 1 2 1 560
+preplace netloc ROM_Reader1_1_completed 1 1 1 N
+preplace netloc mux2p_0_port_out 1 3 1 830
+preplace netloc xlslice_1_Dout 1 3 1 N
+preplace netloc blk_mem_gen_1_douta 1 0 2 40 110 NJ
+preplace netloc smart_mux_0_port_out 1 4 1 N
+preplace netloc btnC_1 1 0 2 20 320 320
+preplace netloc ROM_Reader1_0_completed 1 1 1 280
+preplace netloc iterative_sorter_0_data_out 1 2 1 570
+preplace netloc ROM_Reader1_1_data_out 1 1 1 290
+preplace netloc clk_1 1 0 5 30 310 310 500 NJ 500 NJ 500 1090
+preplace netloc ROM_Reader1_0_addr 1 1 1 300
+preplace netloc blk_mem_gen_0_douta 1 0 2 40 460 NJ
+preplace netloc EightDisplayControl_0_select_display 1 5 1 NJ
+preplace netloc sw_1 1 1 5 300 660 580 510 NJ 510 NJ 510 NJ
+preplace netloc ROM_Reader1_0_data_out 1 1 1 290
+preplace netloc ROM_Reader1_1_addr 1 1 1 290
+preplace netloc EightDisplayControl_0_segments 1 5 1 NJ
+preplace netloc xlslice_0_Dout 1 2 1 NJ
+levelinfo -pg 1 0 160 440 710 960 1230 1390 -top 0 -bot 780
+",
+}
+0

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="/media/psf/Home/Development/ect_ua/UserRepository/iterative_sorter_fsm/iterative_sorter_fsm.xpr">
+<Project Version="7" Minor="10" Path="/media/psf/Home/Development/ect_ua/UserRepository/Repository/iterative_sorter_fsm/iterative_sorter_fsm.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4fe6574f1980469b953fe1ab89931839"/>
