@@ -1,0 +1,74 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Sat Apr 16 17:04:57 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : report_control_sets -verbose -file project_wrapper_control_sets_placed.rpt
+| Design       : project_wrapper
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    21 |
+| Minimum Number of register sites lost to control set restrictions |    49 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             139 |           61 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               4 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+-------------------------------------------------+------------------+------------------+----------------+
+|                    Clock Signal                    |                  Enable Signal                  | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------------------------------------+-------------------------------------------------+------------------+------------------+----------------+
+| ~clk_IBUF_BUFG                                     |                                                 |                  |                1 |              2 |
+| ~clk_IBUF_BUFG                                     | project_i/circuitp_0/U0/addr_rom_tmp[3]_i_1_n_0 | btnC_IBUF        |                1 |              4 |
+|  project_i/circuitp_0/U0/matrix_reg[14][7]_i_1_n_0 |                                                 |                  |                3 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[9][7]_i_1_n_0  |                                                 |                  |                4 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[8][7]_i_1_n_0  |                                                 |                  |                4 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[7][7]_i_1_n_0  |                                                 |                  |                3 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[6][7]_i_1_n_0  |                                                 |                  |                2 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[5][7]_i_1_n_0  |                                                 |                  |                2 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[4][7]_i_1_n_0  |                                                 |                  |                3 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[3][7]_i_1_n_0  |                                                 |                  |                3 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[2][7]_i_1_n_0  |                                                 |                  |                2 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[1][7]_i_1_n_0  |                                                 |                  |                2 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[15][7]_i_1_n_0 |                                                 |                  |                3 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[13][7]_i_1_n_0 |                                                 |                  |                2 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[12][7]_i_1_n_0 |                                                 |                  |                3 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[11][7]_i_1_n_0 |                                                 |                  |                2 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[10][7]_i_1_n_0 |                                                 |                  |                3 |              6 |
+|  project_i/circuitp_0/U0/matrix_reg[0][7]_i_1_n_0  |                                                 |                  |                2 |              6 |
+|  project_i/circuitp_0/U0/addr_rom_reg[3]_i_1_n_0   |                                                 |                  |                2 |              8 |
+| ~project_i/circuitp_0/U0/C_S[0]                    |                                                 |                  |               10 |             16 |
+|  clk_IBUF_BUFG                                     |                                                 |                  |                5 |             17 |
++----------------------------------------------------+-------------------------------------------------+------------------+------------------+----------------+
+
+

@@ -1,0 +1,33 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port btnL -pg 1 -y 330 -defaultsOSRD
+preplace port btnR -pg 1 -y 350 -defaultsOSRD
+preplace port clk -pg 1 -y 50 -defaultsOSRD
+preplace portBus sw -pg 1 -y 400 -defaultsOSRD
+preplace portBus an -pg 1 -y 120 -defaultsOSRD
+preplace portBus led -pg 1 -y 360 -defaultsOSRD
+preplace portBus seg -pg 1 -y 140 -defaultsOSRD
+preplace inst EightDisplayControl_0 -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -y 500 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -y 400 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 1 -y 210 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace inst circuit_0 -pg 1 -lvl 2 -y 350 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 520 -defaultsOSRD
+preplace netloc xlslice_3_Dout 1 1 1 NJ
+preplace netloc xlslice_1_Dout 1 1 1 NJ
+preplace netloc circuit_0_led 1 2 1 NJ
+preplace netloc btnL_1 1 0 2 NJ 330 NJ
+preplace netloc clk_1 1 0 2 NJ 50 230
+preplace netloc xlslice_2_Dout 1 1 1 NJ
+preplace netloc blk_mem_gen_0_douta 1 1 1 250
+preplace netloc EightDisplayControl_0_select_display 1 2 1 NJ
+preplace netloc circuit_0_data_out 1 0 3 20 260 NJ 260 530
+preplace netloc sw_1 1 0 1 20
+preplace netloc EightDisplayControl_0_segments 1 2 1 NJ
+preplace netloc btnR_1 1 0 2 NJ 350 NJ
+preplace netloc xlslice_0_Dout 1 1 1 NJ
+levelinfo -pg 1 0 120 390 550 -top 0 -bot 610
+",
+}

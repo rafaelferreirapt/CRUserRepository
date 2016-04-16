@@ -1,0 +1,531 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Apr 16 14:01:26 2016
+# Process ID: 6244
+# Current directory: /media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.runs/synth_1
+# Command line: vivado -log circuit.vds -mode batch -messageDb vivado.pb -notrace -source circuit.tcl
+# Log file: /media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.runs/synth_1/circuit.vds
+# Journal file: /media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source circuit.tcl -notrace
+Command: synth_design -top circuit -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6305 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 979.066 ; gain = 134.918 ; free physical = 4832 ; free virtual = 7264
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'circuit' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:18]
+	Parameter data_width bound to: 4 - type: integer 
+	Parameter address_bits bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:52]
+WARNING: [Synth 8-614] signal 'A1' is read in the process but is not in the sensitivity list [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:47]
+WARNING: [Synth 8-614] signal 'A2' is read in the process but is not in the sensitivity list [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:47]
+WARNING: [Synth 8-614] signal 'addr_content' is read in the process but is not in the sensitivity list [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:47]
+WARNING: [Synth 8-614] signal 'addr_in' is read in the process but is not in the sensitivity list [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:47]
+WARNING: [Synth 8-614] signal 'matrix' is read in the process but is not in the sensitivity list [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:47]
+WARNING: [Synth 8-614] signal 'led_tmp' is read in the process but is not in the sensitivity list [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'circuit' (1#1) [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:18]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1023.449 ; gain = 179.301 ; free physical = 4787 ; free virtual = 7219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1023.449 ; gain = 179.301 ; free physical = 4787 ; free virtual = 7219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1031.449 ; gain = 187.301 ; free physical = 4787 ; free virtual = 7219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "matrix_reg[255]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[254]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[253]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[252]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[251]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[250]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[249]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[248]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[247]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[246]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[245]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[244]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[243]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[242]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[241]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[240]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[239]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[238]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[237]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[236]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[235]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[234]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[233]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[232]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[231]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[230]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[229]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[228]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[227]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[226]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[225]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[224]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[223]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[222]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[221]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[220]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[219]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[218]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[217]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[216]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[215]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[214]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[213]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[212]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[211]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[210]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[209]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[208]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[207]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[206]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[205]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[204]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[203]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[202]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[201]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[200]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[199]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[198]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[197]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[196]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[195]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[194]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[193]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[192]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[191]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[190]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[189]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[188]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[187]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[186]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[185]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[184]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[183]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[182]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[181]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[180]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[179]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[178]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[177]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[176]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[175]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[174]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[173]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[172]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[171]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[170]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[169]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[168]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[167]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[166]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[165]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[164]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[163]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[162]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[161]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[160]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[159]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[158]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[157]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_reg[156]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[255]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[254]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[253]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[252]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[251]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[250]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[249]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[248]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[247]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[246]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[245]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[244]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[243]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[242]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[241]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[240]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[239]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[238]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[237]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[236]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[235]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[234]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[233]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[232]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[231]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[230]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[229]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[228]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[227]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[226]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[225]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[224]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[223]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[222]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[221]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[220]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[219]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[218]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[217]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[216]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[215]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[214]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[213]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[212]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[211]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[210]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[209]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[208]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[207]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[206]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[205]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[204]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[203]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[202]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[201]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[200]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[199]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[198]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[197]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[196]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[195]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[194]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[193]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[192]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[191]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[190]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[189]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[188]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[187]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[186]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[185]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[184]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[183]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[182]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[181]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[180]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[179]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[178]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[177]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[176]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[175]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[174]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[173]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[172]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[171]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[170]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[169]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[168]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[167]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[166]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[165]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[164]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[163]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[162]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[161]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[160]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[159]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg[158]' [/media/psf/Home/Development/ect_ua/UserRepository/Repository/circuito_c/circuito_c.srcs/sources_1/new/circuit.vhd:54]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1104.488 ; gain = 260.340 ; free physical = 4717 ; free virtual = 7149
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module circuit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1130.492 ; gain = 286.344 ; free physical = 4695 ; free virtual = 7127
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1138.492 ; gain = 294.344 ; free physical = 4684 ; free virtual = 7116
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1138.492 ; gain = 294.344 ; free physical = 4684 ; free virtual = 7116
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[1] ' (FDRE_1) to '\led_tmp_reg[2] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[2] ' (FDRE_1) to '\led_tmp_reg[3] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[3] ' (FDRE_1) to '\led_tmp_reg[4] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[4] ' (FDRE_1) to '\led_tmp_reg[5] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[5] ' (FDRE_1) to '\led_tmp_reg[6] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[6] ' (FDRE_1) to '\led_tmp_reg[7] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[7] ' (FDRE_1) to '\led_tmp_reg[8] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[8] ' (FDRE_1) to '\led_tmp_reg[9] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[9] ' (FDRE_1) to '\led_tmp_reg[10] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[10] ' (FDRE_1) to '\led_tmp_reg[11] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[11] ' (FDRE_1) to '\led_tmp_reg[12] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[12] ' (FDRE_1) to '\led_tmp_reg[13] '
+INFO: [Synth 8-3886] merging instance '\led_tmp_reg[13] ' (FDRE_1) to '\led_tmp_reg[14] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led_tmp_reg[14] )
+INFO: [Synth 8-3886] merging instance '\led_reg[1] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[2] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[3] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[4] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[5] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[6] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[7] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[8] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[9] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[10] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[11] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[12] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3886] merging instance '\led_reg[13] ' (LD) to '\led_reg[14] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led_reg[14] )
+WARNING: [Synth 8-3332] Sequential element (\led_reg[14] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[13] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[12] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[11] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[10] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[9] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[8] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[7] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[6] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[5] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[4] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[3] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[2] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_reg[1] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[14] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[13] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[12] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[11] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[10] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[9] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[8] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[7] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[6] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[5] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[4] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[3] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[2] ) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (\led_tmp_reg[1] ) is unused and will be removed from module circuit.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     2|
+|4     |LUT2   |    70|
+|5     |LUT3   |     2|
+|6     |LUT4   |    56|
+|7     |LUT5   |     4|
+|8     |LUT6   |   819|
+|9     |MUXF7  |   272|
+|10    |MUXF8  |   136|
+|11    |FDRE   |    15|
+|12    |FDSE   |    20|
+|13    |LD     |  2058|
+|14    |IBUF   |    11|
+|15    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  3493|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 292 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1200.523 ; gain = 246.523 ; free physical = 4622 ; free virtual = 7054
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.523 ; gain = 356.375 ; free physical = 4622 ; free virtual = 7054
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2071 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'circuit' is not ideal for floorplanning, since the cellview 'circuit' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 43 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2058 instances were transformed.
+  LD => LDCE: 2050 instances
+  LD => LDCE (inverted pins: G): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+142 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1268.535 ; gain = 353.051 ; free physical = 4578 ; free virtual = 7010
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1300.555 ; gain = 0.000 ; free physical = 4575 ; free virtual = 7008
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 16 14:02:01 2016...

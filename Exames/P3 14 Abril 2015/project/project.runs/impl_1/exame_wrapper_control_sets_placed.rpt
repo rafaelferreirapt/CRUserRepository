@@ -1,0 +1,314 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Sat Apr 16 14:11:55 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : report_control_sets -verbose -file exame_wrapper_control_sets_placed.rpt
+| Design       : exame_wrapper
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   261 |
+| Minimum Number of register sites lost to control set restrictions |    18 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            2078 |          843 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              32 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------+----------------------------------------------+------------------+------------------+----------------+
+|                   Clock Signal                   |                 Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------------------------+----------------------------------------------+------------------+------------------+----------------+
+|  exame_i/circuit_0/C_S                           |                                              |                  |                2 |              2 |
+| ~clk_IBUF_BUFG                                   |                                              |                  |                2 |              3 |
+|  exame_i/circuit_0/U0/matrix_reg[174][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[181][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[180][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[17][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[179][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[178][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[177][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[176][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[175][7]_i_1_n_0 |                                              |                  |                7 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[183][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[173][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[172][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[171][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[170][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[16][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[169][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[182][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[157][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[184][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[185][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[186][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[187][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[188][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[189][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[18][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[190][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[191][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[192][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[193][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[194][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[195][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[196][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[143][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[12][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[130][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[131][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[132][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[133][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[134][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[135][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[136][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[137][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[138][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[139][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[13][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[140][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[141][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[142][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[168][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[144][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[145][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[146][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[147][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[148][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[149][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[14][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[150][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[151][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[152][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[153][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[154][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[155][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[156][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[198][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[23][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[226][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[227][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[228][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[229][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[22][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[230][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[231][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[232][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[233][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[234][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[235][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[236][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[237][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[238][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[239][7]_i_1_n_0 |                                              |                  |                7 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[225][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[240][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[241][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[242][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[158][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[159][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[15][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[160][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[161][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[162][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[163][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[164][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[165][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[166][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[167][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+| ~exame_i/circuit_0/U0/seg[0]                     |                                              |                  |                8 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[210][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[47][7]_i_1_n_0  |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[199][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[19][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[1][7]_i_1_n_0   |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[200][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[201][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[202][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[203][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[204][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[205][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[206][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[207][7]_i_1_n_0 |                                              |                  |                7 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[208][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[209][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[20][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[197][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[211][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[212][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[213][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[214][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[215][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[216][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[217][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[218][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[219][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[21][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[220][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[221][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[222][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[223][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[224][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[83][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[243][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[8][7]_i_1_n_0   |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[89][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[88][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[87][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[86][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[85][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[84][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[244][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[82][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[81][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[80][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[7][7]_i_1_n_0   |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[79][7]_i_1_n_0  |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[78][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[77][7]_i_1_n_0  |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[76][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[245][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[246][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[247][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[248][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[249][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[24][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[250][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[251][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[252][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[253][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[254][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[255][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[25][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[26][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[27][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[61][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[48][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[49][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[4][7]_i_1_n_0   |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[50][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[51][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[52][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[53][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[54][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[55][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[56][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[57][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[58][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[59][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[5][7]_i_1_n_0   |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[60][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[129][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[62][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[63][7]_i_1_n_0  |                                              |                  |                8 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[64][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[65][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[66][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[67][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[68][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[69][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[6][7]_i_1_n_0   |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[70][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[71][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[72][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[73][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[74][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[75][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[114][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[100][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[101][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[102][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[103][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[104][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[105][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[106][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[107][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[108][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[109][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[10][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[110][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[111][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[112][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[113][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[28][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[115][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[116][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[117][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[118][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[119][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[11][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[120][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[121][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[122][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[123][7]_i_1_n_0 |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[124][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[125][7]_i_1_n_0 |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[126][7]_i_1_n_0 |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[127][7]_i_1_n_0 |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[128][7]_i_1_n_0 |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[0][7]_i_1_n_0   |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[29][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[2][7]_i_1_n_0   |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[30][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[31][7]_i_1_n_0  |                                              |                  |                8 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[32][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[33][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[34][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[35][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[36][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[37][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[38][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[39][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[3][7]_i_1_n_0   |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[40][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[41][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[42][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[9][7]_i_1_n_0   |                                              |                  |                7 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[99][7]_i_1_n_0  |                                              |                  |                8 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[98][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[97][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[96][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[95][7]_i_1_n_0  |                                              |                  |                6 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[94][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[93][7]_i_1_n_0  |                                              |                  |                7 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[92][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[91][7]_i_1_n_0  |                                              |                  |                5 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[90][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[46][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[45][7]_i_1_n_0  |                                              |                  |                3 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[44][7]_i_1_n_0  |                                              |                  |                4 |              8 |
+|  exame_i/circuit_0/U0/matrix_reg[43][7]_i_1_n_0  |                                              |                  |                2 |              8 |
+|  clk_IBUF_BUFG                                   |                                              |                  |                5 |             17 |
+| ~clk_IBUF_BUFG                                   | exame_i/circuit_0/U0/addr_content[7]_i_1_n_0 |                  |                6 |             32 |
++--------------------------------------------------+----------------------------------------------+------------------+------------------+----------------+
+
+
