@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 18 22:09:26 2016
+# Process ID: 29493
+# Current directory: /media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/impl_1
+# Command line: vivado -log exam_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source exam_wrapper.tcl -notrace
+# Log file: /media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/impl_1/exam_wrapper.vdi
+# Journal file: /media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source exam_wrapper.tcl -notrace

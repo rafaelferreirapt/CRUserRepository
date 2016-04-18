@@ -1,0 +1,178 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 18 22:31:10 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'exam_resetCircuit_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of exam_resetCircuit_0_0 (user.org:user:resetCircuit:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 18 22:16:55 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'exam_resetCircuit_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of exam_resetCircuit_0_0 (user.org:user:resetCircuit:1.0 (Rev. 2)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'exam_resetCircuit_0_0'.
+
+
+-upgrade has added interface 'clk'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'exam_resetCircuit_0_0'. These changes may impact your design.
+
+
+-upgrade has added port 'clk'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 18 22:05:10 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'exam_resetCircuit_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of exam_resetCircuit_0_0 (user.org:user:resetCircuit:1.0 (Rev. 2)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'exam_resetCircuit_0_0'.
+
+
+-upgrade has added interface 'reset'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'exam_resetCircuit_0_0'. These changes may impact your design.
+
+
+-upgrade has removed port 'btnC'
+-upgrade has added port 'reset'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 18 21:56:41 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'exam_resetCircuit_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of exam_resetCircuit_0_0 (user.org:user:resetCircuit:1.0 (Rev. 2)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'exam_resetCircuit_0_0'. These changes may impact your design.
+
+
+-upgraded port 'hamming' width 3 differs from original width 4
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 18 21:55:30 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'exam_resetCircuit_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of exam_resetCircuit_0_0 (user.org:user:resetCircuit:1.0) from (Rev. 3) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'exam_resetCircuit_0_0'. These changes may impact your design.
+
+
+-upgrade has added port 'hamming'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 18 21:54:41 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'exam_resetCircuit_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of exam_resetCircuit_0_0 (user.org:user:resetCircuit:1.0) from (Rev. 2) to (Rev. 3)
+

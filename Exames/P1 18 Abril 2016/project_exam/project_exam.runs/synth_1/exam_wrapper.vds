@@ -1,0 +1,1212 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 18 22:31:48 2016
+# Process ID: 3878
+# Current directory: /media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/synth_1
+# Command line: vivado -log exam_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source exam_wrapper.tcl
+# Log file: /media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/synth_1/exam_wrapper.vds
+# Journal file: /media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source exam_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/psf/Home/Development/ect_ua/UserRepository/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 929.617 ; gain = 14.133 ; free physical = 4762 ; free virtual = 7181
+Command: synth_design -top exam_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1018.469 ; gain = 174.320 ; free physical = 4691 ; free virtual = 7110
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'exam_wrapper' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam_wrapper.vhd:25]
+INFO: [Synth 8-3491] module 'exam' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:14' bound to instance 'exam_i' of component 'exam' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam_wrapper.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'exam' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:29]
+INFO: [Synth 8-3491] module 'exam_DC32_0_0' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_DC32_0_0/synth/exam_DC32_0_0.vhd:59' bound to instance 'DC32_0' of component 'exam_DC32_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'exam_DC32_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_DC32_0_0/synth/exam_DC32_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'DC32' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/ua.pt/dc32_v1_0/disp.vhd:2' bound to instance 'U0' of component 'DC32' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_DC32_0_0/synth/exam_DC32_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'DC32' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/ua.pt/dc32_v1_0/disp.vhd:8]
+INFO: [Synth 8-638] synthesizing module 'segment_decoder' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/ua.pt/dc32_v1_0/segment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'segment_decoder' (1#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/ua.pt/dc32_v1_0/segment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'DC32' (2#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/ua.pt/dc32_v1_0/disp.vhd:8]
+INFO: [Synth 8-256] done synthesizing module 'exam_DC32_0_0' (3#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_DC32_0_0/synth/exam_DC32_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'exam_MaxNetworkExam_0_2' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_MaxNetworkExam_0_2/synth/exam_MaxNetworkExam_0_2.vhd:56' bound to instance 'MaxNetworkExam_0' of component 'exam_MaxNetworkExam_0_2' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'exam_MaxNetworkExam_0_2' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_MaxNetworkExam_0_2/synth/exam_MaxNetworkExam_0_2.vhd:63]
+	Parameter N bound to: 8 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'MaxNetworkExam' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/maxnetworkexam_v1_0/MaxNetworkExam.vhd:4' bound to instance 'U0' of component 'MaxNetworkExam' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_MaxNetworkExam_0_2/synth/exam_MaxNetworkExam_0_2.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'MaxNetworkExam' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/maxnetworkexam_v1_0/MaxNetworkExam.vhd:11]
+	Parameter N bound to: 8 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MaxNetworkExam' (4#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/maxnetworkexam_v1_0/MaxNetworkExam.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'exam_MaxNetworkExam_0_2' (5#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_MaxNetworkExam_0_2/synth/exam_MaxNetworkExam_0_2.vhd:63]
+INFO: [Synth 8-3491] module 'exam_ROM_Reader1_0_0' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_ROM_Reader1_0_0/synth/exam_ROM_Reader1_0_0.vhd:59' bound to instance 'ROM_Reader1_0' of component 'exam_ROM_Reader1_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'exam_ROM_Reader1_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_ROM_Reader1_0_0/synth/exam_ROM_Reader1_0_0.vhd:70]
+	Parameter data_width bound to: 4 - type: integer 
+	Parameter address_bits bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'ROM_Reader1' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/rom_reader1_v1_0/edia/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/Unroll_ROM_last/Unroll_ROM_last.srcs/sources_1/imports/new/ROM_reader_top.vhd:6' bound to instance 'U0' of component 'ROM_Reader1' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_ROM_Reader1_0_0/synth/exam_ROM_Reader1_0_0.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ROM_Reader1' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/rom_reader1_v1_0/edia/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/Unroll_ROM_last/Unroll_ROM_last.srcs/sources_1/imports/new/ROM_reader_top.vhd:17]
+	Parameter data_width bound to: 4 - type: integer 
+	Parameter address_bits bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ROM_Reader1' (6#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/rom_reader1_v1_0/edia/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/Unroll_ROM_last/Unroll_ROM_last.srcs/sources_1/imports/new/ROM_reader_top.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'exam_ROM_Reader1_0_0' (7#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_ROM_Reader1_0_0/synth/exam_ROM_Reader1_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'exam_blk_mem_gen_0_0' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_blk_mem_gen_0_0/synth/exam_blk_mem_gen_0_0.vhd:59' bound to instance 'blk_mem_gen_0' of component 'exam_blk_mem_gen_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'exam_blk_mem_gen_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_blk_mem_gen_0_0/synth/exam_blk_mem_gen_0_0.vhd:67]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: exam_blk_mem_gen_0_0.mif - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.210399 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_1' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_1' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_blk_mem_gen_0_0/synth/exam_blk_mem_gen_0_0.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd:277]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: exam_blk_mem_gen_0_0.mif - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.210399 mW - type: string 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: exam_blk_mem_gen_0_0.mif - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_RST_TYPE bound to: sync - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_top' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_ALGORITHM_i bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE_i bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: exam_blk_mem_gen_0_0.mif - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_RST_TYPE bound to: sync - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA_ALGO bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA_i bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB_ALGO bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB_i bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_input_block' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RSTA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_REGCEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WEA_I_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_WRITE_WIDTH_A_CORE bound to: 4 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 3 - type: integer 
+	Parameter C_ADDRA_WIDTH_CORE bound to: 3 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RSTB_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_REGCEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WEB_I_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_WRITE_WIDTH_B_CORE bound to: 4 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 3 - type: integer 
+	Parameter C_ADDRB_WIDTH_CORE bound to: 3 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES_A bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES_B bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_input_block' (8#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_generic_cstr' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_PRIM_TYPE_i bound to: 1 - type: integer 
+	Parameter C_USER_WIDTH bound to: 4 - type: integer 
+	Parameter C_USER_DEPTH bound to: 8 - type: integer 
+	Parameter C_TOTAL_PRIMS bound to: 1 - type: integer 
+	Parameter C_DEPTH_RESOLUTION bound to: 512 - type: integer 
+	Parameter C_START_WIDTH bound to: 320000'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_START_DEPTH bound to: 320000'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_PRIM_WIDTH bound to: 320000'b0000000000000000000000000010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_PRIM_DEPTH bound to: 320000'b0000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_USED_WIDTH bound to: 320000'b0000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: exam_blk_mem_gen_0_0.mif - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_RST_TYPE bound to: sync - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RSTA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_REGCEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA_i bound to: 0 - type: integer 
+	Parameter C_WE_WIDTH_A bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_RATIO_WA bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_RATIO_RA bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 3 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RSTB_WIDTH bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_REGCEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB_i bound to: 0 - type: integer 
+	Parameter C_WE_WIDTH_B bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_RATIO_WB bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_RATIO_RB bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH_B bound to: 3 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES_A bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_READ bound to: 0 - type: bool 
+	Parameter C_EN_ECC_WRITE bound to: 0 - type: bool 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: bool 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: bool 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_prim_width' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_USER_WIDTH bound to: 4 - type: integer 
+	Parameter C_USER_DEPTH bound to: 8 - type: integer 
+	Parameter C_START_WIDTH bound to: 0 - type: integer 
+	Parameter C_START_DEPTH bound to: 0 - type: integer 
+	Parameter C_PRIM_WIDTH bound to: 36 - type: integer 
+	Parameter C_PRIM_DEPTH bound to: 512 - type: integer 
+	Parameter C_USED_WIDTH bound to: 4 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: exam_blk_mem_gen_0_0.mif - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_RST_TYPE bound to: sync - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 4'b0000 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_RATIO_WA bound to: 1 - type: integer 
+	Parameter C_RATIO_RA bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 3 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 4'b0000 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_RATIO_WB bound to: 1 - type: integer 
+	Parameter C_RATIO_RB bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH_B bound to: 3 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_EN_ECC_READ bound to: 0 - type: bool 
+	Parameter C_EN_ECC_WRITE bound to: 0 - type: bool 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: bool 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: bool 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_MEM_ADDR_WIDTH_A bound to: 3 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_B bound to: 3 - type: integer 
+	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_prim_wrapper_init' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:96243]
+	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_USER_WIDTH bound to: 4 - type: integer 
+	Parameter C_USER_DEPTH bound to: 8 - type: integer 
+	Parameter C_START_WIDTH bound to: 0 - type: integer 
+	Parameter C_START_DEPTH bound to: 0 - type: integer 
+	Parameter C_PRIM_WIDTH bound to: 36 - type: integer 
+	Parameter C_PRIM_DEPTH bound to: 512 - type: integer 
+	Parameter C_USED_WIDTH bound to: 4 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: exam_blk_mem_gen_0_0.mif - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_SSRA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_SINITA_VAL bound to: 36'b000000000000000000000000000000000000 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 36 - type: integer 
+	Parameter C_RATIO_WA bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 36 - type: integer 
+	Parameter C_RATIO_RA bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 9 - type: integer 
+	Parameter C_HAS_SSRB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_SINITB_VAL bound to: 36'b000000000000000000000000000000000000 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 36 - type: integer 
+	Parameter C_RATIO_WB bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 36 - type: integer 
+	Parameter C_RATIO_RB bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH_B bound to: 9 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_EN_ECC_READ bound to: 0 - type: bool 
+	Parameter C_EN_ECC_WRITE bound to: 0 - type: bool 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: bool 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: bool 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_MEM_ADDR_WIDTH_A bound to: 3 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_B bound to: 3 - type: integer 
+	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
+INFO: [Synth 8-3919] null assignment ignored [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:102011]
+	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOB_REG bound to: 0 - type: integer 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000100000000000000010000000000000000000000010000000000000000000000010000000100000001000000010000000100000001000000000000000000000001000000000000000100000001000000000000000000000001000000000000000100000000000000000000000100000000000000010000000000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 20'b00000000000000000000 
+	Parameter INIT_B bound to: 20'b00000000000000000000 
+	Parameter INIT_FILE bound to: NONE - type: string 
+	Parameter IS_CLKARDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_CLKBWRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_ENARDEN_INVERTED bound to: 1'b0 
+	Parameter IS_ENBWREN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTRAMARSTRAM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTRAMB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREGARSTREG_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREGB_INVERTED bound to: 1'b0 
+	Parameter RAM_MODE bound to: TDP - type: string 
+	Parameter RDADDR_COLLISION_HWCONFIG bound to: PERFORMANCE - type: string 
+	Parameter READ_WIDTH_A bound to: 18 - type: integer 
+	Parameter READ_WIDTH_B bound to: 18 - type: integer 
+	Parameter RSTREG_PRIORITY_A bound to: REGCE - type: string 
+	Parameter RSTREG_PRIORITY_B bound to: REGCE - type: string 
+	Parameter SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL_A bound to: 20'b00000000000000000000 
+	Parameter SRVAL_B bound to: 20'b00000000000000000000 
+	Parameter WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
+	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB18E1' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:102054]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_prim_wrapper_init' (9#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:96243]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_prim_width' (10#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_generic_cstr' (11#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_output_block' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_A_CORE bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_B_CORE bound to: 4 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_output_block' (12#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_blk_mem_gen_top' (13#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_synth' (14#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1' (15#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'exam_blk_mem_gen_0_0' (16#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_blk_mem_gen_0_0/synth/exam_blk_mem_gen_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'exam_resetCircuit_0_0' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_resetCircuit_0_0/synth/exam_resetCircuit_0_0.vhd:56' bound to instance 'resetCircuit_0' of component 'exam_resetCircuit_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'exam_resetCircuit_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_resetCircuit_0_0/synth/exam_resetCircuit_0_0.vhd:67]
+	Parameter N bound to: 8 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'resetCircuit' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/resetcircuit_v1_0/resetCircuit.vhd:6' bound to instance 'U0' of component 'resetCircuit' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_resetCircuit_0_0/synth/exam_resetCircuit_0_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'resetCircuit' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/resetcircuit_v1_0/resetCircuit.vhd:17]
+	Parameter N bound to: 8 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'resetCircuit' (17#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/user.org/resetcircuit_v1_0/resetCircuit.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'exam_resetCircuit_0_0' (18#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_resetCircuit_0_0/synth/exam_resetCircuit_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'exam_xlconcat_0_0' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconcat_0_0/synth/exam_xlconcat_0_0.vhd:59' bound to instance 'xlconcat_0' of component 'exam_xlconcat_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'exam_xlconcat_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconcat_0_0/synth/exam_xlconcat_0_0.vhd:68]
+	Parameter IN0_WIDTH bound to: 3 - type: integer 
+	Parameter IN1_WIDTH bound to: 9 - type: integer 
+	Parameter IN2_WIDTH bound to: 4 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'xlconcat' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:27' bound to instance 'U0' of component 'xlconcat' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconcat_0_0/synth/exam_xlconcat_0_0.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:100]
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+	Parameter IN0_WIDTH bound to: 3 - type: integer 
+	Parameter IN1_WIDTH bound to: 9 - type: integer 
+	Parameter IN2_WIDTH bound to: 4 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (19#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'exam_xlconcat_0_0' (20#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconcat_0_0/synth/exam_xlconcat_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'exam_xlconstant_0_0' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconstant_0_0/sim/exam_xlconstant_0_0.vhd:29' bound to instance 'xlconstant_0' of component 'exam_xlconstant_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'exam_xlconstant_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconstant_0_0/sim/exam_xlconstant_0_0.vhd:35]
+	Parameter CONST_VAL bound to: 9'b000000000 
+	Parameter CONST_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'xlconstant' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconstant_0_0/sim/exam_xlconstant_0_0.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:36]
+	Parameter CONST_VAL bound to: 9'b000000000 
+	Parameter CONST_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (21#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'exam_xlconstant_0_0' (22#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlconstant_0_0/sim/exam_xlconstant_0_0.vhd:35]
+INFO: [Synth 8-3491] module 'exam_xlslice_0_0' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlslice_0_0/synth/exam_xlslice_0_0.vhd:59' bound to instance 'xlslice_0' of component 'exam_xlslice_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'exam_xlslice_0_0' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlslice_0_0/synth/exam_xlslice_0_0.vhd:66]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 28 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at '/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlslice_v1_0/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlslice_0_0/synth/exam_xlslice_0_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'xlslice' [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlslice_v1_0/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 28 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice' (23#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/xlslice_v1_0/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'exam_xlslice_0_0' (24#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ip/exam_xlslice_0_0/synth/exam_xlslice_0_0.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'exam' (25#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'exam_wrapper' (26#1) [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/hdl/exam_wrapper.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:36 ; elapsed = 00:02:51 . Memory (MB): peak = 1261.770 ; gain = 417.621 ; free physical = 4448 ; free virtual = 6867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[35] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[34] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[33] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[32] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[31] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[30] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[29] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[28] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[26] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[25] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[24] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[23] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[22] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[21] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[20] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[19] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[17] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[16] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[15] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[14] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[13] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[12] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[11] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[10] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[8] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[7] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[6] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[5] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[4] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[3] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[2] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[1] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[35] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[34] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[33] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[32] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[31] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[30] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[29] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[28] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[26] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[25] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[24] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[23] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[22] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[21] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[20] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[19] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[17] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[16] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[15] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[14] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[13] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[12] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[11] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[10] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[7] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[6] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[5] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[4] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[3] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[2] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[1] to constant 0 [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/sources_1/bd/exam/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:36 ; elapsed = 00:02:51 . Memory (MB): peak = 1261.770 ; gain = 417.621 ; free physical = 4448 ; free virtual = 6867
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exam_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/exam_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/UserRepository/Exames/P1 18 Abril 2016/project_exam/project_exam.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1306.949 ; gain = 0.000 ; free physical = 4446 ; free virtual = 6865
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4516 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:49 ; elapsed = 00:03:05 . Memory (MB): peak = 1306.953 ; gain = 462.805 ; free physical = 4443 ; free virtual = 6862
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:49 ; elapsed = 00:03:05 . Memory (MB): peak = 1306.953 ; gain = 462.805 ; free physical = 4443 ; free virtual = 6862
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for exam_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/DC32_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/MaxNetworkExam_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/ROM_Reader1_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/resetCircuit_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for exam_i/xlslice_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:49 ; elapsed = 00:03:05 . Memory (MB): peak = 1306.953 ; gain = 462.805 ; free physical = 4443 ; free virtual = 6862
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "N_S" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr_in_N" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_N" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:50 ; elapsed = 00:03:06 . Memory (MB): peak = 1314.961 ; gain = 470.812 ; free physical = 4429 ; free virtual = 6849
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   4 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 36    
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module segment_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+Module DC32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module MaxNetworkExam 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 20    
+Module ROM_Reader1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module resetCircuit 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:50 ; elapsed = 00:03:06 . Memory (MB): peak = 1314.965 ; gain = 470.816 ; free physical = 4429 ; free virtual = 6849
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:03:06 . Memory (MB): peak = 1314.965 ; gain = 470.816 ; free physical = 4431 ; free virtual = 6850
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:02:51 ; elapsed = 00:03:06 . Memory (MB): peak = 1314.965 ; gain = 470.816 ; free physical = 4431 ; free virtual = 6850
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:02:53 ; elapsed = 00:03:09 . Memory (MB): peak = 1330.980 ; gain = 486.832 ; free physical = 4416 ; free virtual = 6835
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:53 ; elapsed = 00:03:09 . Memory (MB): peak = 1330.980 ; gain = 486.832 ; free physical = 4416 ; free virtual = 6835
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:05 ; elapsed = 00:03:21 . Memory (MB): peak = 1330.980 ; gain = 486.832 ; free physical = 4412 ; free virtual = 6831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:05 ; elapsed = 00:03:21 . Memory (MB): peak = 1330.980 ; gain = 486.832 ; free physical = 4412 ; free virtual = 6831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (\U0/C_S_reg[1] ) is unused and will be removed from module exam_ROM_Reader1_0_0.
+INFO: [Synth 8-3332] Sequential element (\B[3] ) is unused and will be removed from module exam_ROM_Reader1_0_0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:03:22 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4404 ; free virtual = 6823
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:03:05 ; elapsed = 00:03:22 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4404 ; free virtual = 6823
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:05 ; elapsed = 00:03:22 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4404 ; free virtual = 6823
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:06 ; elapsed = 00:03:22 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6822
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:06 ; elapsed = 00:03:22 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6822
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:06 ; elapsed = 00:03:22 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:06 ; elapsed = 00:03:22 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:06 ; elapsed = 00:03:23 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:06 ; elapsed = 00:03:23 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     5|
+|3     |LUT1     |    20|
+|4     |LUT2     |     3|
+|5     |LUT3     |    27|
+|6     |LUT4     |    17|
+|7     |LUT5     |    90|
+|8     |LUT6     |    85|
+|9     |MUXF7    |     4|
+|10    |RAMB18E1 |     1|
+|11    |FDRE     |    93|
+|12    |IBUF     |     6|
+|13    |OBUF     |    31|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+-------------------------------------------------+------+
+|      |Instance                                  |Module                                           |Cells |
++------+------------------------------------------+-------------------------------------------------+------+
+|1     |top                                       |                                                 |   383|
+|2     |  exam_i                                  |exam                                             |   345|
+|3     |    DC32_0                                |exam_DC32_0_0                                    |    66|
+|4     |      U0                                  |DC32                                             |    66|
+|5     |    MaxNetworkExam_0                      |exam_MaxNetworkExam_0_2                          |    96|
+|6     |    ROM_Reader1_0                         |exam_ROM_Reader1_0_0                             |   114|
+|7     |      U0                                  |ROM_Reader1                                      |   110|
+|8     |    blk_mem_gen_0                         |exam_blk_mem_gen_0_0                             |     1|
+|9     |      U0                                  |blk_mem_gen_v8_3_1                               |     1|
+|10    |        inst_blk_mem_gen                  |blk_mem_gen_v8_3_1_synth                         |     1|
+|11    |          \gnativebmg.native_blk_mem_gen  |blk_mem_gen_v8_3_1_blk_mem_gen_top               |     1|
+|12    |            \valid.cstr                   |blk_mem_gen_v8_3_1_blk_mem_gen_generic_cstr      |     1|
+|13    |              \ramloop[0].ram.r           |blk_mem_gen_v8_3_1_blk_mem_gen_prim_width        |     1|
+|14    |                \prim_init.ram            |blk_mem_gen_v8_3_1_blk_mem_gen_prim_wrapper_init |     1|
+|15    |    resetCircuit_0                        |exam_resetCircuit_0_0                            |    68|
+|16    |      U0                                  |resetCircuit                                     |    68|
+|17    |    xlconcat_0                            |exam_xlconcat_0_0                                |     0|
+|18    |    xlconstant_0                          |exam_xlconstant_0_0                              |     0|
+|19    |    xlslice_0                             |exam_xlslice_0_0                                 |     0|
++------+------------------------------------------+-------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:06 ; elapsed = 00:03:23 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6823
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:54 ; elapsed = 00:03:06 . Memory (MB): peak = 1339.988 ; gain = 326.676 ; free physical = 4403 ; free virtual = 6822
+Synthesis Optimization Complete : Time (s): cpu = 00:03:07 ; elapsed = 00:03:23 . Memory (MB): peak = 1339.988 ; gain = 495.840 ; free physical = 4403 ; free virtual = 6822
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 76 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+157 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:02 ; elapsed = 00:03:15 . Memory (MB): peak = 1339.992 ; gain = 410.375 ; free physical = 4402 ; free virtual = 6821
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1372.008 ; gain = 0.000 ; free physical = 4402 ; free virtual = 6821
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 18 22:35:35 2016...

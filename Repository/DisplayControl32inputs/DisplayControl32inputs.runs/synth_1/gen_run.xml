@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1460288133">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-DCP" Name="EightDisplayControl32inputs.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-UTIL-PB" Name="EightDisplayControl32inputs_utilization_synth.pb"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="PA-TCL" Name="EightDisplayControl32inputs.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="EightDisplayControl32inputs_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="EightDisplayControl32inputs.vds"/>
+  <File Type="RDS-UTIL" Name="EightDisplayControl32inputs_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="EightDisplayControl32inputs_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="EightDisplayControl32inputs_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/segment_decoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Segment_Didplay_Control/Segment_Didplay_Control.srcs/sources_1/imports/new/segment_decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1426329790"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/disp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Segment_Didplay_Control/Segment_Didplay_Control.srcs/sources_1/imports/new/disp.vhd"/>
+        <Attr Name="ImportTime" Val="1426450017"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="EightDisplayControl32inputs"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/ROM_Reader/rom_reader/rom_reader.xpr">
+<Project Version="7" Minor="10" Path="/media/psf/Home/Development/ect_ua/UserRepository/Repository/ROM_Reader/rom_reader/rom_reader.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6c4f175bed924bb0b530dd33557ce9aa"/>
@@ -18,7 +18,7 @@
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../UserDefinedRepository"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/rom_reader.ip_user_files"/>
@@ -31,7 +31,7 @@
       <File Path="$PSRCDIR/sources_1/imports/edia/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/Unroll_ROM_last/Unroll_ROM_last.srcs/sources_1/imports/new/ROM_reader_top.vhd">
         <FileInfo>
           <Attr Name="Library" Val="work"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Unroll_ROM_last/Unroll_ROM_last.srcs/sources_1/imports/new/ROM_reader_top.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/Unroll_ROM_last/Unroll_ROM_last.srcs/sources_1/imports/new/ROM_reader_top.vhd"/>
           <Attr Name="ImportTime" Val="1460469053"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
