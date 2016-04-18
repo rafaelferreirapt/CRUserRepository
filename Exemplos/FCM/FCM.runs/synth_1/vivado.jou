@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 18 10:31:17 2016
+# Process ID: 9859
+# Current directory: /media/psf/Home/Development/ect_ua/UserRepository/Exemplos/FCM/FCM.runs/synth_1
+# Command line: vivado -log FCM.vds -mode batch -messageDb vivado.pb -notrace -source FCM.tcl
+# Log file: /media/psf/Home/Development/ect_ua/UserRepository/Exemplos/FCM/FCM.runs/synth_1/FCM.vds
+# Journal file: /media/psf/Home/Development/ect_ua/UserRepository/Exemplos/FCM/FCM.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source FCM.tcl -notrace
