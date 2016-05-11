@@ -1,0 +1,15 @@
+// Mem file initialization records.
+//
+// Release 2013.2 -  HEAD, build April 01, 2013
+// Copyright (c) 1995-2016 Xilinx, Inc.  All rights reserved.
+// Created on Wednesday May 11, 2016 - 03:50:00 pm, from:
+//
+//     Map file     - /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.srcs/sources_1/bd/DMB1/DMB1.bmm
+//     Data file(s) - /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.srcs/sources_1/bd/DMB1/ip/DMB1_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'DMB1_i_microblaze_0.DMB1_i_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000
