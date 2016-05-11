@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun May 01 13:58:15 2016
+# Process ID: 3176
+# Current directory: K:/CR_MicroBlase/MB2/MB2.runs/impl_1
+# Command line: vivado.exe -log MB_swled_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source MB_swled_wrapper.tcl -notrace
+# Log file: K:/CR_MicroBlase/MB2/MB2.runs/impl_1/MB_swled_wrapper.vdi
+# Journal file: K:/CR_MicroBlase/MB2/MB2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MB_swled_wrapper.tcl -notrace

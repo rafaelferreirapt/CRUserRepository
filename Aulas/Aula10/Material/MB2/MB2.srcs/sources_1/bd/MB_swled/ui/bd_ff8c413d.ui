@@ -1,0 +1,41 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port btnCpuReset -pg 1 -y 150 -defaultsOSRD
+preplace port clk -pg 1 -y 200 -defaultsOSRD
+preplace portBus sw -pg 1 -y 20 -defaultsOSRD
+preplace portBus led -pg 1 -y 430 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 220 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 260 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 100 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 210 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 520 -defaultsOSRD
+preplace netloc microblaze_0_mdm_axi 1 2 4 550 180 NJ 190 NJ 20 1640
+preplace netloc btnCpuReset_1 1 0 2 NJ 150 NJ
+preplace netloc microblaze_0_Clk 1 1 5 180 80 540 10 860 10 1360 430 1640
+preplace netloc microblaze_0_M_AXI_DC 1 4 1 1340
+preplace netloc microblaze_0_ilmb_1 1 4 1 1310
+preplace netloc microblaze_0_axi_dp 1 4 1 1320
+preplace netloc axi_gpio_0_gpio_io_o 1 6 1 1920
+preplace netloc clk_1 1 0 1 NJ
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 NJ 190 NJ 200 1320
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 160 NJ 230 1300
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1640
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 1350
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 540 210 NJ 220 1340 420 NJ
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 530 20 NJ
+preplace netloc clk_wiz_1_locked 1 1 1 180
+preplace netloc microblaze_0_dlmb_1 1 4 1 1380
+preplace netloc sw_1 1 0 7 NJ 20 NJ 20 NJ 200 NJ 210 NJ 10 NJ 10 1910
+preplace netloc microblaze_0_debug 1 3 1 850
+preplace netloc mdm_1_debug_sys_rst 1 1 3 190 260 NJ 260 810
+levelinfo -pg 1 0 100 350 680 1080 1510 1780 1940 -top 0 -bot 600
+",
+}
+{
+   da_axi4_cnt: "3",
+   da_board_cnt: "3",
+   da_mb_cnt: "1",
+}

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Apr 10 12:12:50 2016
+# Process ID: 2984
+# Current directory: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1068 K:\MostFrequentlyNeeded___2014\Education2011\2015_2016\SecondSemester\CR\AulasTeoricas\Aula8_11april2016\Projects2016\BCD16bit\BCD16bit.xpr
+# Log file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit/vivado.log
+# Journal file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit/BCD16bit.xpr
+ipx::infer_core -vendor ua.pt -library user -taxonomy /UserIP K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+ipx::package_project -root_dir k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/bcd16bit/bcd16bit.srcs/sources_1/imports/6 -vendor ua.pt -library user -taxonomy /UserIP -force

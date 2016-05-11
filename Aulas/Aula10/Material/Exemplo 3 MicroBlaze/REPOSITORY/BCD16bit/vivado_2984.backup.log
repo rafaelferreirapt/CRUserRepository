@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Apr 10 12:12:50 2016
+# Process ID: 2984
+# Current directory: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1068 K:\MostFrequentlyNeeded___2014\Education2011\2015_2016\SecondSemester\CR\AulasTeoricas\Aula8_11april2016\Projects2016\BCD16bit\BCD16bit.xpr
+# Log file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit/vivado.log
+# Journal file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit/BCD16bit.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit'
+INFO: [Project 1-313] Project file moved from 'I:/SDR_P/8/UserDefinedRepository/BCD16bit' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'BCD16bit.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit/BCD16bit.srcs/sources_1/imports/6'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+ipx::infer_core -vendor ua.pt -library user -taxonomy /UserIP K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+Error!  No files matching *.vh *.v *.vhd *.vhdl *.vlog *.sv *.svh *.edn *.edif *.ngc found under "K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY" directory.
+ERROR: [Common 17-69] Command failed: Error!  No files matching *.vh *.v *.vhd *.vhdl *.vlog *.sv *.svh *.edn *.edif *.ngc found under "K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY" directory.
+ipx::package_project -root_dir k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/bcd16bit/bcd16bit.srcs/sources_1/imports/6 -vendor ua.pt -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "reset" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "clk" of definition type "xilinx.com:signal:clock:1.0".
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 10 12:16:13 2016...

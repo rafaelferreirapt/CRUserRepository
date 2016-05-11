@@ -1,0 +1,6 @@
+07:50:20 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+
+07:50:20 Build Finished (took 78ms)
+

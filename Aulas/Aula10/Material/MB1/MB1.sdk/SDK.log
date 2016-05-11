@@ -1,0 +1,11 @@
+10:16:50 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:16:51 INFO  : XSDB server has started successfully.
+10:16:52 INFO  : Processing command line option -hwspec K:/CR_MicroBlase/MB1/MB1.sdk/DMB1_wrapper.hdf.
+10:20:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505160A" && level==0} -index 0' command is executed.
+10:20:52 INFO  : FPGA configured successfully with bitstream "K:/CR_MicroBlase/MB1/MB1.sdk/DMB1_wrapper_hw_platform_0/download.bit"
+10:23:45 INFO  : Processor reset is completed for microblaze_0
+10:24:32 INFO  : Processor reset is completed for microblaze_0
+10:24:44 INFO  : Processor reset is completed for microblaze_0
+10:24:59 INFO  : Processor reset is completed for microblaze_0
+10:40:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,634 @@
+
+*** Running vivado
+    with args -log MP3_Design_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source MP3_Design_wrapper.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source MP3_Design_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 220 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_microblaze_0_0/MP3_Design_microblaze_0_0.xdc] for cell 'MP3_Design_i/microblaze_0/U0'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_microblaze_0_0/MP3_Design_microblaze_0_0.xdc] for cell 'MP3_Design_i/microblaze_0/U0'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_dlmb_v10_0/MP3_Design_dlmb_v10_0.xdc] for cell 'MP3_Design_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_dlmb_v10_0/MP3_Design_dlmb_v10_0.xdc] for cell 'MP3_Design_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_ilmb_v10_0/MP3_Design_ilmb_v10_0.xdc] for cell 'MP3_Design_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_ilmb_v10_0/MP3_Design_ilmb_v10_0.xdc] for cell 'MP3_Design_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_mdm_1_0/MP3_Design_mdm_1_0.xdc] for cell 'MP3_Design_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_mdm_1_0/MP3_Design_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.141 ; gain = 493.086
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_mdm_1_0/MP3_Design_mdm_1_0.xdc] for cell 'MP3_Design_i/mdm_1/U0'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0_board.xdc] for cell 'MP3_Design_i/clk_wiz_1/inst'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0_board.xdc] for cell 'MP3_Design_i/clk_wiz_1/inst'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0.xdc] for cell 'MP3_Design_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0.xdc:56]
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0.xdc] for cell 'MP3_Design_i/clk_wiz_1/inst'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0_board.xdc] for cell 'MP3_Design_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0_board.xdc] for cell 'MP3_Design_i/rst_clk_wiz_1_100M'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0.xdc] for cell 'MP3_Design_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0.xdc] for cell 'MP3_Design_i/rst_clk_wiz_1_100M'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0_board.xdc] for cell 'MP3_Design_i/axi_gpio_0/U0'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0_board.xdc] for cell 'MP3_Design_i/axi_gpio_0/U0'
+Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0.xdc] for cell 'MP3_Design_i/axi_gpio_0/U0'
+Finished Parsing XDC File [k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0.xdc] for cell 'MP3_Design_i/axi_gpio_0/U0'
+Parsing XDC File [K:/CR_MicroBlase/MP3/MP3.srcs/constrs_1/imports/Aula1_15Feb2016/Nexys4_Master.xdc]
+Finished Parsing XDC File [K:/CR_MicroBlase/MP3/MP3.srcs/constrs_1/imports/Aula1_15Feb2016/Nexys4_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'MP3_Design_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_microblaze_0_0/data/mb_bootloop_le.elf 
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 64 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.477 ; gain = 803.266
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -123 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1015.477 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1068213e5
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 7 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1889ebae7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.734 . Memory (MB): peak = 1015.477 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 541 cells.
+Phase 2 Constant Propagation | Checksum: 207ac8a01
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1015.477 ; gain = 0.000
+
+Phase 3 Sweep
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/ALL_Bits[0].ALU_Bit_I1/LO.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/ALL_Bits[1].ALU_Bit_I1/EX_CarryOut.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/ex_alu_carryin.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Zero_Detect_I/EX_Op1_Zero.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/EX_Op1_Zero.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[10].OF_Piperun_Stage/of_PipeRun_carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[1].OF_Piperun_Stage/of_PipeRun_carry_10.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[2].OF_Piperun_Stage/of_PipeRun_carry_10.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[2].OF_Piperun_Stage/of_PipeRun_carry_9.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/of_PipeRun_carry_9.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[4].OF_Piperun_Stage/of_PipeRun_carry_7.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[5].OF_Piperun_Stage/of_PipeRun_carry_6.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[5].OF_Piperun_Stage/of_PipeRun_carry_7.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[6].OF_Piperun_Stage/of_PipeRun_carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[6].OF_Piperun_Stage/of_PipeRun_carry_6.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[7].OF_Piperun_Stage/of_PipeRun_carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[8].OF_Piperun_Stage/of_PipeRun_carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[9].OF_Piperun_Stage/of_PipeRun_carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[9].OF_Piperun_Stage/of_PipeRun_carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_i_carry_and/ib_addr_strobe_iii.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_i_carry_or/ib_ready_MMU_or_not_if_fetch_in_progress.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_ii_carry_and/ib_addr_strobe_iii.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_ii_carry_and/ib_ready_MMU_or_not_if_fetch_in_progress.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_PC_Incr_Dbg_or_Prot.if_pc_incr_carry_and_1/if_pc_incr_carry0.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_PC_Incr_Dbg_or_Prot.if_pc_incr_carry_and_1/if_pc_incr_carry1.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/if_pc_incr_carry_and_0/if_pc_incr_carry0.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/if_pc_incr_carry_and_3/if_pc_incr_carry1.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/ex_op1_zero.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_PipeRun_carry_and/mem_wait_on_ready_N.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_wait_on_ready_N_carry_or/mem_databus_ready.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_wait_on_ready_N_carry_or/mem_wait_on_ready_N.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_op1_zero.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_databus_ready.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_0/dcache_data_strobe_iiii.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_0/mem_read_cache_hit.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/dcache_data_strobe_iiii.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteThrough.DCache_I1/mem_read_cache_hit_carry_or/mem_read_cache_hit.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteThrough.DCache_I1/mem_read_cache_hit_carry_or/mem_read_cache_hit_direct.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteThrough.DCache_I1/mem_read_cache_hit_direct_carry_and/mem_read_cache_hit_direct.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_Debug.Using_ICache.combined_carry_and_I2/iside_data_strobe_combined.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_Debug.Using_ICache.combined_carry_and_I2/iside_data_strobe_combined2.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_Debug.Using_ICache.combined_carry_or_I/iside_data_strobe_combined.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_Debug.Using_ICache.debug_combinded_carry_or_I/iside_data_strobe_combined2.
+WARNING: [Opt 31-6] Deleting driverless net: MP3_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/mem_databus_ready_sel_carry_or/mem_databus_ready.
+INFO: [Opt 31-12] Eliminated 2483 unconnected nets.
+INFO: [Opt 31-11] Eliminated 4990 unconnected cells.
+Phase 3 Sweep | Checksum: 11c938f92
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.477 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1015.477 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 11c938f92
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.477 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 22 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 4 Total Ports: 44
+Ending PowerOpt Patch Enables Task | Checksum: 1942823a4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1942823a4
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.746 ; gain = 165.270
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1180.746 ; gain = 165.270
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1180.746 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file K:/CR_MicroBlase/MP3/MP3.runs/impl_1/MP3_Design_wrapper_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -123 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1180.746 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: f452bcce
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.717 . Memory (MB): peak = 1180.746 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: f452bcce
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: f452bcce
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 40b1f4b8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ba36c48c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 8ee53044
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: f0cfab9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: f0cfab9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: f0cfab9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 1.3 Constrain Clocks/Macros | Checksum: f0cfab9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: f0cfab9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 141ddcfe9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 141ddcfe9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1875d1a8d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 17fc1b224
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 17fc1b224
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1dccd2b81
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1dccd2b81
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+
+Phase 3.7.1 Commit Small Macros and Core Logic
+
+Phase 3.7.1.1 Commit Slice Clusters
+Phase 3.7.1.1 Commit Slice Clusters | Checksum: 14e3ae082
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: 14e3ae082
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: 14e3ae082
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 14e3ae082
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 3.7 Small Shape Detail Placement | Checksum: 14e3ae082
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: c91c9ff9
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: c91c9ff9
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+
+Phase 4.1.1 callUpdateTimingBeforePCO
+Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 10f7b1078
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.1.2 updateClock Trees: PCOPT
+Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 10f7b1078
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.1.3 Post Placement Optimization
+
+Phase 4.1.3.1 PCOPT Shape updates
+
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 10f7b1078
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.1.3.1.2 deleteLutnmShapes
+
+Phase 4.1.3.1.2.1 deleteShapes
+Phase 4.1.3.1.2.1 deleteShapes | Checksum: 157f0ebe1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 157f0ebe1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 4.1.3.1 PCOPT Shape updates | Checksum: 157f0ebe1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.1.3.2 Post Placement Timing Optimization
+
+Phase 4.1.3.2.1 Restore Best Placement
+Phase 4.1.3.2.1 Restore Best Placement | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.585. For the most accurate timing information please run report_timing.
+Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 4.1.3 Post Placement Optimization | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+
+Phase 4.4.1 Restore STA
+Phase 4.4.1 Restore STA | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 4.4 Placer Reporting | Checksum: 25eb41b31
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 29c307ef2
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 29c307ef2
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Ending Placer Task | Checksum: 1a39ce998
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.746 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.577 . Memory (MB): peak = 1180.746 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1180.746 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1180.746 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1180.746 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -123 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: f0b6ce63 ConstDB: 0 ShapeSum: b2e61b35 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 18481ec17
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 18481ec17
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.746 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 18481ec17
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.746 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 243d06174
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1195.352 ; gain = 14.605
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.838  | TNS=0.000  | WHS=-0.259 | THS=-200.465|
+
+Phase 2 Router Initialization | Checksum: 181ac68db
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 1195.352 ; gain = 14.605
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 24004acd6
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 477
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 186783a75
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1199.770 ; gain = 19.023
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.058 | TNS=-0.234 | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 19fb6bdd8
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 102bd291e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 1199.770 ; gain = 19.023
+Phase 4.1.2 GlobIterForTiming | Checksum: 1519a6140
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 1199.770 ; gain = 19.023
+Phase 4.1 Global Iteration 0 | Checksum: 1519a6140
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: ea2b451d
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1199.770 ; gain = 19.023
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.213  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: eaf28295
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1199.770 ; gain = 19.023
+Phase 4 Rip-up And Reroute | Checksum: eaf28295
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: e7176429
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1199.770 ; gain = 19.023
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.213  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: e7176429
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: e7176429
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1199.770 ; gain = 19.023
+Phase 5 Delay and Skew Optimization | Checksum: e7176429
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: 1abe5365c
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.770 ; gain = 19.023
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.213  | TNS=0.000  | WHS=0.028  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: 1a553d728
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.926274 %
+  Global Horizontal Routing Utilization  = 1.11857 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 18f8df072
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 18f8df072
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 19e844fea
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.213  | TNS=0.000  | WHS=0.028  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 19e844fea
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.770 ; gain = 19.023
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.770 ; gain = 19.023
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+61 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1199.770 ; gain = 19.023
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.718 . Memory (MB): peak = 1199.770 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file K:/CR_MicroBlase/MP3/MP3.runs/impl_1/MP3_Design_wrapper_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -123 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Generating merged BMM file for the design top 'MP3_Design_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_microblaze_0_0/data/mb_bootloop_le.elf 
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./MP3_Design_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1544.820 ; gain = 327.891
+INFO: [Common 17-206] Exiting Vivado at Mon May 02 07:46:04 2016...
