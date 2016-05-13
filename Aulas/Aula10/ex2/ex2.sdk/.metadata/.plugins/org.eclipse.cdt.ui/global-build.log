@@ -1,0 +1,600 @@
+21:25:13 **** Clean-only build of configuration Debug for project SDK_MB1 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  SDK_MB1.elf.size  SDK_MB1.elf
+ 
+21:25:13 **** Clean-only build of project SDK_MB1_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+21:25:14 **** Build of project SDK_MB1_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/standalone_v5_3/src
+make -C microblaze_0/libsrc/standalone_v5_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/uartlite_v3_1/src
+make -C microblaze_0/libsrc/uartlite_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v5_3/src
+make -C microblaze_0/libsrc/standalone_v5_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/uartlite_v3_1/src
+make -C microblaze_0/libsrc/uartlite_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartlite
+Finished building libraries
+21:25:16 **** Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3428	    288	   3124	   6840	   1ab8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+21:26:07 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3428	    288	   3124	   6840	   1ab8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+21:26:55 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3428	    288	   3124	   6840	   1ab8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+21:32:49 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Nothing to be done for `all'.
+21:33:12 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Nothing to be done for `all'.
+22:03:51 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Nothing to be done for `all'.
+22:05:24 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Nothing to be done for `all'.
+16:32:07 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Nothing to be done for `all'.
+06:42:09 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Nothing to be done for `all'.
+make: Warning: File `src/subdir.mk' has modification time 0.28 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+06:58:52 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.027 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:51:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from /opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/microblaze-xilinx-elf/include/stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/microblaze-xilinx-elf/include/stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+make: *** [src/helloworld.o] Error 1
+06:59:11 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.2 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3444	    288	   3124	   6856	   1ac8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+06:59:31 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.46 s in the future
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3444	    288	   3124	   6856	   1ac8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:04:52 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.33 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3664	    288	   3120	   7072	   1ba0	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:04:56 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.37 s in the future
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3664	    288	   3120	   7072	   1ba0	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:06:43 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3664	    288	   3120	   7072	   1ba0	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:07:10 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3664	    288	   3120	   7072	   1ba0	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:07:13 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.35 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3664	    288	   3120	   7072	   1ba0	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:26:35 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.25 s in the future
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3664	    288	   3120	   7072	   1ba0	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:29:59 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:10: warning: unused variable 'buf' [-Wunused-variable]
+     char buf[50] = "";
+          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3716	    288	   3124	   7128	   1bd8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:30:11 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.6 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:6: error: 'c' undeclared (first use in this function)
+      c = inbyte();
+      ^
+../src/helloworld.c:65:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:10: warning: unused variable 'buf' [-Wunused-variable]
+     char buf[50] = "";
+          ^
+../src/helloworld.c:60:9: warning: unused variable 'num_buf' [-Wunused-variable]
+     int num_buf = 0;
+         ^
+make: *** [src/helloworld.o] Error 1
+07:31:29 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:6: error: 'c' undeclared (first use in this function)
+      c = inbyte();
+      ^
+../src/helloworld.c:65:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:10: warning: unused variable 'buf' [-Wunused-variable]
+     char buf[50] = "";
+          ^
+../src/helloworld.c:60:9: warning: unused variable 'num_buf' [-Wunused-variable]
+     int num_buf = 0;
+         ^
+make: *** [src/helloworld.o] Error 1
+07:32:18 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.45 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:14: error: 'c' undeclared (first use in this function)
+      outbyte(c);
+              ^
+../src/helloworld.c:69:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:10: warning: variable 'buf' set but not used [-Wunused-but-set-variable]
+     char buf[50] = "";
+          ^
+make: *** [src/helloworld.o] Error 1
+07:32:33 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:14: error: 'c' undeclared (first use in this function)
+      outbyte(c);
+              ^
+../src/helloworld.c:69:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:10: warning: variable 'buf' set but not used [-Wunused-but-set-variable]
+     char buf[50] = "";
+          ^
+make: *** [src/helloworld.o] Error 1
+07:32:40 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.045 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:14: error: 'c' undeclared (first use in this function)
+     } while (c != '\n' || c != '\r');
+              ^
+../src/helloworld.c:67:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:10: warning: variable 'buf' set but not used [-Wunused-but-set-variable]
+     char buf[50] = "";
+          ^
+make: *** [src/helloworld.o] Error 1
+07:32:44 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.7 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:14: error: 'c' undeclared (first use in this function)
+     } while (c != '\n' || c != '\r');
+              ^
+../src/helloworld.c:67:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:10: warning: variable 'buf' set but not used [-Wunused-but-set-variable]
+     char buf[50] = "";
+          ^
+make: *** [src/helloworld.o] Error 1
+07:33:14 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3704	    288	   3120	   7112	   1bc8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:33:27 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.52 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3560	    288	   3120	   6968	   1b38	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:33:33 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.52 s in the future
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3560	    288	   3120	   6968	   1b38	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:35:24 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3596	    288	   3124	   7008	   1b60	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:35:28 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3596	    288	   3124	   7008	   1b60	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:36:28 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.41 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3636	    288	   3124	   7048	   1b88	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:36:55 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.22 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3624	    288	   3120	   7032	   1b78	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:37:03 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.067 s in the future
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3624	    288	   3120	   7032	   1b78	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:38:35 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.5 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3624	    288	   3120	   7032	   1b78	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:38:38 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3624	    288	   3120	   7032	   1b78	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:41:41 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3652	    288	   3124	   7064	   1b98	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:41:55 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.69 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3688	    288	   3120	   7096	   1bb8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:41:58 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.38 s in the future
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3688	    288	   3120	   7096	   1bb8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:42:35 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3688	    288	   3120	   7096	   1bb8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+07:42:41 **** Incremental Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.48 s in the future
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3688	    288	   3120	   7096	   1bb8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+07:45:36 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.77 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3688	    288	   3120	   7096	   1bb8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.

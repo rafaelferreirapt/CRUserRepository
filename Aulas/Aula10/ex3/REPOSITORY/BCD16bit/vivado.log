@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Apr 10 12:16:18 2016
+# Process ID: 5356
+# Current directory: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4556 K:\MostFrequentlyNeeded___2014\Education2011\2015_2016\SecondSemester\CR\AulasTeoricas\Aula8_11april2016\Projects2016\REPOSITORY\BCD16bit\BCD16bit.xpr
+# Log file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit/vivado.log
+# Journal file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit/BCD16bit.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit'
+INFO: [Project 1-313] Project file moved from 'K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BCD16bit' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit/BCD16bit.srcs/sources_1/imports/6'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+ipx::package_project -root_dir k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/bcd16bit/bcd16bit.srcs/sources_1/imports/6 -vendor ua.pt -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "reset" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "clk" of definition type "xilinx.com:signal:clock:1.0".
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit/BCD16bit.srcs/sources_1/imports/6
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit/BCD16bit.srcs/sources_1/imports/6'
+close_project
+create_project counter_display2016 K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016 -part xc7a100tcsg324-1
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+set_property target_language VHDL [current_project]
+create_bd_design "BD_counter_display"
+Wrote  : <K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0
+WARNING: [IP_Flow 19-2162] IP 'BD_counter_display_c_counter_binary_0_0' is locked:
+* IP 'BD_counter_display_c_counter_binary_0_0' has a read-only file:
+   'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/ip/BD_counter_display_c_counter_binary_0_0/BD_counter_display_c_counter_binary_0_0.xml'
+IP is write protected.
+* IP 'BD_counter_display_c_counter_binary_0_0' has a read-only file:
+   'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/ip/BD_counter_display_c_counter_binary_0_0/BD_counter_display_c_counter_binary_0_0.xci' 
+with restricted functionality. Commands to change this IP's configuration are disallowed.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+endgroup
+delete_bd_objs [get_bd_cells c_counter_binary_0]
+set_property  ip_repo_paths  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY'.
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:BinToBCD16:1.0 BinToBCD16_0
+WARNING: [IP_Flow 19-2162] IP 'BD_counter_display_BinToBCD16_0_0' is locked:
+* IP 'BD_counter_display_BinToBCD16_0_0' has a read-only file:
+   'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/ip/BD_counter_display_BinToBCD16_0_0/BD_counter_display_BinToBCD16_0_0.xml'
+IP is write protected.
+* IP 'BD_counter_display_BinToBCD16_0_0' has a read-only file:
+   'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/ip/BD_counter_display_BinToBCD16_0_0/BD_counter_display_BinToBCD16_0_0.xci' 
+with restricted functionality. Commands to change this IP's configuration are disallowed.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+endgroup
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY'.
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY'
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:EightDisplayControl32inputs:1.0 EightDisplayControl32inputs_0
+CRITICAL WARNING: [IP_Flow 19-1671] Failed to create IP instance 'BD_counter_display_EightDisplayControl32inputs_0_0'. Error creating IP directory 'K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/ip/BD_counter_display_EightDisplayControl32inputs_0_0'.
+ERROR: [#UNDEF] Failed to create IP instance 'BD_counter_display_EightDisplayControl32inputs_0_0'. Error creating IP directory 'K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/counter_display2016/counter_display2016.srcs/sources_1/bd/BD_counter_display/ip/BD_counter_display_EightDisplayControl32inputs_0_0'.
+ERROR: [BD 5-7] Error: running create_bd_cell.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY'

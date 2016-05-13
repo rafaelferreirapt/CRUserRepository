@@ -88,8 +88,8 @@ entity pselect_mask is
 
   generic (
     C_AW   : integer                   := 32;
-    C_BAR  : std_logic_vector(0 to 31) := "00000000000000100000000000000000";
-    C_MASK : std_logic_vector(0 to 31) := "00000000000001111100000000000000"
+    C_BAR  : std_logic_vector(0 to 63) := X"0000000000020000";
+    C_MASK : std_logic_vector(0 to 63) := X"000000000007C000"
     );
   port (
     A     : in  std_logic_vector(0 to C_AW-1);
@@ -121,37 +121,10 @@ architecture imp of pselect_mask is
     end if;
   end function fix_AB;
 
-  constant Nr      : integer := Nr_Of_Ones(C_MASK);
+  constant Nr      : integer := Nr_Of_Ones(C_MASK(64 - C_AW to 63));
   constant Use_CIN : boolean := ((Nr mod 4) = 0);
   constant AB      : integer := fix_AB(Use_CIN, Nr);
   
-  attribute INIT : string;
-
-  constant NUM_LUTS    : integer := (AB-1)/4+1;
-
-  -- function to initialize LUT within pselect 
-  type int4 is array (3 downto 0) of integer;
-  function pselect_init_lut(i        : integer;
-                            AB       : integer;
-                            NUM_LUTS : integer;
-                            C_AW     : integer;
-                            C_BAR    : std_logic_vector(0 to 31)) 
-    return bit_vector is
-    variable init_vector : bit_vector(15 downto 0) := X"0001";
-    variable j           : integer                 := 0;
-    variable val_in      : int4;
-  begin
-    for j in 0 to 3 loop
-      if i < NUM_LUTS-1 or j <= ((AB-1) mod 4) then
-        val_in(j) := conv_integer(C_BAR(i*4+j));
-      else val_in(j) := 0;
-      end if;
-    end loop;
-    init_vector := To_bitvector(conv_std_logic_vector(2**(val_in(3)*8+
-                                                          val_in(2)*4+val_in(1)*2+val_in(0)*1),16));
-    return init_vector;
-  end pselect_init_lut;
-
   signal A_Bus : std_logic_vector(0 to AB);
   signal BAR   : std_logic_vector(0 to AB);
 
@@ -166,10 +139,10 @@ begin  -- VHDL_RTL
     tmp   := 0;
     A_Bus <= (others => '0');
     BAR   <= (others => '0');
-    for I in C_MASK'range loop
-      if (C_MASK(I) = '1') then
+    for I in 0 to C_AW - 1 loop
+      if (C_MASK(64 - C_AW + I) = '1') then
         A_Bus(tmp) <= A(I);
-        BAR(tmp)   <= C_BAR(I);
+        BAR(tmp)   <= C_BAR(64 - C_AW + I);
         tmp        := tmp + 1;
       end if;
     end loop;  -- I
@@ -182,4 +155,3 @@ begin  -- VHDL_RTL
   CS <= Valid when A_Bus=BAR else '0';
 
 end imp;
-

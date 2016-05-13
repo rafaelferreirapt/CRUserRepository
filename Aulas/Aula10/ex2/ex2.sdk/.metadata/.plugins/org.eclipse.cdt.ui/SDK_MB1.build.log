@@ -1,0 +1,23 @@
+07:45:36 **** Auto Build of configuration Debug for project SDK_MB1 ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.77 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SDK_MB1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SDK_MB1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SDK_MB1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "SDK_MB1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDK_MB1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SDK_MB1.elf  |tee "SDK_MB1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3688	    288	   3120	   7096	   1bb8	SDK_MB1.elf
+Finished building: SDK_MB1.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+07:45:37 Build Finished (took 1s.15ms)
+

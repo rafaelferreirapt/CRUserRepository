@@ -219,3 +219,18 @@ java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor 
 14:52:33 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
 14:52:35 INFO  : Processor reset is completed for microblaze_0
 14:53:07 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:49:12 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:49:15 INFO  : XSDB server has started successfully.
+11:49:15 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.sdk/MB_swled_wrapper.hdf.
+12:30:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:30:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+12:30:16 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.sdk/MB_swled_wrapper_hw_platform_0/download.bit"
+12:30:57 INFO  : Processor reset is completed for microblaze_0
+12:34:04 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:35:19 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:35:20 INFO  : XSDB server has started successfully.
+12:35:21 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.sdk/MB_swled_wrapper.hdf.
+12:35:22 INFO  : Checking for hwspec changes in the project MB_swled_wrapper_hw_platform_1.
+12:36:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:36:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+12:36:18 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.sdk/MB_swled_wrapper_hw_platform_0/download.bit"

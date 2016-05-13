@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2015.4 (64-bit)
-# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Wed May 11 16:07:49 2016
-# Process ID: 15509
-# Current directory: /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.runs/impl_1
-# Command line: vivado -log DMB1_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source DMB1_wrapper.tcl -notrace
-# Log file: /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.runs/impl_1/DMB1_wrapper.vdi
-# Journal file: /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.runs/impl_1/vivado.jou
+# Start of session at: Thu May 12 23:54:09 2016
+# Process ID: 4464
+# Current directory: Y:/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.runs/impl_1
+# Command line: vivado.exe -log DMB1_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source DMB1_wrapper.tcl -notrace
+# Log file: Y:/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.runs/impl_1/DMB1_wrapper.vdi
+# Journal file: Y:/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source DMB1_wrapper.tcl -notrace

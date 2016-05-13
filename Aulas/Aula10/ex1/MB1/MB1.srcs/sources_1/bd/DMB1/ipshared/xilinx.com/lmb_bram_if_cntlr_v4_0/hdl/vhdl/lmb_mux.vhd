@@ -2,7 +2,7 @@
 -- lmb_mux.vhd - Entity and architecture
 -------------------------------------------------------------------------------
 --
--- (c) Copyright [2003] - [2011] Xilinx, Inc. All rights reserved.
+-- (c) Copyright [2003] - [2015] Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and 
@@ -87,11 +87,11 @@ use IEEE.std_logic_unsigned.all;
 
 entity lmb_mux is
   generic (
-    C_BASEADDR   : std_logic_vector(0 to 31) := X"FFFFFFFF";
-    C_MASK       : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK1      : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK2      : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK3      : std_logic_vector(0 to 31) := X"00800000";
+    C_BASEADDR   : std_logic_vector(0 to 63) := X"FFFFFFFFFFFFFFFF";
+    C_MASK       : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK1      : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK2      : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK3      : std_logic_vector(0 to 63) := X"0000000000800000";
     C_LMB_AWIDTH : integer                   := 32;
     C_LMB_DWIDTH : integer                   := 32;
     C_NUM_LMB    : integer                   := 1);
@@ -172,10 +172,10 @@ architecture imp of lmb_mux is
   component pselect_mask
     generic (
       C_AW   : integer                   := 32;
-      C_BAR  : std_logic_vector(0 to 31) := X"00000000";
-      C_MASK : std_logic_vector(0 to 31) := X"00800000");
+      C_BAR  : std_logic_vector(0 to 63) := X"0000000000000000";
+      C_MASK : std_logic_vector(0 to 63) := X"0000000000800000");
     port (
-      A     : in  std_logic_vector(0 to 31);
+      A     : in  std_logic_vector(0 to C_AW - 1);
       CS    : out std_logic;
       Valid : in  std_logic);
   end component;
@@ -245,7 +245,7 @@ begin  -- VHDL_RTL
 
   more_than_one_lmb: if (C_NUM_LMB > 1) generate
 
-    type C_Mask_Vec_T is array (0 to 3) of std_logic_vector(0 to 31);
+    type C_Mask_Vec_T is array (0 to 3) of std_logic_vector(0 to 63);
     constant C_Mask_Vec : C_MASK_Vec_T := (C_MASK, C_MASK1, C_MASK2, C_MASK3);
 
     type ABus_vec_T  is array (0 to C_NUM_LMB-1) of std_logic_vector(0 to C_LMB_AWIDTH - 1); 
@@ -454,4 +454,3 @@ begin  -- VHDL_RTL
   end generate more_than_one_lmb;
 
 end imp;
-

@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2015.4 (64-bit)              -->
+<!-- Product Version: Vivado v2016.1 (64-bit)              -->
 <!--                                                         -->
-<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="K:/CR_MicroBlase/MB2/MB2.xpr">
+<Project Version="7" Minor="12" Path="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ec1513c61335475a97913046f64a0c7b"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
-    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/Material/MB2/MB2.cache/compile_simlib/activehdl"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="XPMLibraries" Val="XPM_CDC"/>
+    <Option Name="XPMLibraries" Val="XPM_MEMORY"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/MB2.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/MB2.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -34,26 +52,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_mdm_1_0/MB_swled_mdm_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_xbar_0/MB_swled_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_microblaze_0_0/MB_swled_microblaze_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_dlmb_v10_0/MB_swled_dlmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_ilmb_bram_if_cntlr_0/MB_swled_ilmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_ilmb_v10_0/MB_swled_ilmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_microblaze_0_axi_periph_0/MB_swled_microblaze_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_lmb_bram_0/MB_swled_lmb_bram_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_auto_pc_1/MB_swled_auto_pc_1.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_dlmb_bram_if_cntlr_0/MB_swled_dlmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_axi_gpio_0_0/MB_swled_axi_gpio_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_auto_pc_0/MB_swled_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_rst_clk_wiz_1_100M_0/MB_swled_rst_clk_wiz_1_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="ip/MB_swled_clk_wiz_1_0/MB_swled_clk_wiz_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="hdl/MB_swled.vhd"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="MB_swled.bmm"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="MB_swled_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="hdl/MB_swled.hwdef"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="hw_handoff/MB_swled_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="MB_swled.bd" FileRelPathName="hw_handoff/MB_swled.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/MB_swled/hdl/MB_swled_wrapper.vhd">
         <FileInfo>
@@ -82,11 +80,14 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="MB_swled_wrapper"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
@@ -111,25 +112,18 @@
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
     </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
-    </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
-          <Desc>Vivado Implementation Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

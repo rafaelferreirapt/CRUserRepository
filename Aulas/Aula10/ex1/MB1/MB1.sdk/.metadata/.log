@@ -2036,3 +2036,23 @@ java.io.IOException: Communication channel is closed by remote peer
 	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
 	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2016-05-12 16:30:11.002 -----------------------------------------------
+eclipse.buildId=2016.1
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.sdk
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-12 16:30:33.221
+!MESSAGE Indexed 'SDK_MB1' (2 sources, 8 headers) in 1.62 sec: 128 declarations; 84 references; 3 unresolved inclusions; 0 syntax errors; 11 unresolved names (4.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-12 16:30:37.113
+!MESSAGE Indexed 'SDK_MB1_bsp' (37 sources, 74 headers) in 3.69 sec: 1,389 declarations; 5,117 references; 33 unresolved inclusions; 4 syntax errors; 31 unresolved names (0.47%)
+
+!ENTRY org.eclipse.tcf 4 0 2016-05-12 16:32:28.421
+!MESSAGE TCF channel terminated
+!STACK 0
+java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)

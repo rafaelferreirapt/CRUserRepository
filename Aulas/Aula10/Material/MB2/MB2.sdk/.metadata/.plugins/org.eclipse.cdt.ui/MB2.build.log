@@ -1,6 +1,10 @@
-14:52:32 **** Incremental Build of configuration Debug for project MB2 ****
+12:31:51 **** Incremental Build of configuration Debug for project MB2 ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB2_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+/bin/sh: 1: mb-gcc: not found
+make: *** [src/helloworld.o] Error 127
 
-14:52:32 Build Finished (took 156ms)
+12:31:51 Build Finished (took 65ms)
 

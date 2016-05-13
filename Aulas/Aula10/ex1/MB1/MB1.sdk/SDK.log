@@ -139,3 +139,12 @@ com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
 22:05:09 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.sdk/DMB1_wrapper_hw_platform_0/download.bit"
 22:05:25 INFO  : Processor reset is completed for microblaze_0
 22:08:17 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:30:31 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.sdk/temp_xsdb_launch_script.tcl
+16:30:34 INFO  : XSDB server has started successfully.
+16:30:35 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.sdk/DMB1_wrapper.hdf.
+16:30:36 INFO  : Checking for hwspec changes in the project DMB1_wrapper_hw_platform_1.
+16:31:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+16:31:47 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex1/MB1/MB1.sdk/DMB1_wrapper_hw_platform_0/download.bit"
+16:32:12 INFO  : Processor reset is completed for microblaze_0
+16:32:31 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

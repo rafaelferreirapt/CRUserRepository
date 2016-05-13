@@ -1,0 +1,5 @@
+07:47:10 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+07:47:11 INFO  : XSDB server has started successfully.
+07:47:11 INFO  : Processing command line option -hwspec K:/CR_MicroBlase/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+07:50:21 INFO  : Processor reset is completed for microblaze_0
+07:51:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

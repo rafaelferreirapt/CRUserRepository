@@ -596,3 +596,15 @@ INFO: [Common 17-186] '/media/psf/Home/Development/ect_ua/UserRepository/Aulas/A
 INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2203.219 ; gain = 296.293 ; free physical = 3914 ; free virtual = 6128
 INFO: [Common 17-206] Exiting Vivado at Wed May 11 16:10:12 2016...
+
+*** Running vivado
+    with args -log DMB1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source DMB1_wrapper.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source DMB1_wrapper.tcl -notrace
+Command: open_checkpoint DMB1_wrapper_routed.dcp
