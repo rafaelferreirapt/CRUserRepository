@@ -64,9 +64,8 @@ ENTITY MP3_Design_xlslice_1_0 IS
 END MP3_Design_xlslice_1_0;
 
 ARCHITECTURE MP3_Design_xlslice_1_0_arch OF MP3_Design_xlslice_1_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_xlslice_1_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT xlslice IS
     GENERIC (
       DIN_WIDTH : INTEGER;
@@ -79,11 +78,11 @@ ARCHITECTURE MP3_Design_xlslice_1_0_arch OF MP3_Design_xlslice_1_0 IS
     );
   END COMPONENT xlslice;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF MP3_Design_xlslice_1_0_arch: ARCHITECTURE IS "xlslice,Vivado 2015.4";
+  ATTRIBUTE X_CORE_INFO OF MP3_Design_xlslice_1_0_arch: ARCHITECTURE IS "xlslice,Vivado 2016.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF MP3_Design_xlslice_1_0_arch : ARCHITECTURE IS "MP3_Design_xlslice_1_0,xlslice,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF MP3_Design_xlslice_1_0_arch: ARCHITECTURE IS "MP3_Design_xlslice_1_0,xlslice,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=0,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DIN_WIDTH=32,DIN_FROM=15,DIN_TO=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF MP3_Design_xlslice_1_0_arch: ARCHITECTURE IS "MP3_Design_xlslice_1_0,xlslice,{x_ipProduct=Vivado 2016.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=0,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DIN_WIDTH=32,DIN_FROM=15,DIN_TO=0}";
 BEGIN
   U0 : xlslice
     GENERIC MAP (

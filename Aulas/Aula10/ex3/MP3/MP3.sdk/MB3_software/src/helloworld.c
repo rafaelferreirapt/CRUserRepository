@@ -1,9 +1,7 @@
-#include <stdio.h>
 #include "platform.h"
 #include "xparameters.h"
 #include "xgpio.h"
 
-void print(char *str);
 char inbyte(void);
 void outbyte(char c);
 
@@ -12,31 +10,54 @@ XGpio GPIO_0;
 XGpio_Config GPIO_0_conf;
 
 int main()
-{	char c;
-		GPIO_0_conf.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
-	    GPIO_0_conf.DeviceId = XPAR_GPIO_0_DEVICE_ID;
-	    GPIO_0_conf.InterruptPresent = XPAR_GPIO_0_INTERRUPT_PRESENT;
-	    GPIO_0_conf.IsDual = XPAR_GPIO_0_IS_DUAL;
+{
+	char c;
 
-	    //Initialize the XGpio instance
-        XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
+	GPIO_0_conf.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
+	GPIO_0_conf.DeviceId = XPAR_GPIO_0_DEVICE_ID;
+	GPIO_0_conf.InterruptPresent = XPAR_GPIO_0_INTERRUPT_PRESENT;
+	GPIO_0_conf.IsDual = XPAR_GPIO_0_IS_DUAL;
+
+	//Initialize the XGpio instance
+	XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
 
     init_platform();
 
-    u32 input = 0x12345678;
-
-
+    u32 input;
 
     do
-    {		print("Character ? (e for exit):   ");
-    		c = inbyte(); inbyte();
-    		print("\nCharacter is:   ");
-    		outbyte(c);
-    		print("\n");
-//    		input = XGpio_DiscreteRead(&GPIO_0, 2);				//Read the switches value
-            XGpio_DiscreteWrite(&GPIO_0, 1, input);	//Write the led value
-    } while (c != 'e');
+    {
+    	print("Character ? (x for exit):   ");
+		c = inbyte();
+		inbyte();
+
+		print("\nCharacter is: ");
+		outbyte(c);
+		print("\n");
+
+		if(c<='9' && c>='0'){
+			input = 0x00000000 + (c-'0');
+			print("c<='9' && c>='0'\n");
+		}else if(c<='f' && c>='a'){
+			input = 0x00000010 + (c-'a');
+			print("c<='f' && c>='a'\n");
+		}else if(c<='F' && c>='A'){
+			input = 0x00000010 + (c-'A');
+			print("c<='F' && c>='A'\n");
+		}else{
+		    print("\nThe program has been terminated\n\r");
+		    cleanup_platform();
+
+		    return 0;
+			break;
+		}
+
+		XGpio_DiscreteWrite(&GPIO_0, 1, 0x00000000);	//Write the led value
+		XGpio_DiscreteWrite(&GPIO_0, 1, input);		 	//Write the led value
+    } while (c != 'x');
+
     print("\nThe program has been terminated\n\r");
     cleanup_platform();
+
     return 0;
 }

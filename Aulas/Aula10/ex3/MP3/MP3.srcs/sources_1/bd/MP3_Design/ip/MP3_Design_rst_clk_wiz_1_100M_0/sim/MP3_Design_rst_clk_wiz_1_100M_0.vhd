@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:proc_sys_reset:5.0
--- IP Revision: 8
+-- IP Revision: 9
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY proc_sys_reset_v5_0_8;
-USE proc_sys_reset_v5_0_8.proc_sys_reset;
+LIBRARY proc_sys_reset_v5_0_9;
+USE proc_sys_reset_v5_0_9.proc_sys_reset;
 
 ENTITY MP3_Design_rst_clk_wiz_1_100M_0 IS
   PORT (
@@ -72,9 +72,8 @@ ENTITY MP3_Design_rst_clk_wiz_1_100M_0 IS
 END MP3_Design_rst_clk_wiz_1_100M_0;
 
 ARCHITECTURE MP3_Design_rst_clk_wiz_1_100M_0_arch OF MP3_Design_rst_clk_wiz_1_100M_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_rst_clk_wiz_1_100M_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT proc_sys_reset IS
     GENERIC (
       C_FAMILY : STRING;

@@ -1,11 +1,12 @@
 // Mem file initialization records.
 //
-// Release 2013.2 -  HEAD, build April 01, 2013
-// Copyright (c) 1995-2016 Xilinx, Inc.  All rights reserved.
-// Created on Monday May 02, 2016 - 07:20:32 am, from:
+// SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+// Vivado v2016.1 (64-bit)
+// Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+// Created on Friday May 13, 2016 - 06:11:31 pm, from:
 //
-//     Map file     - K:\CR_MicroBlase\MP3\MP3.srcs\sources_1\bd\MP3_Design\MP3_Design.bmm
-//     Data file(s) - k:/CR_MicroBlase/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_microblaze_0_0/data/mb_bootloop_le.elf
+//     Map file     - /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.srcs/sources_1/bd/MP3_Design/MP3_Design.bmm
+//     Data file(s) - /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_microblaze_0_0/data/mb_bootloop_le.elf
 //
 // Address space 'MP3_Design_i_microblaze_0.MP3_Design_i_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
 //

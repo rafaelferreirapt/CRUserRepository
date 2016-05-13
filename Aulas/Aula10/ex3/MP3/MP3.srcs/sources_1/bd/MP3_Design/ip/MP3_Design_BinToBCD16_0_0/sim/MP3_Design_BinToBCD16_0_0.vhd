@@ -69,9 +69,8 @@ ENTITY MP3_Design_BinToBCD16_0_0 IS
 END MP3_Design_BinToBCD16_0_0;
 
 ARCHITECTURE MP3_Design_BinToBCD16_0_0_arch OF MP3_Design_BinToBCD16_0_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_BinToBCD16_0_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT BinToBCD16 IS
     GENERIC (
       size_of_data_to_convert : INTEGER

@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:lmb_v10:3.0
--- IP Revision: 7
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY lmb_v10_v3_0_7;
-USE lmb_v10_v3_0_7.lmb_v10;
+LIBRARY lmb_v10_v3_0_8;
+USE lmb_v10_v3_0_8.lmb_v10;
 
 ENTITY MP3_Design_ilmb_v10_0 IS
   PORT (
@@ -87,9 +87,8 @@ ENTITY MP3_Design_ilmb_v10_0 IS
 END MP3_Design_ilmb_v10_0;
 
 ARCHITECTURE MP3_Design_ilmb_v10_0_arch OF MP3_Design_ilmb_v10_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_ilmb_v10_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT lmb_v10 IS
     GENERIC (
       C_LMB_NUM_SLAVES : INTEGER;

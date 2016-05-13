@@ -85,8 +85,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 entity Parity is
   generic (

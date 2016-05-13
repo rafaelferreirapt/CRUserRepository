@@ -94,8 +94,8 @@ use IEEE.std_logic_1164.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library mdm_v3_2_4;
-use mdm_v3_2_4.all;
+library mdm_v3_2_5;
+use mdm_v3_2_5.all;
 
 library axi_lite_ipif_v3_0_3;
 use axi_lite_ipif_v3_0_3.axi_lite_ipif;

@@ -3,12 +3,12 @@
 -------------------------------------------------------------------------------
 --
 -- (c) Copyright [2003] - [2015] Xilinx, Inc. All rights reserved.
--- 
+--
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and 
+-- of Xilinx, Inc. and is protected under U.S. and
 -- international copyright and other intellectual property
 -- laws.
--- 
+--
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
@@ -30,7 +30,7 @@
 -- by a third party) even if such damage or loss was
 -- reasonably foreseeable or Xilinx had been advised of the
 -- possibility of the same.
--- 
+--
 -- CRITICAL APPLICATIONS
 -- Xilinx products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
@@ -44,7 +44,7 @@
 -- liability of any use of Xilinx products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
--- 
+--
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES
 --
@@ -87,18 +87,18 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.all;
 
 entity lmb_bram_if_cntlr is
   generic (
     C_FAMILY                   : string                    := "Virtex7";
-    C_HIGHADDR                 : std_logic_vector(0 to 31) := X"00000000";
-    C_BASEADDR                 : std_logic_vector(0 to 31) := X"FFFFFFFF";
-    C_MASK                     : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK1                    : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK2                    : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK3                    : std_logic_vector(0 to 31) := X"00800000";
+    C_HIGHADDR                 : std_logic_vector(0 to 63) := X"0000000000000000";
+    C_BASEADDR                 : std_logic_vector(0 to 63) := X"FFFFFFFFFFFFFFFF";
+    C_MASK                     : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK1                    : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK2                    : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK3                    : std_logic_vector(0 to 63) := X"0000000000800000";
     C_LMB_AWIDTH               : integer                   := 32;
     C_LMB_DWIDTH               : integer                   := 32;
     C_ECC                      : integer                   := 0;
@@ -112,11 +112,13 @@ entity lmb_bram_if_cntlr is
     C_CE_COUNTER_WIDTH         : integer                   := 0;
     C_WRITE_ACCESS             : integer                   := 2;
     C_NUM_LMB                  : integer                   := 1;
+    -- BRAM generic
+    C_BRAM_AWIDTH              : integer                   := 32;
     -- AXI generics
-    C_S_AXI_CTRL_BASEADDR      : std_logic_vector       := X"FFFF_FFFF";
-    C_S_AXI_CTRL_HIGHADDR      : std_logic_vector       := X"0000_0000";
-    C_S_AXI_CTRL_ADDR_WIDTH    : integer                := 32;
-    C_S_AXI_CTRL_DATA_WIDTH    : integer                := 32);
+    C_S_AXI_CTRL_BASEADDR      : std_logic_vector          := X"FFFF_FFFF";
+    C_S_AXI_CTRL_HIGHADDR      : std_logic_vector          := X"0000_0000";
+    C_S_AXI_CTRL_ADDR_WIDTH    : integer                   := 32;
+    C_S_AXI_CTRL_DATA_WIDTH    : integer                   := 32);
   port (
     LMB_Clk : in std_logic := '0';
     LMB_Rst : in std_logic := '0';
@@ -172,11 +174,11 @@ entity lmb_bram_if_cntlr is
     Sl3_Wait         : out std_logic;
     Sl3_UE           : out std_logic;
     Sl3_CE           : out std_logic;
-    
+
     -- ports to data memory block
     BRAM_Rst_A  : out std_logic;
     BRAM_Clk_A  : out std_logic;
-    BRAM_Addr_A : out std_logic_vector(0 to C_LMB_AWIDTH-1);
+    BRAM_Addr_A : out std_logic_vector(0 to C_BRAM_AWIDTH-1);
     BRAM_EN_A   : out std_logic;
     BRAM_WEN_A  : out std_logic_vector(0 to (C_LMB_DWIDTH+8*C_ECC)/8-1);
     BRAM_Dout_A : out std_logic_vector(0 to C_LMB_DWIDTH+8*C_ECC-1);
@@ -202,15 +204,15 @@ entity lmb_bram_if_cntlr is
     S_AXI_CTRL_RRESP   : out std_logic_vector(1 downto 0);
     S_AXI_CTRL_RVALID  : out std_logic;
     S_AXI_CTRL_RREADY  : in  std_logic;
-   
+
     -- Interrupt and error signals
     UE        : out std_logic;
     CE        : out std_logic;
     Interrupt : out std_logic);
 end lmb_bram_if_cntlr;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 architecture imp of lmb_bram_if_cntlr is
 
@@ -220,11 +222,11 @@ architecture imp of lmb_bram_if_cntlr is
 
   component lmb_mux is
   generic (
-    C_BASEADDR   : std_logic_vector(0 to 31) := X"FFFFFFFF";
-    C_MASK       : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK1      : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK2      : std_logic_vector(0 to 31) := X"00800000";
-    C_MASK3      : std_logic_vector(0 to 31) := X"00800000";
+    C_BASEADDR   : std_logic_vector(0 to 63) := X"FFFFFFFFFFFFFFFF";
+    C_MASK       : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK1      : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK2      : std_logic_vector(0 to 63) := X"0000000000800000";
+    C_MASK3      : std_logic_vector(0 to 63) := X"0000000000800000";
     C_LMB_AWIDTH : integer                   := 32;
     C_LMB_DWIDTH : integer                   := 32;
     C_NUM_LMB    : integer                   := 1);
@@ -283,7 +285,7 @@ architecture imp of lmb_bram_if_cntlr is
     Sl3_Wait         : out std_logic;
     Sl3_UE           : out std_logic;
     Sl3_CE           : out std_logic;
-    
+
     -- Muxed LMB Bus
     LMB_ABus        : out std_logic_vector(0 to C_LMB_AWIDTH-1);
     LMB_WriteDBus   : out std_logic_vector(0 to C_LMB_DWIDTH-1);
@@ -300,7 +302,7 @@ architecture imp of lmb_bram_if_cntlr is
     lmb_select       : out std_logic);
   end component lmb_mux;
 
-  component axi_interface 
+  component axi_interface
   generic (
     C_TARGET           : TARGET_FAMILY_TYPE;
     C_S_AXI_BASEADDR   : std_logic_vector := X"FFFF_FFFF";
@@ -331,7 +333,7 @@ architecture imp of lmb_bram_if_cntlr is
     S_AXI_RREADY  : in  std_logic;
     RegWr         : out std_logic;
     RegWrData     : out std_logic_vector(0 to C_DWIDTH - 1);
-    RegAddr       : out std_logic_vector(0 to C_REGADDR_WIDTH-1);  
+    RegAddr       : out std_logic_vector(0 to C_REGADDR_WIDTH-1);
     RegRdData     : in  std_logic_vector(0 to C_DWIDTH - 1));
   end component;
 
@@ -350,7 +352,7 @@ architecture imp of lmb_bram_if_cntlr is
       UE         : out std_logic;
       CE         : out std_logic);
   end component checkbit_handler;
-  
+
   component Correct_One_Bit
     generic (
       C_TARGET      : TARGET_FAMILY_TYPE;
@@ -362,7 +364,7 @@ architecture imp of lmb_bram_if_cntlr is
   end component Correct_One_Bit;
 
   constant C_TARGET   : TARGET_FAMILY_TYPE := String_To_Family(C_FAMILY, false);
-  
+
   constant C_HAS_FAULT_INJECT         : boolean := C_FAULT_INJECT = 1;
   constant C_HAS_CE_FAILING_REGISTERS : boolean := C_CE_FAILING_REGISTERS = 1;
   constant C_HAS_UE_FAILING_REGISTERS : boolean := C_UE_FAILING_REGISTERS = 1;
@@ -408,6 +410,10 @@ architecture imp of lmb_bram_if_cntlr is
 
 begin
 
+  assert C_LMB_AWIDTH >= C_BRAM_AWIDTH
+    report "C_LMB_AWIDTH must be greater than or equal to C_BRAM_AWIDTH"
+    severity failure;
+
   -----------------------------------------------------------------------------
   -- Cleaning incoming data from BRAM from 'U' for simulation purpose
   -- This is added since simulation model for BRAM will not initialize
@@ -421,7 +427,7 @@ begin
     -- pragma translate_off
     bram_din_a_i <= To_StdLogicVector(To_bitvector(BRAM_Din_A));
     -- pragma translate_on
-   
+
   end process Cleaning_machine;
 
   lmb_mux_I : lmb_mux
@@ -492,7 +498,7 @@ begin
       Sl_Wait          => Sl_Wait_i,
       Sl_UE            => Sl_UE_i,
       Sl_CE            => Sl_CE_i,
-      lmb_select       => lmb_select);  
+      lmb_select       => lmb_select);
 
   BRAM_Rst_A  <= '0';
   BRAM_Clk_A  <= LMB_Clk;
@@ -501,7 +507,7 @@ begin
   lmb_we(1) <= LMB_BE_i(1) and LMB_WriteStrobe_i and lmb_select;
   lmb_we(2) <= LMB_BE_i(2) and LMB_WriteStrobe_i and lmb_select;
   lmb_we(3) <= LMB_BE_i(3) and LMB_WriteStrobe_i and lmb_select;
-  
+
 
   No_ECC : if (C_ECC = 0) generate
 
@@ -511,7 +517,7 @@ begin
     BRAM_WEN_A  <= lmb_we;
     BRAM_Dout_A <= LMB_WriteDBus_i;
     Sl_DBus_i   <= bram_din_a_i;
-    BRAM_Addr_A <= LMB_ABus_i;
+    BRAM_Addr_A <= LMB_ABus_i(C_LMB_AWIDTH - C_BRAM_AWIDTH to C_LMB_AWIDTH - 1);
 
     -- only used wen ECC enabled, tie to constant inactive
     Sl_Wait_i   <= '0';
@@ -525,7 +531,7 @@ begin
     -- Writes are pipelined in MB with 5 stage pipeline
     -----------------------------------------------------------------------------
     Ready_Handling : process (LMB_Clk) is
-    begin 
+    begin
       if (LMB_Clk'event and LMB_Clk = '1') then
         if (LMB_Rst = '1') then
           Sl_Rdy <= '0';
@@ -538,9 +544,9 @@ begin
     end process Ready_Handling;
 
     Sl_Ready_i <= Sl_Rdy and lmb_as;
-    
+
   end generate No_ECC;
-  
+
   ECC : if (C_ECC = 1) generate
 
     constant NO_WRITES  : integer := 0;
@@ -553,7 +559,7 @@ begin
     constant C_ECC_ONOFF         : natural := 31;
     constant C_ECC_ONOFF_WIDTH   : natural := 1;
     signal ECC_EnableCheckingReg : std_logic_vector(32-C_ECC_ONOFF_WIDTH to 31);
-    
+
     -- Fault Inject Registers
     signal FaultInjectData   : std_logic_vector(0 to C_LMB_DWIDTH-1);
     signal FaultInjectECC    : std_logic_vector(32-C_ECC_WIDTH to 31);
@@ -562,10 +568,10 @@ begin
     signal write_access           : std_logic;
     signal full_word_write_access : std_logic;
     signal IsWordWrite            : std_logic;
-    signal RdModifyWr_Read        : std_logic;  -- Read cycle in read modify write sequence 
-    signal RdModifyWr_Modify      : std_logic;  -- Modify cycle in read modify write sequence 
-    signal RdModifyWr_Modify_i    : std_logic;  -- Modify cycle in read modify write sequence 
-    signal RdModifyWr_Write       : std_logic;  -- Write cycle in read modify write sequence 
+    signal RdModifyWr_Read        : std_logic;  -- Read cycle in read modify write sequence
+    signal RdModifyWr_Modify      : std_logic;  -- Modify cycle in read modify write sequence
+    signal RdModifyWr_Modify_i    : std_logic;  -- Modify cycle in read modify write sequence
+    signal RdModifyWr_Write       : std_logic;  -- Write cycle in read modify write sequence
     signal LMB_ABus_Q             : std_logic_vector(0 to C_LMB_AWIDTH-1);
 
     -- Read ECC
@@ -596,6 +602,8 @@ begin
     constant inverted_bit : bool_array := (false,false,true,false,true,false,false);
   begin
 
+    assert C_LMB_DWIDTH = 32 report "C_LMB_DWIDTH must be 32 when C_ECC = 1" severity failure;
+
     -- Enable BRAMs when access on LMB and in the second cycle in a read/modify write
     bram_en <= '1' when LMB_AddrStrobe_i = '1' or RdModifyWr_Write = '1' else
                '0';
@@ -611,7 +619,7 @@ begin
     -- Writes are pipelined in MB with 5 stage pipeline
     -----------------------------------------------------------------------------
     Ready_Handling : process (LMB_Clk) is
-    begin 
+    begin
       if (LMB_Clk'event and LMB_Clk = '1') then
         if (LMB_Rst = '1') then
           Sl_Rdy <= '0';
@@ -621,7 +629,7 @@ begin
           -- Directly drive ready on valid read access or on valid word write access
           -- otherwise drive ready when we have written the new data on a
           -- readmodifywrite sequence
-          Sl_Rdy <= ((LMB_AddrStrobe_i and lmb_select) and (LMB_ReadStrobe_i or IsWordWrite))                         
+          Sl_Rdy <= ((LMB_AddrStrobe_i and lmb_select) and (LMB_ReadStrobe_i or IsWordWrite))
                         or RdModifyWr_Write;
           lmb_as <= LMB_AddrStrobe_i;
         end if;
@@ -634,7 +642,7 @@ begin
     begin  -- process Wait_Handling
       if (LMB_Clk'event and LMB_Clk = '1') then  -- rising clock edge
         if (LMB_Rst = '1') then
-          Sl_Wait_i <= '0';          
+          Sl_Wait_i <= '0';
         elsif (LMB_AddrStrobe_i = '1') then
           Sl_Wait_i <= lmb_select;
         elsif (Sl_Rdy = '1') then
@@ -662,7 +670,7 @@ begin
     -- Discrete error signals
     UE <= Sl_UE_i and Sl_Ready_i;
     CE <= Sl_CE_i and Sl_Ready_i;
-    
+
     -- Correct Data
     Gen_Correct_Data: for I in 0 to 31 generate
       Correct_One_Bit_I : Correct_One_Bit
@@ -675,7 +683,7 @@ begin
           DCorr         => CorrectedRdData(I));
     end generate Gen_Correct_Data;
 
-    -- Drive corrected read data on LMB 
+    -- Drive corrected read data on LMB
     Sl_DBus_i <= CorrectedRdData;
 
     -- Remember address and writestrobe
@@ -696,8 +704,8 @@ begin
 
     bram_addr <= LMB_ABus_Q when RdModifyWr_Write = '1' else
                  LMB_ABus_i;
-    
-    BRAM_Addr_A <= bram_addr;
+
+    BRAM_Addr_A <= bram_addr(C_LMB_AWIDTH - C_BRAM_AWIDTH to C_LMB_AWIDTH - 1);
 
     Do_Writes : if (C_WRITE_ACCESS /= NO_WRITES) generate
       signal WrData  : std_logic_vector(0 to C_LMB_DWIDTH-1);
@@ -715,16 +723,16 @@ begin
         CorrReg : process(LMB_Clk) is
         begin
           if (LMB_Clk'event and LMB_Clk = '1') then
-            if RdModifyWr_Modify = '1' then   -- Remember error signals 
+            if RdModifyWr_Modify = '1' then   -- Remember error signals
               CE_Q <= Sl_CE_i;
               UE_Q <= Sl_UE_i;
             elsif RdModifyWr_Write = '1' then   -- Keep the signals one more cycle
               CE_Q <= CE_Q;
               UE_Q <= UE_Q;
-            else              
+            else
               CE_Q <= '0';
               UE_Q <= '0';
-            end if;          
+            end if;
           end if;
         end process CorrReg;
 
@@ -741,7 +749,7 @@ begin
         end process StoreLMB_WE;
 
         RdModifyWr_Modify <= RdModifyWr_Modify_i and lmb_as;
-        
+
         RdModifyWr_Read  <= '1' when lmb_we /= "1111" and lmb_we /= "0000" and (C_WRITE_ACCESS = ALL_WRITES) else
                             '0';
 
@@ -761,7 +769,7 @@ begin
         end process StoreWriteDBus;
 
         wrdata_i <= WriteDBus_Q when RdModifyWr_Write = '1' else LMB_WriteDBus_i;
-        
+
         -- Select BRAM data to write from LMB on 32-bit word access or a mix of
         -- read data and LMB write data for read/modify write operations
         WrData(0 to 7)   <= wrdata_i(0 to 7) when ((RdModifyWr_Write = '0' and LMB_BE_i(0) = '1') or
@@ -776,7 +784,7 @@ begin
         WrData(24 to 31) <= wrdata_i(24 to 31) when ((RdModifyWr_Write = '0' and LMB_BE_i(3) = '1') or
                                                      (RdModifyWr_Write = '1' and lmb_be_q(3) = '1')) else
                             CorrectedRdData_Q(24 to 31);
-        
+
       end generate DO_BYTE_HALFWORD_WRITES;
 
       DO_Only_Word_Writes : if (C_WRITE_ACCESS = ONLY_WORD) generate
@@ -794,12 +802,12 @@ begin
       WrDataSel : process(IsWordWrite, lmb_select, RdModifyWr_Modify, RdModifyWr_Write, UE_Q)
       begin
         if (RdModifyWr_Modify = '1') then
-          BRAM_WEN_A <= (others => '0');          
+          BRAM_WEN_A <= (others => '0');
         elsif (RdModifyWr_Write = '1') then
           if (UE_Q = '0') then
             BRAM_WEN_A <= (others => '1');  -- byte or half word write, and not UE
           else
-            BRAM_WEN_A <= (others => '0');          
+            BRAM_WEN_A <= (others => '0');
           end if;
         elsif (IsWordWrite = '1') then           -- word write
           BRAM_WEN_A <= (others => lmb_select);
@@ -807,8 +815,8 @@ begin
           BRAM_WEN_A <= (others => '0');
         end if;
       end process WrDataSel;
-      
-      -- Generate ECC bits for writing into BRAM      
+
+      -- Generate ECC bits for writing into BRAM
       checkbit_handler_I2 : checkbit_handler
         generic map (
           C_TARGET   => C_TARGET,
@@ -823,11 +831,11 @@ begin
           CE_Q       => '0',            -- [in  std_logic]
           UE         => open,           -- [out std_logic]
           CE         => open);          -- [out std_logic]
-      
+
       -- Drive BRAM write data and inject fault if applicable
       BRAM_Dout_A(0 to 31)  <= WrData xor FaultInjectData;
       BRAM_Dout_A(32 to 39) <= ('0' & WrECC) xor ('0' & FaultInjectECC);
-      
+
     end generate Do_Writes;
 
     No_Write_Accesses : if (C_WRITE_ACCESS = NO_WRITES) generate
@@ -840,6 +848,7 @@ begin
       CE_Q              <= '0';
       UE_Q              <= '0';
       BRAM_WEN_A        <= (others => '0');
+      BRAM_Dout_A       <= (others => '0');
     end generate No_Write_Accesses;
 
     Has_AXI : if C_HAS_AXI generate
@@ -877,7 +886,7 @@ begin
       constant C_DWIDTH : integer := 32;
       signal RegWrData  : std_logic_vector(0 to C_DWIDTH-1);
       signal RegRdData  : std_logic_vector(0 to C_DWIDTH-1);
-      signal RegAddr    : std_logic_vector(0 to C_REGADDR_WIDTH-1); 
+      signal RegAddr    : std_logic_vector(0 to C_REGADDR_WIDTH-1);
       signal RegWr      : std_logic;
 
       -- Correctable Error First Failing Register
@@ -895,12 +904,12 @@ begin
       -- Correctable Error Counter
       signal CE_CounterReg     : std_logic_vector(32-C_CE_COUNTER_WIDTH to 31);
 
-      signal sample_registers : std_logic;      
+      signal sample_registers : std_logic;
 
     begin
 
       sample_registers <= lmb_as and not full_word_write_access;
-        
+
       -- Implement fault injection registers
       Fault_Inject : if C_HAS_FAULT_INJECT and (C_WRITE_ACCESS /= NO_WRITES) generate
       begin
@@ -927,7 +936,7 @@ begin
         FaultInjectData <= (others => '0');
         FaultInjectECC  <= (others => '0');
       end generate No_Fault_Inject;
-      
+
       -- Implement Correctable Error First Failing Register
       CE_Failing_Registers : if C_HAS_CE_FAILING_REGISTERS generate
       begin
@@ -946,14 +955,14 @@ begin
           end if;
         end process CE_FailingReg;
       end generate CE_Failing_Registers;
-      
+
       No_CE_Failing_Registers : if not C_HAS_CE_FAILING_REGISTERS generate
       begin
         CE_FailingAddress <= (others => '0');
         CE_FailingData    <= (others => '0');
         CE_FailingECC     <= (others => '0');
       end generate No_CE_Failing_Registers;
-      
+
       -- Implement Unorrectable Error First Failing Register
       UE_Failing_Registers : if C_HAS_UE_FAILING_REGISTERS generate
       begin
@@ -972,14 +981,14 @@ begin
           end if;
         end process UE_FailingReg;
       end generate UE_Failing_Registers;
-      
+
       No_UE_Failing_Registers : if not C_HAS_UE_FAILING_REGISTERS generate
       begin
         UE_FailingAddress <= (others => '0');
         UE_FailingData    <= (others => '0');
         UE_FailingECC     <= (others => '0');
       end generate No_UE_Failing_Registers;
-      
+
       ECC_Status_Registers : if C_HAS_ECC_STATUS_REGISTERS generate
       begin
 
@@ -1005,7 +1014,7 @@ begin
                 ECC_StatusReg(C_ECC_STATUS_UE) <= '1';  -- Set when UE occurs
               end if;
             end if;
-          end if;    
+          end if;
         end process StatusReg;
 
         EnableIRQReg : process(LMB_Clk) is
@@ -1019,10 +1028,10 @@ begin
               -- UE Interrupt enable bit
               ECC_EnableIRQReg(C_ECC_ENABLE_IRQ_UE) <= RegWrData(C_ECC_ENABLE_IRQ_UE);
             end if;
-          end if;    
+          end if;
         end process EnableIRQReg;
-        
-        Interrupt <= (ECC_StatusReg(C_ECC_STATUS_CE) and ECC_EnableIRQReg(C_ECC_ENABLE_IRQ_CE)) or 
+
+        Interrupt <= (ECC_StatusReg(C_ECC_STATUS_CE) and ECC_EnableIRQReg(C_ECC_ENABLE_IRQ_CE)) or
                      (ECC_StatusReg(C_ECC_STATUS_UE) and ECC_EnableIRQReg(C_ECC_ENABLE_IRQ_UE));
 
       end generate ECC_Status_Registers;
@@ -1045,11 +1054,11 @@ begin
                  ECC_EnableCheckingReg(C_ECC_ONOFF) <= '0';
               else
                  ECC_EnableCheckingReg(C_ECC_ONOFF) <= '1';
-              end if;  
+              end if;
             elsif RegWr = '1' and RegAddr = C_ECC_OnOffReg then
               ECC_EnableCheckingReg(C_ECC_ONOFF) <= RegWrData(C_ECC_ONOFF);
             end if;
-          end if;    
+          end if;
         end process OnOffReg;
 
       end generate ECC_OnOff_Register;
@@ -1080,7 +1089,7 @@ begin
         end process CountReg;
 
         CE_CounterReg_plus_1 <= std_logic_vector(unsigned(('0' & CE_CounterReg)) + 1);
-        
+
       end generate CE_Counter;
 
       No_CE_Counter : if not C_HAS_CE_COUNTER generate
@@ -1112,7 +1121,7 @@ begin
 
       AXI : if C_HAS_AXI generate
       begin
-        axi_I : axi_interface 
+        axi_I : axi_interface
         generic map(
           C_TARGET           => C_TARGET,
           C_S_AXI_BASEADDR   => C_S_AXI_CTRL_BASEADDR,

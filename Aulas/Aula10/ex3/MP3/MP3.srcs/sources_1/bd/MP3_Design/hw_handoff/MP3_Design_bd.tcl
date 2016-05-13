@@ -7,15 +7,25 @@
 # IP Integrator Tcl commands easier.
 ################################################################
 
+namespace eval _tcl {
+proc get_script_folder {} {
+   set script_path [file normalize [info script]]
+   set script_folder [file dirname $script_path]
+   return $script_folder
+}
+}
+variable script_folder
+set script_folder [_tcl::get_script_folder]
+
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2015.4
+set scripts_vivado_version 2016.1
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
    puts ""
-   puts "ERROR: This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."
+   catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
 
    return 1
 }
@@ -27,16 +37,14 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # To test this script, run the following commands from Vivado Tcl console:
 # source MP3_Design_script.tcl
 
-# If you do not already have a project created,
-# you can create a project using the following command:
-#    create_project project_1 myproj -part xc7a100tcsg324-1
+# If there is no project opened, this script will create a
+# project, but make sure you do not have an existing project
+# <./myproj/project_1.xpr> in the current working folder.
 
-# CHECKING IF PROJECT EXISTS
-if { [get_projects -quiet] eq "" } {
-   puts "ERROR: Please open or create a project!"
-   return 1
+set list_projs [get_projects -quiet]
+if { $list_projs eq "" } {
+   create_project project_1 myproj -part xc7a100tcsg324-1
 }
-
 
 
 # CHANGE DESIGN NAME HERE
@@ -57,7 +65,7 @@ if { ${design_name} eq "" } {
    # USE CASES:
    #    1) Design_name not set
 
-   set errMsg "ERROR: Please set the variable <design_name> to a non-empty value."
+   set errMsg "Please set the variable <design_name> to a non-empty value."
    set nRet 1
 
 } elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
@@ -67,23 +75,23 @@ if { ${design_name} eq "" } {
    #    4): Current design opened AND is empty AND names diff; design_name exists in project.
 
    if { $cur_design ne $design_name } {
-      puts "INFO: Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+      common::send_msg_id "BD_TCL-001" "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
       set design_name [get_property NAME $cur_design]
    }
-   puts "INFO: Constructing design in IPI design <$cur_design>..."
+   common::send_msg_id "BD_TCL-002" "INFO" "Constructing design in IPI design <$cur_design>..."
 
 } elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
    # USE CASES:
    #    5) Current design opened AND has components AND same names.
 
-   set errMsg "ERROR: Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+   set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
    set nRet 1
 } elseif { [get_files -quiet ${design_name}.bd] ne "" } {
    # USE CASES: 
    #    6) Current opened design, has components, but diff names, design_name exists in project.
    #    7) No opened design, design_name exists in project.
 
-   set errMsg "ERROR: Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+   set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
    set nRet 2
 
 } else {
@@ -91,19 +99,19 @@ if { ${design_name} eq "" } {
    #    8) No opened design, design_name not in project.
    #    9) Current opened design, has components, but diff names, design_name not in project.
 
-   puts "INFO: Currently there is no design <$design_name> in project, so creating one..."
+   common::send_msg_id "BD_TCL-003" "INFO" "Currently there is no design <$design_name> in project, so creating one..."
 
    create_bd_design $design_name
 
-   puts "INFO: Making design <$design_name> as current_bd_design."
+   common::send_msg_id "BD_TCL-004" "INFO" "Making design <$design_name> as current_bd_design."
    current_bd_design $design_name
 
 }
 
-puts "INFO: Currently the variable <design_name> is equal to \"$design_name\"."
+common::send_msg_id "BD_TCL-005" "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
 
 if { $nRet != 0 } {
-   puts $errMsg
+   catch {common::send_msg_id "BD_TCL-114" "ERROR" $errMsg}
    return $nRet
 }
 
@@ -115,22 +123,24 @@ if { $nRet != 0 } {
 # Hierarchical cell: microblaze_0_local_memory
 proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
 
+  variable script_folder
+
   if { $parentCell eq "" || $nameHier eq "" } {
-     puts "ERROR: create_hier_cell_microblaze_0_local_memory() - Empty argument(s)!"
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" create_hier_cell_microblaze_0_local_memory() - Empty argument(s)!"}
      return
   }
 
   # Get object for parentCell
   set parentObj [get_bd_cells $parentCell]
   if { $parentObj == "" } {
-     puts "ERROR: Unable to find parent cell <$parentCell>!"
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
      return
   }
 
   # Make sure parentObj is hier blk
   set parentType [get_property TYPE $parentObj]
   if { $parentType ne "hier" } {
-     puts "ERROR: Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
      return
   }
 
@@ -198,6 +208,8 @@ CONFIG.use_bram_block {BRAM_Controller} \
 # procedure reusable. If parentCell is "", will use root.
 proc create_root_design { parentCell } {
 
+  variable script_folder
+
   if { $parentCell eq "" } {
      set parentCell [get_bd_cells /]
   }
@@ -205,14 +217,14 @@ proc create_root_design { parentCell } {
   # Get object for parentCell
   set parentObj [get_bd_cells $parentCell]
   if { $parentObj == "" } {
-     puts "ERROR: Unable to find parent cell <$parentCell>!"
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
      return
   }
 
   # Make sure parentObj is hier blk
   set parentType [get_property TYPE $parentObj]
   if { $parentType ne "hier" } {
-     puts "ERROR: Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
      return
   }
 
@@ -247,9 +259,27 @@ CONFIG.C_IS_DUAL {1} \
  ] $axi_gpio_0
 
   # Create instance: clk_wiz_1, and set properties
-  set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.2 clk_wiz_1 ]
+  set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_1 ]
   set_property -dict [ list \
+CONFIG.CLKOUT1_JITTER {130.958} \
+CONFIG.CLKOUT1_PHASE_ERROR {98.575} \
+CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} \
+CONFIG.MMCM_CLKIN1_PERIOD {10.0} \
+CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} \
+CONFIG.MMCM_COMPENSATION {ZHOLD} \
 CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
+ ] $clk_wiz_1
+
+  # Need to retain value_src of defaults
+  set_property -dict [ list \
+CONFIG.CLKOUT1_JITTER.VALUE_SRC {DEFAULT} \
+CONFIG.CLKOUT1_PHASE_ERROR.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKFBOUT_MULT_F.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKIN1_PERIOD.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKIN2_PERIOD.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
  ] $clk_wiz_1
 
   # Create instance: mdm_1, and set properties
@@ -259,7 +289,7 @@ CONFIG.C_USE_UART {1} \
  ] $mdm_1
 
   # Create instance: microblaze_0, and set properties
-  set microblaze_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 microblaze_0 ]
+  set microblaze_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.6 microblaze_0 ]
   set_property -dict [ list \
 CONFIG.C_CACHE_BYTE_SIZE {8192} \
 CONFIG.C_DCACHE_BYTE_SIZE {8192} \
@@ -356,16 +386,16 @@ CONFIG.DOUT_WIDTH {16} \
   connect_bd_net -net xlslice_1_Dout [get_bd_pins xlconcat_0/In0] [get_bd_pins xlslice_1/Dout]
 
   # Create address segments
-  create_bd_addr_seg -range 0x10000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] SEG_axi_gpio_0_Reg
-  create_bd_addr_seg -range 0x10000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] SEG_axi_gpio_0_Reg
-  create_bd_addr_seg -range 0x10000 -offset 0x0 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] SEG_dlmb_bram_if_cntlr_Mem
-  create_bd_addr_seg -range 0x10000 -offset 0x0 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] SEG_ilmb_bram_if_cntlr_Mem
-  create_bd_addr_seg -range 0x1000 -offset 0x41400000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs mdm_1/S_AXI/Reg] SEG_mdm_1_Reg
-  create_bd_addr_seg -range 0x1000 -offset 0x41400000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs mdm_1/S_AXI/Reg] SEG_mdm_1_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] SEG_axi_gpio_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] SEG_axi_gpio_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x00000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] SEG_dlmb_bram_if_cntlr_Mem
+  create_bd_addr_seg -range 0x00010000 -offset 0x00000000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] SEG_ilmb_bram_if_cntlr_Mem
+  create_bd_addr_seg -range 0x00001000 -offset 0x41400000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs mdm_1/S_AXI/Reg] SEG_mdm_1_Reg
+  create_bd_addr_seg -range 0x00001000 -offset 0x41400000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs mdm_1/S_AXI/Reg] SEG_mdm_1_Reg
 
   # Perform GUI Layout
   regenerate_bd_layout -layout_string {
-   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
 preplace port btnC -pg 1 -y 600 -defaultsOSRD
 preplace port btnCpuReset -pg 1 -y 190 -defaultsOSRD
@@ -374,49 +404,49 @@ preplace portBus an -pg 1 -y 430 -defaultsOSRD
 preplace portBus seg -pg 1 -y 450 -defaultsOSRD
 preplace inst xlslice_0 -pg 1 -lvl 7 -y 550 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 7 -y 660 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 8 -y 480 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 8 -y 470 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 6 -y 660 -defaultsOSRD
 preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 210 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -y 710 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 9 -y 620 -defaultsOSRD
 preplace inst DC32_0 -pg 1 -lvl 10 -y 440 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 5 -y 710 -defaultsOSRD
 preplace inst mdm_1 -pg 1 -lvl 3 -y 100 -defaultsOSRD
 preplace inst BinToBCD16_0 -pg 1 -lvl 8 -y 610 -defaultsOSRD
 preplace inst microblaze_0 -pg 1 -lvl 4 -y 100 -defaultsOSRD
 preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 210 -defaultsOSRD
 preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 380 -defaultsOSRD
 preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 500 -defaultsOSRD
-preplace netloc xlconstant_1_dout 1 5 2 NJ 740 1770
-preplace netloc microblaze_0_mdm_axi 1 2 4 490 10 NJ 10 NJ 10 1620
+preplace netloc xlconstant_1_dout 1 5 2 NJ 740 1780
+preplace netloc microblaze_0_mdm_axi 1 2 4 500 10 NJ 10 NJ 10 1620
 preplace netloc BinToBCD16_0_BCD0 1 8 1 N
-preplace netloc xlslice_1_Dout 1 8 1 2290
+preplace netloc xlslice_1_Dout 1 8 1 2310
 preplace netloc BinToBCD16_0_BCD1 1 8 1 N
 preplace netloc btnCpuReset_1 1 0 2 NJ 190 NJ
 preplace netloc BinToBCD16_0_BCD2 1 8 1 N
 preplace netloc btnC_1 1 0 8 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ
-preplace netloc microblaze_0_Clk 1 1 9 150 120 490 180 790 190 1300 410 NJ 410 NJ 410 NJ 430 NJ 430 N
+preplace netloc microblaze_0_Clk 1 1 9 150 120 500 180 790 190 1310 410 NJ 410 NJ 410 NJ 420 NJ 420 2510
 preplace netloc BinToBCD16_0_BCD3 1 8 1 N
-preplace netloc microblaze_0_M_AXI_DC 1 4 1 1250
-preplace netloc microblaze_0_ilmb_1 1 4 1 1270
-preplace netloc microblaze_0_axi_dp 1 4 1 1240
+preplace netloc microblaze_0_M_AXI_DC 1 4 1 1260
+preplace netloc microblaze_0_ilmb_1 1 4 1 1280
+preplace netloc microblaze_0_axi_dp 1 4 1 1250
 preplace netloc clk_1 1 0 1 -10
 preplace netloc xlconstant_0_dout 1 7 1 NJ
-preplace netloc xlconcat_0_dout 1 9 1 2470
-preplace netloc axi_gpio_0_gpio_io_o 1 5 3 1630 550 NJ 480 NJ
+preplace netloc xlconcat_0_dout 1 9 1 2510
+preplace netloc axi_gpio_0_gpio_io_o 1 5 3 1630 550 NJ 470 NJ
 preplace netloc DC32_0_select_display 1 10 1 NJ
 preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 NJ 230 NJ 230 NJ
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 190 NJ 210 1250
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 2 1320 580 1620
-preplace netloc microblaze_0_M_AXI_IC 1 4 1 1260
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 3 500 200 NJ 200 1310
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 190 NJ 210 1260
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 2 1330 580 1620
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 1270
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 3 510 200 NJ 200 1320
 preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 N 170 NJ
 preplace netloc clk_wiz_1_locked 1 1 1 160
-preplace netloc microblaze_0_dlmb_1 1 4 1 1280
+preplace netloc microblaze_0_dlmb_1 1 4 1 1290
 preplace netloc DC32_0_segments 1 10 1 NJ
 preplace netloc microblaze_0_debug 1 3 1 790
 preplace netloc mdm_1_debug_sys_rst 1 1 3 160 30 NJ 30 780
-preplace netloc xlslice_0_Dout 1 7 1 2070
-levelinfo -pg 1 -30 70 330 650 1020 1470 1700 1980 2190 2380 2600 2750 -top 0 -bot 790
+preplace netloc xlslice_0_Dout 1 7 1 2080
+levelinfo -pg 1 -30 70 330 650 1020 1480 1710 1980 2200 2410 2650 2810 -top 0 -bot 790
 ",
 }
 

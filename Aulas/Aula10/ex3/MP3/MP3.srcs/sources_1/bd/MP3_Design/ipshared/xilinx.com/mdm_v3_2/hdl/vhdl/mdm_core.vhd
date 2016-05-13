@@ -778,8 +778,8 @@ use IEEE.numeric_std.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library mdm_v3_2_4;
-use mdm_v3_2_4.all;
+library mdm_v3_2_5;
+use mdm_v3_2_5.all;
 
 architecture IMP of MDM_CORE is
 

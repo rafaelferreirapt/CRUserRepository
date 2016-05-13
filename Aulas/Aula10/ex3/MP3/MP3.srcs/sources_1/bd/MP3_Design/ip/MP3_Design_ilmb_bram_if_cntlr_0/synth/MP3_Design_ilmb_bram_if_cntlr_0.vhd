@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:lmb_bram_if_cntlr:4.0
--- IP Revision: 7
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY lmb_bram_if_cntlr_v4_0_7;
-USE lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_cntlr;
+LIBRARY lmb_bram_if_cntlr_v4_0_8;
+USE lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_cntlr;
 
 ENTITY MP3_Design_ilmb_bram_if_cntlr_0 IS
   PORT (
@@ -82,19 +82,18 @@ ENTITY MP3_Design_ilmb_bram_if_cntlr_0 IS
 END MP3_Design_ilmb_bram_if_cntlr_0;
 
 ARCHITECTURE MP3_Design_ilmb_bram_if_cntlr_0_arch OF MP3_Design_ilmb_bram_if_cntlr_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_ilmb_bram_if_cntlr_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT lmb_bram_if_cntlr IS
     GENERIC (
       C_FAMILY : STRING;
-      C_HIGHADDR : STD_LOGIC_VECTOR(0 TO 31);
-      C_BASEADDR : STD_LOGIC_VECTOR(0 TO 31);
+      C_HIGHADDR : STD_LOGIC_VECTOR;
+      C_BASEADDR : STD_LOGIC_VECTOR;
       C_NUM_LMB : INTEGER;
-      C_MASK : STD_LOGIC_VECTOR(0 TO 31);
-      C_MASK1 : STD_LOGIC_VECTOR(0 TO 31);
-      C_MASK2 : STD_LOGIC_VECTOR(0 TO 31);
-      C_MASK3 : STD_LOGIC_VECTOR(0 TO 31);
+      C_MASK : STD_LOGIC_VECTOR;
+      C_MASK1 : STD_LOGIC_VECTOR;
+      C_MASK2 : STD_LOGIC_VECTOR;
+      C_MASK3 : STD_LOGIC_VECTOR;
       C_LMB_AWIDTH : INTEGER;
       C_LMB_DWIDTH : INTEGER;
       C_ECC : INTEGER;
@@ -107,6 +106,7 @@ ARCHITECTURE MP3_Design_ilmb_bram_if_cntlr_0_arch OF MP3_Design_ilmb_bram_if_cnt
       C_ECC_ONOFF_RESET_VALUE : INTEGER;
       C_CE_COUNTER_WIDTH : INTEGER;
       C_WRITE_ACCESS : INTEGER;
+      C_BRAM_AWIDTH : INTEGER;
       C_S_AXI_CTRL_ADDR_WIDTH : INTEGER;
       C_S_AXI_CTRL_DATA_WIDTH : INTEGER
     );
@@ -189,11 +189,12 @@ ARCHITECTURE MP3_Design_ilmb_bram_if_cntlr_0_arch OF MP3_Design_ilmb_bram_if_cnt
     );
   END COMPONENT lmb_bram_if_cntlr;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF MP3_Design_ilmb_bram_if_cntlr_0_arch: ARCHITECTURE IS "lmb_bram_if_cntlr,Vivado 2015.4";
+  ATTRIBUTE X_CORE_INFO OF MP3_Design_ilmb_bram_if_cntlr_0_arch: ARCHITECTURE IS "lmb_bram_if_cntlr,Vivado 2016.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF MP3_Design_ilmb_bram_if_cntlr_0_arch : ARCHITECTURE IS "MP3_Design_ilmb_bram_if_cntlr_0,lmb_bram_if_cntlr,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF MP3_Design_ilmb_bram_if_cntlr_0_arch: ARCHITECTURE IS "MP3_Design_ilmb_bram_if_cntlr_0,lmb_bram_if_cntlr,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=lmb_bram_if_cntlr,x_ipVersion=4.0,x_ipCoreRevision=7,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_HIGHADDR=0x0000FFFF,C_BASEADDR=0x00000000,C_NUM_LMB=1,C_MASK=0x40000000,C_MASK1=0x00800000,C_MASK2=0x00800000,C_MASK3=0x00800000,C_LMB_AWIDTH=32,C_LMB_DWIDTH=32,C_ECC=0,C_INTERCONNECT=0,C_FAULT_INJECT=0,C_CE_FAILING_REGISTERS=0,C_UE_FAILING_REGISTERS=0,C_ECC_STATUS_REGISTERS=0,C_ECC_ONOFF_REGISTER=0,C_ECC_ONOFF_RESET_VALUE=1,C_CE_COUNTER_WIDTH=0,C_WRITE_ACCESS=2,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF MP3_Design_ilmb_bram_if_cntlr_0_arch: ARCHITECTURE IS "MP3_Design_ilmb_bram_if_cntlr_0,lmb_bram_if_cntlr,{x_ipProduct=Vivado 2016.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=lmb_bram_if_cntlr,x_ipVersion=4.0,x_ipCoreRevision=8,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_HIGHADDR=0x000000000000FFFF,C_BASEADDR=0x0000000000000000,C_NUM_LMB=1,C_MASK=0x0000000040000000,C_MASK1=0x0000000000800000,C_MASK2=0x0000000000800000,C_MASK3=0x0000000000800000,C_LMB_AWIDTH=32,C_LMB_DWIDTH=32,C_ECC=0,C_INTERCONNECT=0,C_FAULT_INJECT=0,C_CE_FAILING_RE" & 
+"GISTERS=0,C_UE_FAILING_REGISTERS=0,C_ECC_STATUS_REGISTERS=0,C_ECC_ONOFF_REGISTER=0,C_ECC_ONOFF_RESET_VALUE=1,C_CE_COUNTER_WIDTH=0,C_WRITE_ACCESS=2,C_BRAM_AWIDTH=32,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF LMB_Clk: SIGNAL IS "xilinx.com:signal:clock:1.0 CLK.LMB_Clk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF LMB_Rst: SIGNAL IS "xilinx.com:signal:reset:1.0 RST.LMB_Rst RST";
@@ -219,13 +220,13 @@ BEGIN
   U0 : lmb_bram_if_cntlr
     GENERIC MAP (
       C_FAMILY => "artix7",
-      C_HIGHADDR => X"0000FFFF",
-      C_BASEADDR => X"00000000",
+      C_HIGHADDR => X"000000000000FFFF",
+      C_BASEADDR => X"0000000000000000",
       C_NUM_LMB => 1,
-      C_MASK => X"40000000",
-      C_MASK1 => X"00800000",
-      C_MASK2 => X"00800000",
-      C_MASK3 => X"00800000",
+      C_MASK => X"0000000040000000",
+      C_MASK1 => X"0000000000800000",
+      C_MASK2 => X"0000000000800000",
+      C_MASK3 => X"0000000000800000",
       C_LMB_AWIDTH => 32,
       C_LMB_DWIDTH => 32,
       C_ECC => 0,
@@ -238,6 +239,7 @@ BEGIN
       C_ECC_ONOFF_RESET_VALUE => 1,
       C_CE_COUNTER_WIDTH => 0,
       C_WRITE_ACCESS => 2,
+      C_BRAM_AWIDTH => 32,
       C_S_AXI_CTRL_ADDR_WIDTH => 32,
       C_S_AXI_CTRL_DATA_WIDTH => 32
     )

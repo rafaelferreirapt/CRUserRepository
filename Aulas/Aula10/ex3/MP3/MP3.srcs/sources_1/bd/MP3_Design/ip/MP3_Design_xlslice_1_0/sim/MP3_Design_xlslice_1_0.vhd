@@ -64,9 +64,8 @@ ENTITY MP3_Design_xlslice_1_0 IS
 END MP3_Design_xlslice_1_0;
 
 ARCHITECTURE MP3_Design_xlslice_1_0_arch OF MP3_Design_xlslice_1_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_xlslice_1_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT xlslice IS
     GENERIC (
       DIN_WIDTH : INTEGER;

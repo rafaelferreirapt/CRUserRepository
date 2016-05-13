@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:mdm:3.2
--- IP Revision: 4
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY mdm_v3_2_4;
-USE mdm_v3_2_4.MDM;
+LIBRARY mdm_v3_2_5;
+USE mdm_v3_2_5.MDM;
 
 ENTITY MP3_Design_mdm_1_0 IS
   PORT (
@@ -91,9 +91,8 @@ ENTITY MP3_Design_mdm_1_0 IS
 END MP3_Design_mdm_1_0;
 
 ARCHITECTURE MP3_Design_mdm_1_0_arch OF MP3_Design_mdm_1_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_mdm_1_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT MDM IS
     GENERIC (
       C_FAMILY : STRING;

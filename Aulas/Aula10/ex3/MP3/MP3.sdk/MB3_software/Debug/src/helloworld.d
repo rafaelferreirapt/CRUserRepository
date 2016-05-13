@@ -1,4 +1,4 @@
-src/helloworld.o src/helloworld.d: ../src/helloworld.c ../src/platform.h \
+src/helloworld.o src/helloworld.o: ../src/helloworld.c ../src/platform.h \
  ../src/platform_config.h \
  ../../MB3_software_bsp/microblaze_0/include/xparameters.h \
  ../../MB3_software_bsp/microblaze_0/include/xgpio.h \

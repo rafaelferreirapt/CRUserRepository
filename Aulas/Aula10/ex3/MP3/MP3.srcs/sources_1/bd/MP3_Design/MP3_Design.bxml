@@ -2,11 +2,11 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="MP3_Design" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1462170977"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1462170977"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1462170977"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1463159467"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1463159467"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1463159467"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\MP3_Design_microblaze_0_0\MP3_Design_microblaze_0_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_microblaze_0_0/MP3_Design_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -14,7 +14,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_dlmb_v10_0\MP3_Design_dlmb_v10_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_dlmb_v10_0/MP3_Design_dlmb_v10_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_local_memory/dlmb_v10"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -22,7 +22,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_ilmb_v10_0\MP3_Design_ilmb_v10_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_ilmb_v10_0/MP3_Design_ilmb_v10_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_local_memory/ilmb_v10"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -30,7 +30,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_dlmb_bram_if_cntlr_0\MP3_Design_dlmb_bram_if_cntlr_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_dlmb_bram_if_cntlr_0/MP3_Design_dlmb_bram_if_cntlr_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_local_memory/dlmb_bram_if_cntlr"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -38,7 +38,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_ilmb_bram_if_cntlr_0\MP3_Design_ilmb_bram_if_cntlr_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_ilmb_bram_if_cntlr_0/MP3_Design_ilmb_bram_if_cntlr_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_local_memory/ilmb_bram_if_cntlr"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -46,7 +46,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_lmb_bram_0\MP3_Design_lmb_bram_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_lmb_bram_0/MP3_Design_lmb_bram_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_local_memory/lmb_bram"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -54,7 +54,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_microblaze_0_axi_periph_0\MP3_Design_microblaze_0_axi_periph_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_microblaze_0_axi_periph_0/MP3_Design_microblaze_0_axi_periph_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -62,7 +62,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_mdm_1_0\MP3_Design_mdm_1_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_mdm_1_0/MP3_Design_mdm_1_0.xci" Type="IP">
         <Instance HierarchyPath="mdm_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -70,7 +70,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_clk_wiz_1_0\MP3_Design_clk_wiz_1_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -78,7 +78,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_rst_clk_wiz_1_100M_0\MP3_Design_rst_clk_wiz_1_100M_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0.xci" Type="IP">
         <Instance HierarchyPath="rst_clk_wiz_1_100M"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -86,7 +86,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_axi_gpio_0_0\MP3_Design_axi_gpio_0_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_gpio_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -94,15 +94,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_xbar_0\MP3_Design_xbar_0.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_axi_periph/xbar"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\MP3_Design_DC32_0_0\MP3_Design_DC32_0_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_DC32_0_0/MP3_Design_DC32_0_0.xci" Type="IP">
         <Instance HierarchyPath="DC32_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -110,7 +102,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_BinToBCD16_0_0\MP3_Design_BinToBCD16_0_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_BinToBCD16_0_0/MP3_Design_BinToBCD16_0_0.xci" Type="IP">
         <Instance HierarchyPath="BinToBCD16_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -118,7 +110,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_xlslice_0_0\MP3_Design_xlslice_0_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_xlslice_0_0/MP3_Design_xlslice_0_0.xci" Type="IP">
         <Instance HierarchyPath="xlslice_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -126,7 +118,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_xlslice_1_0\MP3_Design_xlslice_1_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_xlslice_1_0/MP3_Design_xlslice_1_0.xci" Type="IP">
         <Instance HierarchyPath="xlslice_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -134,7 +126,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_xlconcat_0_0\MP3_Design_xlconcat_0_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_xlconcat_0_0/MP3_Design_xlconcat_0_0.xci" Type="IP">
         <Instance HierarchyPath="xlconcat_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -142,7 +134,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_xlconstant_0_0\MP3_Design_xlconstant_0_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_xlconstant_0_0/MP3_Design_xlconstant_0_0.xci" Type="IP">
         <Instance HierarchyPath="xlconstant_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -150,13 +142,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="hdl\MP3_Design.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\MP3_Design_xlconstant_1_0\MP3_Design_xlconstant_1_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_xlconstant_1_0/MP3_Design_xlconstant_1_0.xci" Type="IP">
         <Instance HierarchyPath="xlconstant_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -164,7 +150,15 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_auto_pc_0\MP3_Design_auto_pc_0.xci" Type="IP">
+      <File Name="ip/MP3_Design_xbar_0/MP3_Design_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_axi_periph/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/MP3_Design_auto_pc_0/MP3_Design_auto_pc_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_axi_periph/s01_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -172,12 +166,18 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\MP3_Design_auto_pc_1\MP3_Design_auto_pc_1.xci" Type="IP">
+      <File Name="ip/MP3_Design_auto_pc_1/MP3_Design_auto_pc_1.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_axi_periph/s02_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hdl/MP3_Design.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="MP3_Design.bmm" Type="BMM">
@@ -193,17 +193,17 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="OUT_OF_CONTEXT"/>
       </File>
-      <File Name="hw_handoff\MP3_Design.hwh" Type="HwHandoff">
+      <File Name="hw_handoff/MP3_Design.hwh" Type="HwHandoff">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
       </File>
-      <File Name="hw_handoff\MP3_Design_bd.tcl">
+      <File Name="hw_handoff/MP3_Design_bd.tcl">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
       </File>
-      <File Name="hdl\MP3_Design.hwdef">
+      <File Name="hdl/MP3_Design.hwdef">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>

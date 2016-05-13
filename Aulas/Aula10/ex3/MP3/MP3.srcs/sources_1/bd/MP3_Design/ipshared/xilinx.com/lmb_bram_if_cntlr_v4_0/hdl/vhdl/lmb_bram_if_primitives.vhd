@@ -89,8 +89,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 entity MB_LUT6 is
   generic (
@@ -156,8 +156,8 @@ end architecture IMP;
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 entity MB_MUXCY is
   generic (
@@ -199,8 +199,8 @@ end architecture IMP;
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 entity MB_XORCY is
   generic (
@@ -240,8 +240,8 @@ end architecture IMP;
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 entity MB_MUXF7 is
   generic (
@@ -283,8 +283,8 @@ end architecture IMP;
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 entity MB_MUXF8 is
   generic (
@@ -326,8 +326,8 @@ end architecture IMP;
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-library lmb_bram_if_cntlr_v4_0_7;
-use lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs.all;
+library lmb_bram_if_cntlr_v4_0_8;
+use lmb_bram_if_cntlr_v4_0_8.lmb_bram_if_funcs.all;
 
 entity MB_FDRE is
   generic (

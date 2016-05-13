@@ -2,15 +2,23 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.mb.exe.debug.1011426317;xilinx.gnu.mb.exe.debug.1011426317.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include"/>
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include-fixed"/>
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../microblaze-xilinx-elf/sysroot/usr/include"/>
 <includePath path="d:\xilinx\sdk\2015.4\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
 <includePath path="d:\xilinx\sdk\2015.4\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
 <includePath path="d:\xilinx\sdk\2015.4\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
+<definedSymbol symbol="__GNUC__=5"/>
 <definedSymbol symbol="__GNUC_MINOR__=9"/>
+<definedSymbol symbol="__GNUC_MINOR__=2"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=2"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=0"/>
 <definedSymbol symbol="__VERSION__=&quot;4.9.2&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;5.2.0&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -72,57 +80,96 @@
 <definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
 <definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
 <definedSymbol symbol="__GXX_ABI_VERSION=1002"/>
+<definedSymbol symbol="__GXX_ABI_VERSION=1009"/>
 <definedSymbol symbol="__SCHAR_MAX__=127"/>
+<definedSymbol symbol="__SCHAR_MAX__=0x7f"/>
 <definedSymbol symbol="__SHRT_MAX__=32767"/>
+<definedSymbol symbol="__SHRT_MAX__=0x7fff"/>
 <definedSymbol symbol="__INT_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__LONG_MAX__=2147483647L"/>
+<definedSymbol symbol="__LONG_MAX__=0x7fffffffL"/>
 <definedSymbol symbol="__LONG_LONG_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__LONG_LONG_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__WCHAR_MAX__=2147483647"/>
+<definedSymbol symbol="__WCHAR_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__WCHAR_MIN__=(-__WCHAR_MAX__ - 1)"/>
 <definedSymbol symbol="__WINT_MAX__=4294967295U"/>
+<definedSymbol symbol="__WINT_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__WINT_MIN__=0U"/>
 <definedSymbol symbol="__PTRDIFF_MAX__=2147483647"/>
+<definedSymbol symbol="__PTRDIFF_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__SIZE_MAX__=4294967295U"/>
+<definedSymbol symbol="__SIZE_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__INTMAX_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INTMAX_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__INTMAX_C(c)=c ## LL"/>
 <definedSymbol symbol="__UINTMAX_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINTMAX_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__UINTMAX_C(c)=c ## ULL"/>
 <definedSymbol symbol="__SIG_ATOMIC_MAX__=2147483647"/>
+<definedSymbol symbol="__SIG_ATOMIC_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__SIG_ATOMIC_MIN__=(-__SIG_ATOMIC_MAX__ - 1)"/>
 <definedSymbol symbol="__INT8_MAX__=127"/>
+<definedSymbol symbol="__INT8_MAX__=0x7f"/>
 <definedSymbol symbol="__INT16_MAX__=32767"/>
+<definedSymbol symbol="__INT16_MAX__=0x7fff"/>
 <definedSymbol symbol="__INT32_MAX__=2147483647L"/>
+<definedSymbol symbol="__INT32_MAX__=0x7fffffffL"/>
 <definedSymbol symbol="__INT64_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INT64_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__UINT8_MAX__=255"/>
+<definedSymbol symbol="__UINT8_MAX__=0xff"/>
 <definedSymbol symbol="__UINT16_MAX__=65535"/>
+<definedSymbol symbol="__UINT16_MAX__=0xffff"/>
 <definedSymbol symbol="__UINT32_MAX__=4294967295UL"/>
+<definedSymbol symbol="__UINT32_MAX__=0xffffffffUL"/>
 <definedSymbol symbol="__UINT64_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINT64_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__INT_LEAST8_MAX__=127"/>
+<definedSymbol symbol="__INT_LEAST8_MAX__=0x7f"/>
 <definedSymbol symbol="__INT8_C(c)=c"/>
 <definedSymbol symbol="__INT_LEAST16_MAX__=32767"/>
+<definedSymbol symbol="__INT_LEAST16_MAX__=0x7fff"/>
 <definedSymbol symbol="__INT16_C(c)=c"/>
 <definedSymbol symbol="__INT_LEAST32_MAX__=2147483647L"/>
+<definedSymbol symbol="__INT_LEAST32_MAX__=0x7fffffffL"/>
 <definedSymbol symbol="__INT32_C(c)=c ## L"/>
 <definedSymbol symbol="__INT_LEAST64_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INT_LEAST64_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__INT64_C(c)=c ## LL"/>
 <definedSymbol symbol="__UINT_LEAST8_MAX__=255"/>
+<definedSymbol symbol="__UINT_LEAST8_MAX__=0xff"/>
 <definedSymbol symbol="__UINT8_C(c)=c"/>
 <definedSymbol symbol="__UINT_LEAST16_MAX__=65535"/>
+<definedSymbol symbol="__UINT_LEAST16_MAX__=0xffff"/>
 <definedSymbol symbol="__UINT16_C(c)=c"/>
 <definedSymbol symbol="__UINT_LEAST32_MAX__=4294967295UL"/>
+<definedSymbol symbol="__UINT_LEAST32_MAX__=0xffffffffUL"/>
 <definedSymbol symbol="__UINT32_C(c)=c ## UL"/>
 <definedSymbol symbol="__UINT_LEAST64_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINT_LEAST64_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__UINT64_C(c)=c ## ULL"/>
 <definedSymbol symbol="__INT_FAST8_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_FAST8_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__INT_FAST16_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_FAST16_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__INT_FAST32_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_FAST32_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__INT_FAST64_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INT_FAST64_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__UINT_FAST8_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINT_FAST8_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__UINT_FAST16_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINT_FAST16_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__UINT_FAST32_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINT_FAST32_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__UINT_FAST64_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINT_FAST64_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__INTPTR_MAX__=2147483647"/>
+<definedSymbol symbol="__INTPTR_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__UINTPTR_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINTPTR_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__GCC_IEC_559=0"/>
 <definedSymbol symbol="__GCC_IEC_559_COMPLEX=0"/>
 <definedSymbol symbol="__FLT_EVAL_METHOD__=0"/>
@@ -216,6 +263,10 @@
 <definedSymbol symbol="_BIG_ENDIAN=1"/>
 <definedSymbol symbol="__BIG_ENDIAN__=1"/>
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
+<definedSymbol symbol="__STDC_VERSION__=201112L"/>
+<definedSymbol symbol="__STDC_UTF_16__=1"/>
+<definedSymbol symbol="__STDC_UTF_32__=1"/>
+<definedSymbol symbol="__GNUC_STDC_INLINE__=1"/>
 </collector>
 </instance>
 <instance id="xilinx.gnu.mb.exe.release.441858311;xilinx.gnu.mb.exe.release.441858311.">
@@ -438,15 +489,23 @@
 </instance>
 <instance id="xilinx.gnu.mb.exe.debug.1011426317;xilinx.gnu.mb.exe.debug.1011426317.;xilinx.gnu.mb.c.toolchain.compiler.debug.636520493;xilinx.gnu.compiler.input.1996285185">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include"/>
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include-fixed"/>
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="/opt/Xilinx/SDK/2016.1/gnu/microblaze/lin/bin/../microblaze-xilinx-elf/sysroot/usr/include"/>
 <includePath path="d:\xilinx\sdk\2015.4\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
 <includePath path="d:\xilinx\sdk\2015.4\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
 <includePath path="d:\xilinx\sdk\2015.4\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
+<definedSymbol symbol="__GNUC__=5"/>
 <definedSymbol symbol="__GNUC_MINOR__=9"/>
+<definedSymbol symbol="__GNUC_MINOR__=2"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=2"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=0"/>
 <definedSymbol symbol="__VERSION__=&quot;4.9.2&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;5.2.0&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -508,57 +567,96 @@
 <definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
 <definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
 <definedSymbol symbol="__GXX_ABI_VERSION=1002"/>
+<definedSymbol symbol="__GXX_ABI_VERSION=1009"/>
 <definedSymbol symbol="__SCHAR_MAX__=127"/>
+<definedSymbol symbol="__SCHAR_MAX__=0x7f"/>
 <definedSymbol symbol="__SHRT_MAX__=32767"/>
+<definedSymbol symbol="__SHRT_MAX__=0x7fff"/>
 <definedSymbol symbol="__INT_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__LONG_MAX__=2147483647L"/>
+<definedSymbol symbol="__LONG_MAX__=0x7fffffffL"/>
 <definedSymbol symbol="__LONG_LONG_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__LONG_LONG_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__WCHAR_MAX__=2147483647"/>
+<definedSymbol symbol="__WCHAR_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__WCHAR_MIN__=(-__WCHAR_MAX__ - 1)"/>
 <definedSymbol symbol="__WINT_MAX__=4294967295U"/>
+<definedSymbol symbol="__WINT_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__WINT_MIN__=0U"/>
 <definedSymbol symbol="__PTRDIFF_MAX__=2147483647"/>
+<definedSymbol symbol="__PTRDIFF_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__SIZE_MAX__=4294967295U"/>
+<definedSymbol symbol="__SIZE_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__INTMAX_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INTMAX_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__INTMAX_C(c)=c ## LL"/>
 <definedSymbol symbol="__UINTMAX_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINTMAX_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__UINTMAX_C(c)=c ## ULL"/>
 <definedSymbol symbol="__SIG_ATOMIC_MAX__=2147483647"/>
+<definedSymbol symbol="__SIG_ATOMIC_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__SIG_ATOMIC_MIN__=(-__SIG_ATOMIC_MAX__ - 1)"/>
 <definedSymbol symbol="__INT8_MAX__=127"/>
+<definedSymbol symbol="__INT8_MAX__=0x7f"/>
 <definedSymbol symbol="__INT16_MAX__=32767"/>
+<definedSymbol symbol="__INT16_MAX__=0x7fff"/>
 <definedSymbol symbol="__INT32_MAX__=2147483647L"/>
+<definedSymbol symbol="__INT32_MAX__=0x7fffffffL"/>
 <definedSymbol symbol="__INT64_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INT64_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__UINT8_MAX__=255"/>
+<definedSymbol symbol="__UINT8_MAX__=0xff"/>
 <definedSymbol symbol="__UINT16_MAX__=65535"/>
+<definedSymbol symbol="__UINT16_MAX__=0xffff"/>
 <definedSymbol symbol="__UINT32_MAX__=4294967295UL"/>
+<definedSymbol symbol="__UINT32_MAX__=0xffffffffUL"/>
 <definedSymbol symbol="__UINT64_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINT64_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__INT_LEAST8_MAX__=127"/>
+<definedSymbol symbol="__INT_LEAST8_MAX__=0x7f"/>
 <definedSymbol symbol="__INT8_C(c)=c"/>
 <definedSymbol symbol="__INT_LEAST16_MAX__=32767"/>
+<definedSymbol symbol="__INT_LEAST16_MAX__=0x7fff"/>
 <definedSymbol symbol="__INT16_C(c)=c"/>
 <definedSymbol symbol="__INT_LEAST32_MAX__=2147483647L"/>
+<definedSymbol symbol="__INT_LEAST32_MAX__=0x7fffffffL"/>
 <definedSymbol symbol="__INT32_C(c)=c ## L"/>
 <definedSymbol symbol="__INT_LEAST64_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INT_LEAST64_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__INT64_C(c)=c ## LL"/>
 <definedSymbol symbol="__UINT_LEAST8_MAX__=255"/>
+<definedSymbol symbol="__UINT_LEAST8_MAX__=0xff"/>
 <definedSymbol symbol="__UINT8_C(c)=c"/>
 <definedSymbol symbol="__UINT_LEAST16_MAX__=65535"/>
+<definedSymbol symbol="__UINT_LEAST16_MAX__=0xffff"/>
 <definedSymbol symbol="__UINT16_C(c)=c"/>
 <definedSymbol symbol="__UINT_LEAST32_MAX__=4294967295UL"/>
+<definedSymbol symbol="__UINT_LEAST32_MAX__=0xffffffffUL"/>
 <definedSymbol symbol="__UINT32_C(c)=c ## UL"/>
 <definedSymbol symbol="__UINT_LEAST64_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINT_LEAST64_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__UINT64_C(c)=c ## ULL"/>
 <definedSymbol symbol="__INT_FAST8_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_FAST8_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__INT_FAST16_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_FAST16_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__INT_FAST32_MAX__=2147483647"/>
+<definedSymbol symbol="__INT_FAST32_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__INT_FAST64_MAX__=9223372036854775807LL"/>
+<definedSymbol symbol="__INT_FAST64_MAX__=0x7fffffffffffffffLL"/>
 <definedSymbol symbol="__UINT_FAST8_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINT_FAST8_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__UINT_FAST16_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINT_FAST16_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__UINT_FAST32_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINT_FAST32_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__UINT_FAST64_MAX__=18446744073709551615ULL"/>
+<definedSymbol symbol="__UINT_FAST64_MAX__=0xffffffffffffffffULL"/>
 <definedSymbol symbol="__INTPTR_MAX__=2147483647"/>
+<definedSymbol symbol="__INTPTR_MAX__=0x7fffffff"/>
 <definedSymbol symbol="__UINTPTR_MAX__=4294967295U"/>
+<definedSymbol symbol="__UINTPTR_MAX__=0xffffffffU"/>
 <definedSymbol symbol="__GCC_IEC_559=0"/>
 <definedSymbol symbol="__GCC_IEC_559_COMPLEX=0"/>
 <definedSymbol symbol="__FLT_EVAL_METHOD__=0"/>
@@ -652,6 +750,10 @@
 <definedSymbol symbol="_BIG_ENDIAN=1"/>
 <definedSymbol symbol="__BIG_ENDIAN__=1"/>
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
+<definedSymbol symbol="__STDC_VERSION__=201112L"/>
+<definedSymbol symbol="__STDC_UTF_16__=1"/>
+<definedSymbol symbol="__STDC_UTF_32__=1"/>
+<definedSymbol symbol="__GNUC_STDC_INLINE__=1"/>
 </collector>
 </instance>
 </scannerInfo>

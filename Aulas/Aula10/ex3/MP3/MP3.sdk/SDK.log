@@ -3,3 +3,227 @@
 07:47:11 INFO  : Processing command line option -hwspec K:/CR_MicroBlase/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
 07:50:21 INFO  : Processor reset is completed for microblaze_0
 07:51:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:38:39 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+10:38:41 INFO  : XSDB server has started successfully.
+10:38:41 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+10:39:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+10:39:56 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+10:41:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:41:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+10:41:10 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+10:43:00 INFO  : Processor reset is completed for microblaze_0
+10:43:17 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:43:21 INFO  : Processor reset is completed for microblaze_0
+10:44:11 INFO  : Processor reset is completed for microblaze_0
+10:45:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+10:45:02 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+10:45:35 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+10:45:35 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+10:45:35 ERROR : Disconnect target failed.
+10:47:44 INFO  : Processor reset is completed for microblaze_0
+10:47:45 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:48:14 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:48:49 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+10:48:50 INFO  : XSDB server has started successfully.
+10:48:50 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+10:48:52 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+10:49:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+10:49:41 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+10:51:35 INFO  : Processor reset is completed for microblaze_0
+10:54:47 INFO  : Processor reset is completed for microblaze_0
+10:54:57 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+10:54:57 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+10:54:57 ERROR : Disconnect target failed.
+10:56:00 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+10:56:00 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+10:56:00 ERROR : Disconnect target failed.
+11:06:03 INFO  : Processor reset is completed for microblaze_0
+11:06:51 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:07:35 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:08:04 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+11:08:06 INFO  : XSDB server has started successfully.
+11:08:06 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+11:08:07 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+11:08:32 INFO  : Processor reset is completed for microblaze_0
+11:09:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:09:30 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:09:47 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:09:47 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+11:09:47 ERROR : Disconnect target failed.
+11:10:08 INFO  : Processor reset is completed for microblaze_0
+11:10:08 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:10:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:10:42 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:11:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:11:22 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:12:45 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:13:11 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+11:13:12 INFO  : XSDB server has started successfully.
+11:13:13 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+11:13:14 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+11:14:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:15:03 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:15:31 INFO  : Processor reset is completed for microblaze_0
+11:17:34 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:17:54 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:18:20 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+11:18:24 INFO  : XSDB server has started successfully.
+11:18:25 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+11:18:27 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+11:19:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:19:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:19:08 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:19:28 INFO  : Processor reset is completed for microblaze_0
+11:30:06 INFO  : Processor reset is completed for microblaze_0
+11:30:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:30:56 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:31:33 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:31:33 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+11:31:33 ERROR : Disconnect target failed.
+11:31:58 INFO  : Processor reset is completed for microblaze_0
+11:31:58 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:32:16 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:32:34 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+11:32:35 INFO  : XSDB server has started successfully.
+11:32:36 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+11:32:37 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+11:33:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:33:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:33:19 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:33:50 INFO  : Processor reset is completed for microblaze_0
+11:36:28 INFO  : Processor reset is completed for microblaze_0
+11:37:04 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+11:37:07 INFO  : XSDB server has started successfully.
+11:37:07 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+11:37:09 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+11:37:19 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:37:19 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+11:37:19 ERROR : Disconnect target failed.
+11:37:19 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:39:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:39:16 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:40:34 INFO  : Processor reset is completed for microblaze_0
+11:43:56 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:43:59 INFO  : Processor reset is completed for microblaze_0
+11:44:09 INFO  : Processor reset is completed for microblaze_0
+11:44:30 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:44:55 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+11:44:56 INFO  : XSDB server has started successfully.
+11:44:56 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+11:44:58 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+11:45:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:45:37 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:47:18 INFO  : Processor reset is completed for microblaze_0
+11:48:59 INFO  : Processor reset is completed for microblaze_0
+11:50:54 INFO  : Processor reset is completed for microblaze_0
+11:51:15 INFO  : Processor reset is completed for microblaze_0
+11:51:39 INFO  : Processor reset is completed for microblaze_0
+11:52:32 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:52:32 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+11:52:32 ERROR : Disconnect target failed.
+11:52:44 INFO  : Processor reset is completed for microblaze_0
+11:53:11 INFO  : Processor reset is completed for microblaze_0
+11:53:29 INFO  : Processor reset is completed for microblaze_0
+11:53:42 INFO  : Processor reset is completed for microblaze_0
+11:54:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:54:10 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:54:14 INFO  : Processor reset is completed for microblaze_0
+11:54:52 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+11:54:54 INFO  : XSDB server has started successfully.
+11:54:54 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+11:54:56 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+11:55:22 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:55:22 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+11:55:22 ERROR : Disconnect target failed.
+11:55:22 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:55:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:55:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+11:55:51 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+11:56:32 INFO  : Processor reset is completed for microblaze_0
+12:29:18 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:29:22 ERROR : Unexpected error while launching program.
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:819)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:596)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:29:30 INFO  : Processor reset is completed for microblaze_0
+12:30:41 INFO  : Processor reset is completed for microblaze_0
+12:32:09 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/temp_xsdb_launch_script.tcl
+12:32:11 INFO  : XSDB server has started successfully.
+12:32:11 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper.hdf.
+12:32:14 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_1.
+12:32:26 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+12:32:26 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+12:32:26 ERROR : Disconnect target failed.
+12:32:26 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:33:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:33:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505271A" && level==0} -index 0' command is executed.
+12:33:02 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+12:33:12 INFO  : Processor reset is completed for microblaze_0
+12:35:33 INFO  : Processor reset is completed for microblaze_0
+12:37:34 INFO  : Processor reset is completed for microblaze_0
+12:37:56 INFO  : Processor reset is completed for microblaze_0
+12:38:30 INFO  : Processor reset is completed for microblaze_0
+13:18:46 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

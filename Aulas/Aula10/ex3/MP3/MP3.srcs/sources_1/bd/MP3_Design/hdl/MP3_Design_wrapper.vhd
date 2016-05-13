@@ -1,8 +1,8 @@
---Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
---Date        : Mon May 02 07:36:16 2016
---Host        : DETI-PC0018 running 64-bit Service Pack 1  (build 7601)
+--Tool Version: Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+--Date        : Fri May 13 18:10:55 2016
+--Host        : ubuntu running 64-bit Ubuntu 14.04.1 LTS
 --Command     : generate_target MP3_Design_wrapper.bd
 --Design      : MP3_Design_wrapper
 --Purpose     : IP block netlist
@@ -24,11 +24,11 @@ end MP3_Design_wrapper;
 architecture STRUCTURE of MP3_Design_wrapper is
   component MP3_Design is
   port (
-    clk : in STD_LOGIC;
     btnCpuReset : in STD_LOGIC;
     an : out STD_LOGIC_VECTOR ( 7 downto 0 );
     seg : out STD_LOGIC_VECTOR ( 6 downto 0 );
-    btnC : in STD_LOGIC
+    btnC : in STD_LOGIC;
+    clk : in STD_LOGIC
   );
   end component MP3_Design;
 begin

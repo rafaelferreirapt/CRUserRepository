@@ -345,8 +345,8 @@ end entity JTAG_CONTROL;
 library unisim;
 use unisim.vcomponents.all;
 
-library mdm_v3_2_4;
-use mdm_v3_2_4.SRL_FIFO;
+library mdm_v3_2_5;
+use mdm_v3_2_5.SRL_FIFO;
 
 architecture IMP of JTAG_CONTROL is
 

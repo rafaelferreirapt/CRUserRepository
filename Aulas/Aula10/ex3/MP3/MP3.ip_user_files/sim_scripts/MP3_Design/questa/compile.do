@@ -1,58 +1,73 @@
 vlib work
 vlib msim
 
-vlib msim/microblaze_v9_5_3
 vlib msim/xil_defaultlib
-vlib msim/lmb_v10_v3_0_7
-vlib msim/lmb_bram_if_cntlr_v4_0_7
-vlib msim/blk_mem_gen_v8_3_1
+vlib msim/xpm
+vlib msim/microblaze_v9_6_0
+vlib msim/lmb_v10_v3_0_8
+vlib msim/lmb_bram_if_cntlr_v4_0_8
+vlib msim/blk_mem_gen_v8_3_2
 vlib msim/axi_lite_ipif_v3_0_3
-vlib msim/mdm_v3_2_4
+vlib msim/mdm_v3_2_5
 vlib msim/lib_cdc_v1_0_2
-vlib msim/proc_sys_reset_v5_0_8
+vlib msim/proc_sys_reset_v5_0_9
 vlib msim/interrupt_control_v3_1_3
-vlib msim/axi_gpio_v2_0_9
+vlib msim/axi_gpio_v2_0_10
 vlib msim/generic_baseblocks_v2_1_0
 vlib msim/axi_infrastructure_v1_1_0
-vlib msim/axi_register_slice_v2_1_7
-vlib msim/fifo_generator_v13_0_1
-vlib msim/axi_data_fifo_v2_1_6
-vlib msim/axi_crossbar_v2_1_8
-vlib msim/axi_protocol_converter_v2_1_7
+vlib msim/axi_register_slice_v2_1_8
+vlib msim/fifo_generator_v13_1_0
+vlib msim/axi_data_fifo_v2_1_7
+vlib msim/axi_crossbar_v2_1_9
+vlib msim/axi_protocol_converter_v2_1_8
 
-vmap microblaze_v9_5_3 msim/microblaze_v9_5_3
 vmap xil_defaultlib msim/xil_defaultlib
-vmap lmb_v10_v3_0_7 msim/lmb_v10_v3_0_7
-vmap lmb_bram_if_cntlr_v4_0_7 msim/lmb_bram_if_cntlr_v4_0_7
-vmap blk_mem_gen_v8_3_1 msim/blk_mem_gen_v8_3_1
+vmap xpm msim/xpm
+vmap microblaze_v9_6_0 msim/microblaze_v9_6_0
+vmap lmb_v10_v3_0_8 msim/lmb_v10_v3_0_8
+vmap lmb_bram_if_cntlr_v4_0_8 msim/lmb_bram_if_cntlr_v4_0_8
+vmap blk_mem_gen_v8_3_2 msim/blk_mem_gen_v8_3_2
 vmap axi_lite_ipif_v3_0_3 msim/axi_lite_ipif_v3_0_3
-vmap mdm_v3_2_4 msim/mdm_v3_2_4
+vmap mdm_v3_2_5 msim/mdm_v3_2_5
 vmap lib_cdc_v1_0_2 msim/lib_cdc_v1_0_2
-vmap proc_sys_reset_v5_0_8 msim/proc_sys_reset_v5_0_8
+vmap proc_sys_reset_v5_0_9 msim/proc_sys_reset_v5_0_9
 vmap interrupt_control_v3_1_3 msim/interrupt_control_v3_1_3
-vmap axi_gpio_v2_0_9 msim/axi_gpio_v2_0_9
+vmap axi_gpio_v2_0_10 msim/axi_gpio_v2_0_10
 vmap generic_baseblocks_v2_1_0 msim/generic_baseblocks_v2_1_0
 vmap axi_infrastructure_v1_1_0 msim/axi_infrastructure_v1_1_0
-vmap axi_register_slice_v2_1_7 msim/axi_register_slice_v2_1_7
-vmap fifo_generator_v13_0_1 msim/fifo_generator_v13_0_1
-vmap axi_data_fifo_v2_1_6 msim/axi_data_fifo_v2_1_6
-vmap axi_crossbar_v2_1_8 msim/axi_crossbar_v2_1_8
-vmap axi_protocol_converter_v2_1_7 msim/axi_protocol_converter_v2_1_7
+vmap axi_register_slice_v2_1_8 msim/axi_register_slice_v2_1_8
+vmap fifo_generator_v13_1_0 msim/fifo_generator_v13_1_0
+vmap axi_data_fifo_v2_1_7 msim/axi_data_fifo_v2_1_7
+vmap axi_crossbar_v2_1_9 msim/axi_crossbar_v2_1_9
+vmap axi_protocol_converter_v2_1_8 msim/axi_protocol_converter_v2_1_8
 
-vcom -work microblaze_v9_5_3 -64 \
-"../../../ipstatic/microblaze_v9_5/hdl/microblaze_v9_5_vh_rfs.vhd" \
+vlog -work xil_defaultlib -64 -sv "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" \
+
+vcom -work xpm -64 \
+"/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vcom -work microblaze_v9_6_0 -64 \
+"../../../ipstatic/microblaze_v9_6/hdl/microblaze_v9_6_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib -64 \
 "../../../bd/MP3_Design/ip/MP3_Design_microblaze_0_0/sim/MP3_Design_microblaze_0_0.vhd" \
 
-vcom -work lmb_v10_v3_0_7 -64 \
+vcom -work lmb_v10_v3_0_8 -64 \
 "../../../ipstatic/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd" \
 
 vcom -work xil_defaultlib -64 \
 "../../../bd/MP3_Design/ip/MP3_Design_dlmb_v10_0/sim/MP3_Design_dlmb_v10_0.vhd" \
 "../../../bd/MP3_Design/ip/MP3_Design_ilmb_v10_0/sim/MP3_Design_ilmb_v10_0.vhd" \
 
-vcom -work lmb_bram_if_cntlr_v4_0_7 -64 \
+vcom -work lmb_bram_if_cntlr_v4_0_8 -64 \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_funcs.vhd" \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_primitives.vhd" \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/xor18.vhd" \
@@ -60,7 +75,6 @@ vcom -work lmb_bram_if_cntlr_v4_0_7 -64 \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/parityenable.vhd" \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/checkbit_handler.vhd" \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/correct_one_bit.vhd" \
-"../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect.vhd" \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect_mask.vhd" \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/axi_interface.vhd" \
 "../../../ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd" \
@@ -70,11 +84,11 @@ vcom -work xil_defaultlib -64 \
 "../../../bd/MP3_Design/ip/MP3_Design_dlmb_bram_if_cntlr_0/sim/MP3_Design_dlmb_bram_if_cntlr_0.vhd" \
 "../../../bd/MP3_Design/ip/MP3_Design_ilmb_bram_if_cntlr_0/sim/MP3_Design_ilmb_bram_if_cntlr_0.vhd" \
 
-vcom -work blk_mem_gen_v8_3_1 -64 \
-"../../../ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.vhd" \
+vlog -work blk_mem_gen_v8_3_2 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
+"../../../ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" \
 
-vcom -work xil_defaultlib -64 \
-"../../../bd/MP3_Design/ip/MP3_Design_lmb_bram_0/sim/MP3_Design_lmb_bram_0.vhd" \
+vlog -work xil_defaultlib -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
+"../../../bd/MP3_Design/ip/MP3_Design_lmb_bram_0/sim/MP3_Design_lmb_bram_0.v" \
 
 vcom -work axi_lite_ipif_v3_0_3 -64 \
 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd" \
@@ -83,7 +97,7 @@ vcom -work axi_lite_ipif_v3_0_3 -64 \
 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd" \
 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/axi_lite_ipif.vhd" \
 
-vcom -work mdm_v3_2_4 -64 \
+vcom -work mdm_v3_2_5 -64 \
 "../../../ipstatic/mdm_v3_2/hdl/vhdl/mdm_primitives.vhd" \
 "../../../ipstatic/mdm_v3_2/hdl/vhdl/arbiter.vhd" \
 "../../../ipstatic/mdm_v3_2/hdl/vhdl/srl_fifo.vhd" \
@@ -95,14 +109,14 @@ vcom -work mdm_v3_2_4 -64 \
 vcom -work xil_defaultlib -64 \
 "../../../bd/MP3_Design/ip/MP3_Design_mdm_1_0/sim/MP3_Design_mdm_1_0.vhd" \
 
-vlog -work xil_defaultlib -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work xil_defaultlib -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0_clk_wiz.v" \
 "../../../bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0.v" \
 
 vcom -work lib_cdc_v1_0_2 -64 \
 "../../../ipstatic/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd" \
 
-vcom -work proc_sys_reset_v5_0_8 -64 \
+vcom -work proc_sys_reset_v5_0_9 -64 \
 "../../../ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd" \
 "../../../ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd" \
 "../../../ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd" \
@@ -114,14 +128,27 @@ vcom -work xil_defaultlib -64 \
 vcom -work interrupt_control_v3_1_3 -64 \
 "../../../ipstatic/interrupt_control_v3_1/hdl/src/vhdl/interrupt_control.vhd" \
 
-vcom -work axi_gpio_v2_0_9 -64 \
+vcom -work axi_gpio_v2_0_10 -64 \
 "../../../ipstatic/axi_gpio_v2_0/hdl/src/vhdl/gpio_core.vhd" \
 "../../../ipstatic/axi_gpio_v2_0/hdl/src/vhdl/axi_gpio.vhd" \
 
 vcom -work xil_defaultlib -64 \
 "../../../bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/sim/MP3_Design_axi_gpio_0_0.vhd" \
+"../../../ipstatic/dc32_v1_0/segment_decoder.vhd" \
+"../../../ipstatic/dc32_v1_0/disp.vhd" \
+"../../../bd/MP3_Design/ip/MP3_Design_DC32_0_0/sim/MP3_Design_DC32_0_0.vhd" \
+"../../../../MP3.srcs/sources_1/bd/MP3_Design/ipshared/ua.pt/bintobcd16_v1_0/Binary_to_BCD16.vhd" \
+"../../../bd/MP3_Design/ip/MP3_Design_BinToBCD16_0_0/sim/MP3_Design_BinToBCD16_0_0.vhd" \
+"../../../bd/MP3_Design/ipshared/xilinx.com/xlslice_v1_0/xlslice.vhd" \
+"../../../bd/MP3_Design/ip/MP3_Design_xlslice_0_0/sim/MP3_Design_xlslice_0_0.vhd" \
+"../../../bd/MP3_Design/ip/MP3_Design_xlslice_1_0/sim/MP3_Design_xlslice_1_0.vhd" \
+"../../../bd/MP3_Design/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd" \
+"../../../bd/MP3_Design/ip/MP3_Design_xlconcat_0_0/sim/MP3_Design_xlconcat_0_0.vhd" \
+"../../../bd/MP3_Design/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd" \
+"../../../bd/MP3_Design/ip/MP3_Design_xlconstant_0_0/sim/MP3_Design_xlconstant_0_0.vhd" \
+"../../../bd/MP3_Design/ip/MP3_Design_xlconstant_1_0/sim/MP3_Design_xlconstant_1_0.vhd" \
 
-vlog -work generic_baseblocks_v2_1_0 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work generic_baseblocks_v2_1_0 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" \
 "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" \
 "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" \
@@ -140,20 +167,25 @@ vlog -work generic_baseblocks_v2_1_0 -64 "+incdir+../../../ipstatic/axi_infrastr
 "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux.v" \
 "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" \
 
-vlog -work axi_infrastructure_v1_1_0 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work axi_infrastructure_v1_1_0 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" \
 "../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" \
 "../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" \
 
-vlog -work axi_register_slice_v2_1_7 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work axi_register_slice_v2_1_8 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" \
 "../../../ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" \
 
-vcom -work fifo_generator_v13_0_1 -64 \
-"../../../ipstatic/fifo_generator_v13_0/simulation/fifo_generator_vhdl_beh.vhd" \
-"../../../ipstatic/fifo_generator_v13_0/hdl/fifo_generator_v13_0_rfs.vhd" \
+vlog -work fifo_generator_v13_1_0 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
+"../../../ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" \
 
-vlog -work axi_data_fifo_v2_1_6 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vcom -work fifo_generator_v13_1_0 -64 \
+"../../../ipstatic/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.vhd" \
+
+vlog -work fifo_generator_v13_1_0 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
+"../../../ipstatic/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.v" \
+
+vlog -work axi_data_fifo_v2_1_7 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" \
 "../../../ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" \
 "../../../ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" \
@@ -161,7 +193,7 @@ vlog -work axi_data_fifo_v2_1_6 -64 "+incdir+../../../ipstatic/axi_infrastructur
 "../../../ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" \
 "../../../ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" \
 
-vlog -work axi_crossbar_v2_1_8 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work axi_crossbar_v2_1_9 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v" \
 "../../../ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v" \
 "../../../ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v" \
@@ -175,24 +207,10 @@ vlog -work axi_crossbar_v2_1_8 -64 "+incdir+../../../ipstatic/axi_infrastructure
 "../../../ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v" \
 "../../../ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v" \
 
-vlog -work xil_defaultlib -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work xil_defaultlib -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../bd/MP3_Design/ip/MP3_Design_xbar_0/sim/MP3_Design_xbar_0.v" \
 
-vcom -work xil_defaultlib -64 \
-"../../../bd/MP3_Design/ipshared/xilinx.com/dc32_v1_0/segment_decoder.vhd" \
-"../../../bd/MP3_Design/ipshared/xilinx.com/dc32_v1_0/disp.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_DC32_0_0/sim/MP3_Design_DC32_0_0.vhd" \
-"../../../bd/MP3_Design/ipshared/ua.pt/bintobcd16_v1_0/Binary_to_BCD16.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_BinToBCD16_0_0/sim/MP3_Design_BinToBCD16_0_0.vhd" \
-"../../../bd/MP3_Design/ipshared/xilinx.com/xlslice_v1_0/xlslice.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_xlslice_0_0/sim/MP3_Design_xlslice_0_0.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_xlslice_1_0/sim/MP3_Design_xlslice_1_0.vhd" \
-"../../../bd/MP3_Design/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_xlconcat_0_0/sim/MP3_Design_xlconcat_0_0.vhd" \
-"../../../bd/MP3_Design/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_xlconstant_0_0/sim/MP3_Design_xlconstant_0_0.vhd" \
-
-vlog -work axi_protocol_converter_v2_1_7 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work axi_protocol_converter_v2_1_8 -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" \
 "../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v" \
 "../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v" \
@@ -213,7 +231,7 @@ vlog -work axi_protocol_converter_v2_1_7 -64 "+incdir+../../../ipstatic/axi_infr
 "../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v" \
 "../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v" \
 
-vlog -work xil_defaultlib -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+vlog -work xil_defaultlib -64 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../bd/MP3_Design/ip/MP3_Design_auto_pc_0/sim/MP3_Design_auto_pc_0.v" \
 "../../../bd/MP3_Design/ip/MP3_Design_auto_pc_1/sim/MP3_Design_auto_pc_1.v" \
 

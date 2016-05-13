@@ -39,9 +39,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_rst_
 # IP: bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_axi_gpio_0_0 || ORIG_REF_NAME==MP3_Design_axi_gpio_0_0}]
 
-# IP: bd/MP3_Design/ip/MP3_Design_xbar_0/MP3_Design_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_xbar_0 || ORIG_REF_NAME==MP3_Design_xbar_0}]
-
 # IP: bd/MP3_Design/ip/MP3_Design_DC32_0_0/MP3_Design_DC32_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_DC32_0_0 || ORIG_REF_NAME==MP3_Design_DC32_0_0}]
 
@@ -62,6 +59,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_xlco
 
 # IP: bd/MP3_Design/ip/MP3_Design_xlconstant_1_0/MP3_Design_xlconstant_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_xlconstant_1_0 || ORIG_REF_NAME==MP3_Design_xlconstant_1_0}]
+
+# IP: bd/MP3_Design/ip/MP3_Design_xbar_0/MP3_Design_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_xbar_0 || ORIG_REF_NAME==MP3_Design_xbar_0}]
 
 # IP: bd/MP3_Design/ip/MP3_Design_auto_pc_0/MP3_Design_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_auto_pc_0 || ORIG_REF_NAME==MP3_Design_auto_pc_0}]
@@ -108,10 +108,10 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/MP3_Design/ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0_ooc.xdc
 
 # XDC: bd/MP3_Design/ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0_board.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0}]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/MP3_Design/ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0}]
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==MP3_Design_rst_clk_wiz_1_100M_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/MP3_Design/ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0_ooc.xdc
 

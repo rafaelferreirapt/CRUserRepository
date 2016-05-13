@@ -46,15 +46,15 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:ip:microblaze:9.5
--- IP Revision: 3
+-- IP VLNV: xilinx.com:ip:microblaze:9.6
+-- IP Revision: 0
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY microblaze_v9_5_3;
-USE microblaze_v9_5_3.MicroBlaze;
+LIBRARY microblaze_v9_6_0;
+USE microblaze_v9_6_0.MicroBlaze;
 
 ENTITY MP3_Design_microblaze_0_0 IS
   PORT (
@@ -187,9 +187,8 @@ ENTITY MP3_Design_microblaze_0_0 IS
 END MP3_Design_microblaze_0_0;
 
 ARCHITECTURE MP3_Design_microblaze_0_0_arch OF MP3_Design_microblaze_0_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MP3_Design_microblaze_0_0_arch: ARCHITECTURE IS "yes";
-
   COMPONENT MicroBlaze IS
     GENERIC (
       C_SCO : INTEGER;
@@ -205,6 +204,9 @@ ARCHITECTURE MP3_Design_microblaze_0_0_arch OF MP3_Design_microblaze_0_0 IS
       C_ENDIANNESS : INTEGER;
       C_FAMILY : STRING;
       C_DATA_SIZE : INTEGER;
+      C_INSTR_SIZE : INTEGER;
+      C_IADDR_SIZE : INTEGER;
+      C_DADDR_SIZE : INTEGER;
       C_INSTANCE : STRING;
       C_AVOID_PRIMITIVES : INTEGER;
       C_AREA_OPTIMIZED : INTEGER;
@@ -243,6 +245,7 @@ ARCHITECTURE MP3_Design_microblaze_0_0_arch OF MP3_Design_microblaze_0_0 IS
       C_USE_INTERRUPT : INTEGER;
       C_USE_EXT_BRK : INTEGER;
       C_USE_EXT_NM_BRK : INTEGER;
+      C_USE_NON_SECURE : INTEGER;
       C_USE_MMU : INTEGER;
       C_MMU_DTLB_SIZE : INTEGER;
       C_MMU_ITLB_SIZE : INTEGER;
@@ -271,6 +274,7 @@ ARCHITECTURE MP3_Design_microblaze_0_0_arch OF MP3_Design_microblaze_0_0 IS
       C_INTERRUPT_IS_EDGE : INTEGER;
       C_EDGE_IS_POSITIVE : INTEGER;
       C_ASYNC_INTERRUPT : INTEGER;
+      C_ASYNC_WAKEUP : INTEGER;
       C_M0_AXIS_DATA_WIDTH : INTEGER;
       C_S0_AXIS_DATA_WIDTH : INTEGER;
       C_M1_AXIS_DATA_WIDTH : INTEGER;
@@ -303,8 +307,8 @@ ARCHITECTURE MP3_Design_microblaze_0_0_arch OF MP3_Design_microblaze_0_0 IS
       C_S14_AXIS_DATA_WIDTH : INTEGER;
       C_M15_AXIS_DATA_WIDTH : INTEGER;
       C_S15_AXIS_DATA_WIDTH : INTEGER;
-      C_ICACHE_BASEADDR : STD_LOGIC_VECTOR(0 TO 31);
-      C_ICACHE_HIGHADDR : STD_LOGIC_VECTOR(0 TO 31);
+      C_ICACHE_BASEADDR : STD_LOGIC_VECTOR;
+      C_ICACHE_HIGHADDR : STD_LOGIC_VECTOR;
       C_USE_ICACHE : INTEGER;
       C_ALLOW_ICACHE_WR : INTEGER;
       C_ADDR_TAG_BITS : INTEGER;
@@ -324,8 +328,8 @@ ARCHITECTURE MP3_Design_microblaze_0_0_arch OF MP3_Design_microblaze_0_0 IS
       C_M_AXI_IC_WUSER_WIDTH : INTEGER;
       C_M_AXI_IC_RUSER_WIDTH : INTEGER;
       C_M_AXI_IC_BUSER_WIDTH : INTEGER;
-      C_DCACHE_BASEADDR : STD_LOGIC_VECTOR(0 TO 31);
-      C_DCACHE_HIGHADDR : STD_LOGIC_VECTOR(0 TO 31);
+      C_DCACHE_BASEADDR : STD_LOGIC_VECTOR;
+      C_DCACHE_HIGHADDR : STD_LOGIC_VECTOR;
       C_USE_DCACHE : INTEGER;
       C_ALLOW_DCACHE_WR : INTEGER;
       C_DCACHE_ADDR_TAG : INTEGER;
@@ -366,8 +370,14 @@ ARCHITECTURE MP3_Design_microblaze_0_0_arch OF MP3_Design_microblaze_0_0 IS
       MB_Error : OUT STD_LOGIC;
       Wakeup : IN STD_LOGIC_VECTOR(0 TO 1);
       Sleep : OUT STD_LOGIC;
+      Hibernate : OUT STD_LOGIC;
+      Suspend : OUT STD_LOGIC;
       Dbg_Wakeup : OUT STD_LOGIC;
+      Dbg_Continue : OUT STD_LOGIC;
       Reset_Mode : IN STD_LOGIC_VECTOR(0 TO 1);
+      Pause : IN STD_LOGIC;
+      Pause_Ack : OUT STD_LOGIC;
+      Non_Secure : IN STD_LOGIC_VECTOR(0 TO 3);
       LOCKSTEP_Slave_In : IN STD_LOGIC_VECTOR(0 TO 4095);
       LOCKSTEP_Master_Out : OUT STD_LOGIC_VECTOR(0 TO 4095);
       LOCKSTEP_Out : OUT STD_LOGIC_VECTOR(0 TO 4095);
@@ -906,12 +916,15 @@ BEGIN
       C_ENDIANNESS => 1,
       C_FAMILY => "artix7",
       C_DATA_SIZE => 32,
+      C_INSTR_SIZE => 32,
+      C_IADDR_SIZE => 32,
+      C_DADDR_SIZE => 32,
       C_INSTANCE => "MP3_Design_microblaze_0_0",
       C_AVOID_PRIMITIVES => 0,
       C_AREA_OPTIMIZED => 0,
       C_OPTIMIZATION => 0,
       C_INTERCONNECT => 2,
-      C_BASE_VECTORS => X"00000000",
+      C_BASE_VECTORS => X"0000000000000000",
       C_M_AXI_DP_THREAD_ID_WIDTH => 1,
       C_M_AXI_DP_DATA_WIDTH => 32,
       C_M_AXI_DP_ADDR_WIDTH => 32,
@@ -944,6 +957,7 @@ BEGIN
       C_USE_INTERRUPT => 0,
       C_USE_EXT_BRK => 0,
       C_USE_EXT_NM_BRK => 0,
+      C_USE_NON_SECURE => 0,
       C_USE_MMU => 0,
       C_MMU_DTLB_SIZE => 4,
       C_MMU_ITLB_SIZE => 2,
@@ -972,6 +986,7 @@ BEGIN
       C_INTERRUPT_IS_EDGE => 0,
       C_EDGE_IS_POSITIVE => 1,
       C_ASYNC_INTERRUPT => 1,
+      C_ASYNC_WAKEUP => 3,
       C_M0_AXIS_DATA_WIDTH => 32,
       C_S0_AXIS_DATA_WIDTH => 32,
       C_M1_AXIS_DATA_WIDTH => 32,
@@ -1004,8 +1019,8 @@ BEGIN
       C_S14_AXIS_DATA_WIDTH => 32,
       C_M15_AXIS_DATA_WIDTH => 32,
       C_S15_AXIS_DATA_WIDTH => 32,
-      C_ICACHE_BASEADDR => X"00000000",
-      C_ICACHE_HIGHADDR => X"3FFFFFFF",
+      C_ICACHE_BASEADDR => X"0000000000000000",
+      C_ICACHE_HIGHADDR => X"000000003FFFFFFF",
       C_USE_ICACHE => 1,
       C_ALLOW_ICACHE_WR => 1,
       C_ADDR_TAG_BITS => 17,
@@ -1025,8 +1040,8 @@ BEGIN
       C_M_AXI_IC_WUSER_WIDTH => 1,
       C_M_AXI_IC_RUSER_WIDTH => 1,
       C_M_AXI_IC_BUSER_WIDTH => 1,
-      C_DCACHE_BASEADDR => X"00000000",
-      C_DCACHE_HIGHADDR => X"3FFFFFFF",
+      C_DCACHE_BASEADDR => X"0000000000000000",
+      C_DCACHE_HIGHADDR => X"000000003fffffff",
       C_USE_DCACHE => 1,
       C_ALLOW_DCACHE_WR => 1,
       C_DCACHE_ADDR_TAG => 17,
@@ -1064,6 +1079,8 @@ BEGIN
       Dbg_Stop => '0',
       Wakeup => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 2)),
       Reset_Mode => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 2)),
+      Pause => '0',
+      Non_Secure => X"0",
       LOCKSTEP_Slave_In => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4096)),
       Instr_Addr => Instr_Addr,
       Instr => Instr,
