@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# 
+# Start of session at: Fri May 13 18:48:12 2016
+# Process ID: 20777
+# Current directory: /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/webtalk/webtalk.log
+# Journal file: /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
