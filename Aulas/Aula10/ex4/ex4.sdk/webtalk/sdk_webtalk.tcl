@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/webtalk
+webtalk_init -webtalk_dir /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.sdk/webtalk
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri May 13 10:48:12 2016" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sat May 14 01:37:35 2016" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "SDK v2016.1" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2016.1" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
@@ -12,9 +12,9 @@ webtalk_add_data -client project -key target_family -value "NA" -context "softwa
 webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "7igjjee5jblo63jn54j462jde3" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_id -value "2016.1_5" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "5" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "b9b94cde5dlfurp8mbic2msgh4" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_id -value "2016.1_6" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "" -context "user_environment"
@@ -22,12 +22,12 @@ webtalk_add_data -client project -key cpu_speed -value "" -context "user_environ
 webtalk_add_data -client project -key total_processors -value "" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "" -context "user_environment"
 webtalk_register_client -client sdk
-webtalk_add_data -client sdk -key uid -value "1463161132000" -context "sdk\\\\hardware/1463161132000"
-webtalk_add_data -client sdk -key isZynq -value "false" -context "sdk\\\\hardware/1463161132000"
-webtalk_add_data -client sdk -key Processors -value "1" -context "sdk\\\\hardware/1463161132000"
-webtalk_add_data -client sdk -key VivadoVersion -value "2016.1" -context "sdk\\\\hardware/1463161132000"
-webtalk_add_data -client sdk -key Arch -value "artix7" -context "sdk\\\\hardware/1463161132000"
-webtalk_add_data -client sdk -key Device -value "7a100t" -context "sdk\\\\hardware/1463161132000"
-webtalk_add_data -client sdk -key IsHandoff -value "true" -context "sdk\\\\hardware/1463161132000"
-webtalk_transmit -clientid 1549560069 -regid "" -xml /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/webtalk/usage_statistics_ext_sdk.xml -html /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex3/MP3/MP3.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+webtalk_add_data -client sdk -key uid -value "1463178239000" -context "sdk\\\\hardware/1463178239000"
+webtalk_add_data -client sdk -key isZynq -value "false" -context "sdk\\\\hardware/1463178239000"
+webtalk_add_data -client sdk -key Processors -value "1" -context "sdk\\\\hardware/1463178239000"
+webtalk_add_data -client sdk -key VivadoVersion -value "2016.1" -context "sdk\\\\hardware/1463178239000"
+webtalk_add_data -client sdk -key Arch -value "artix7" -context "sdk\\\\hardware/1463178239000"
+webtalk_add_data -client sdk -key Device -value "7a100t" -context "sdk\\\\hardware/1463178239000"
+webtalk_add_data -client sdk -key IsHandoff -value "true" -context "sdk\\\\hardware/1463178239000"
+webtalk_transmit -clientid 3105361815 -regid "" -xml /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.sdk/webtalk/usage_statistics_ext_sdk.xml -html /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
 webtalk_terminate

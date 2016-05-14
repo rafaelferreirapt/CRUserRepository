@@ -84,10 +84,6 @@ set rc [catch {
   set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0_board.xdc]
   read_xdc -ref MP3_Design_axi_gpio_0_0 -cells U0 /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0.xdc
   set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref MP3_Design_axi_gpio_1_0 -cells U0 /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_1_0/MP3_Design_axi_gpio_1_0_board.xdc
-  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_1_0/MP3_Design_axi_gpio_1_0_board.xdc]
-  read_xdc -ref MP3_Design_axi_gpio_1_0 -cells U0 /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_1_0/MP3_Design_axi_gpio_1_0.xdc
-  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/sources_1/bd/MP3_Design/ip/MP3_Design_axi_gpio_1_0/MP3_Design_axi_gpio_1_0.xdc]
   read_xdc /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.srcs/constrs_1/imports/Aula1_15Feb2016/Nexys4_Master.xdc
   link_design -top MP3_Design_wrapper -part xc7a100tcsg324-1
   write_hwdef -file MP3_Design_wrapper.hwdef

@@ -23,27 +23,18 @@ int main()
 
     init_platform();
 
-    u32 input;
+    u32 input1, input2, result;
 
     do
     {
-    	print("Character ? (x for exit):   ");
+    	print("(x for exit):\n\r");
+    	print("Operand 1:");
 		c = inbyte();
 		inbyte();
 
-		print("\nCharacter is: ");
-		outbyte(c);
-		print("\n");
-
 		if(c<='9' && c>='0'){
-			input = 0x00000000 + (c-'0');
+			input1 = 0x00000000 + (c-'0');
 			print("c<='9' && c>='0'\n");
-		}else if(c<='f' && c>='a'){
-			input = 0x00000010 + (c-'a');
-			print("c<='f' && c>='a'\n");
-		}else if(c<='F' && c>='A'){
-			input = 0x00000010 + (c-'A');
-			print("c<='F' && c>='A'\n");
 		}else{
 		    print("\nThe program has been terminated\n\r");
 		    cleanup_platform();
@@ -52,8 +43,45 @@ int main()
 			break;
 		}
 
-		XGpio_DiscreteWrite(&GPIO_0, 1, 0x00000000);	//Write the led value
-		XGpio_DiscreteWrite(&GPIO_0, 1, input);		 	//Write the led value
+		print("Operand 2:");
+		c = inbyte();
+		inbyte();
+
+		if(c<='9' && c>='0'){
+			input2 = 0x00000000 + (c-'0');
+			print("c<='9' && c>='0'\n");
+		}else{
+			print("\nThe program has been terminated\n\r");
+			cleanup_platform();
+
+			return 0;
+			break;
+		}
+
+		print("Operator (+,-,*,/,%):");
+		c = inbyte();
+		inbyte();
+
+		if(c=='+'){
+			result = input1 + input2;
+		}else if(c=='-'){
+			result = input1 - input2;
+		}else if(c=='*'){
+			result = input1 * input2;
+		}else if(c=='/'){
+			result = input1 / input2;
+		}else if(c=='%'){
+			result = input1 % input2;
+		}else{
+			print("\nThe program has been terminated\n\r");
+			cleanup_platform();
+
+			return 0;
+			break;
+		}
+
+		XGpio_DiscreteWrite(&GPIO_0, 1, 0x00000000);		//Write the led value
+		XGpio_DiscreteWrite(&GPIO_0, 1, result);		 	//Write the led value
     } while (c != 'x');
 
     print("\nThe program has been terminated\n\r");
