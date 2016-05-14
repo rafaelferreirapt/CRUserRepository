@@ -146,7 +146,6 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/MP3_Design/ip/MP3_Design_xlconcat_0_0/sim/MP3_Design_xlconcat_0_0.vhd" \
 "../../../bd/MP3_Design/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd" \
 "../../../bd/MP3_Design/ip/MP3_Design_xlconstant_0_0/sim/MP3_Design_xlconstant_0_0.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_xlconstant_1_0/sim/MP3_Design_xlconstant_1_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0 -v2k5 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" \
@@ -212,7 +211,6 @@ vlog -work xil_defaultlib -v2k5 "+incdir+../../../ipstatic/axi_infrastructure_v1
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/MP3_Design/hdl/MP3_Design.vhd" \
-"../../../bd/MP3_Design/ip/MP3_Design_axi_gpio_1_0/sim/MP3_Design_axi_gpio_1_0.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_8 -v2k5 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/clk_wiz_v5_3" \
 "../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" \

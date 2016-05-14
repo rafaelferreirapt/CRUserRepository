@@ -78,7 +78,7 @@ ENTITY MP3_Design_axi_gpio_0_0 IS
     s_axi_rvalid : OUT STD_LOGIC;
     s_axi_rready : IN STD_LOGIC;
     gpio_io_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    gpio2_io_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
+    gpio2_io_i : IN STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END MP3_Design_axi_gpio_0_0;
 
@@ -127,9 +127,9 @@ ARCHITECTURE MP3_Design_axi_gpio_0_0_arch OF MP3_Design_axi_gpio_0_0 IS
       gpio_io_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       gpio_io_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       gpio_io_t : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      gpio2_io_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      gpio2_io_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      gpio2_io_t : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+      gpio2_io_i : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      gpio2_io_o : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+      gpio2_io_t : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
   END COMPONENT axi_gpio;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -161,7 +161,7 @@ BEGIN
       C_S_AXI_ADDR_WIDTH => 9,
       C_S_AXI_DATA_WIDTH => 32,
       C_GPIO_WIDTH => 32,
-      C_GPIO2_WIDTH => 32,
+      C_GPIO2_WIDTH => 16,
       C_ALL_INPUTS => 0,
       C_ALL_INPUTS_2 => 1,
       C_ALL_OUTPUTS => 1,

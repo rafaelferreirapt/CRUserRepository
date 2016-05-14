@@ -52,9 +52,7 @@ vhdl xil_defaultlib "../../../bd/MP3_Design/ipshared/xilinx.com/xlconcat_v2_1/xl
 vhdl xil_defaultlib "../../../bd/MP3_Design/ip/MP3_Design_xlconcat_0_0/sim/MP3_Design_xlconcat_0_0.vhd" 
 vhdl xil_defaultlib "../../../bd/MP3_Design/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd" 
 vhdl xil_defaultlib "../../../bd/MP3_Design/ip/MP3_Design_xlconstant_0_0/sim/MP3_Design_xlconstant_0_0.vhd" 
-vhdl xil_defaultlib "../../../bd/MP3_Design/ip/MP3_Design_xlconstant_1_0/sim/MP3_Design_xlconstant_1_0.vhd" 
 vhdl fifo_generator_v13_1_0 "../../../ipstatic/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.vhd" 
 vhdl xil_defaultlib "../../../bd/MP3_Design/hdl/MP3_Design.vhd" 
-vhdl xil_defaultlib "../../../bd/MP3_Design/ip/MP3_Design_axi_gpio_1_0/sim/MP3_Design_axi_gpio_1_0.vhd" 
 
 nosort

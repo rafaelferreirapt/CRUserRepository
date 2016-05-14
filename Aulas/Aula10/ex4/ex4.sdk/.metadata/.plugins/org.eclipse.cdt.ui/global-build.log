@@ -1037,3 +1037,753 @@ mb-size MB3_software.elf  |tee "MB3_software.elf.size"
 Finished building: MB3_software.elf.size
  
 make: warning:  Clock skew detected.  Your build may be incomplete.
+01:03:15 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5024	    288	   3152	   8464	   2110	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:12:12 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5060	    288	   3156	   8504	   2138	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:14:18 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5104	    288	   3152	   8544	   2160	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:27:18 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5104	    288	   3152	   8544	   2160	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:28:47 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5104	    288	   3152	   8544	   2160	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:32:01 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+01:33:40 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:33:49 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:34:44 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:34:51 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:35:35 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:36:24 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:36:32 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+01:36:55 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:36:58 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:39:07 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+01:40:35 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:58:11 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5108	    288	   3156	   8552	   2168	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+01:58:44 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:00:04 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:10:50 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5116	    288	   3156	   8560	   2170	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:10:56 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5116	    288	   3156	   8560	   2170	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:13:21 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:16:05 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:16:34 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5172	    288	   3156	   8616	   21a8	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:16:44 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5200	    288	   3152	   8640	   21c0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:16:45 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5200	    288	   3152	   8640	   21c0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:17:07 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:18:16 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:20:05 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:20:47 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5212	    288	   3156	   8656	   21d0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:21:02 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5200	    288	   3152	   8640	   21c0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:21:28 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5200	    288	   3152	   8640	   21c0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:22:51 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5228	    288	   3156	   8672	   21e0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:23:00 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5228	    288	   3156	   8672	   21e0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:24:17 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5148	    288	   3156	   8592	   2190	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:26:07 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5148	    288	   3156	   8592	   2190	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:28:50 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:29:20 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5200	    288	   3152	   8640	   21c0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:30:18 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:26:9: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+     u32 input;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5072	    288	   3152	   8512	   2140	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:30:53 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:27:9: warning: unused variable 'sw' [-Wunused-variable]
+     u32 sw;
+         ^
+../src/helloworld.c:26:9: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+     u32 input;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4972	    288	   3156	   8416	   20e0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:31:25 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:40:4: error: 'input' undeclared (first use in this function)
+    input = 0x00000000 + (c-'0');
+    ^
+../src/helloworld.c:40:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:26:25: warning: unused variable 'operator' [-Wunused-variable]
+     u32 input1, input2, operator;
+                         ^
+../src/helloworld.c:26:17: warning: unused variable 'input2' [-Wunused-variable]
+     u32 input1, input2, operator;
+                 ^
+../src/helloworld.c:26:9: warning: unused variable 'input1' [-Wunused-variable]
+     u32 input1, input2, operator;
+         ^
+make: *** [src/helloworld.o] Error 1
+02:31:57 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:4: error: 'input' undeclared (first use in this function)
+    input = 0x00000000 + (c-'0');
+    ^
+../src/helloworld.c:41:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:26:25: warning: unused variable 'operator' [-Wunused-variable]
+     u32 input1, input2, operator;
+                         ^
+../src/helloworld.c:26:17: warning: unused variable 'input2' [-Wunused-variable]
+     u32 input1, input2, operator;
+                 ^
+../src/helloworld.c:26:9: warning: unused variable 'input1' [-Wunused-variable]
+     u32 input1, input2, operator;
+         ^
+make: *** [src/helloworld.o] Error 1
+02:32:26 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:26:25: warning: unused variable 'operator' [-Wunused-variable]
+     u32 input1, input2, operator;
+                         ^
+../src/helloworld.c:26:17: warning: unused variable 'input2' [-Wunused-variable]
+     u32 input1, input2, operator;
+                 ^
+../src/helloworld.c:26:9: warning: variable 'input1' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, operator;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4704	    288	   3152	   8144	   1fd0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:32:51 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:26:25: warning: unused variable 'operator' [-Wunused-variable]
+     u32 input1, input2, operator;
+                         ^
+../src/helloworld.c:26:17: warning: variable 'input2' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, operator;
+                 ^
+../src/helloworld.c:26:9: warning: variable 'input1' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, operator;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4884	    288	   3156	   8328	   2088	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:33:49 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.021 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:26:25: warning: unused variable 'operator' [-Wunused-variable]
+     u32 input1, input2, operator;
+                         ^
+../src/helloworld.c:26:17: warning: variable 'input2' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, operator;
+                 ^
+../src/helloworld.c:26:9: warning: variable 'input1' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, operator;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4980	    288	   3156	   8424	   20e8	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+02:37:07 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4980	    288	   3156	   8424	   20e8	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:39:32 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.
+02:43:06 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:26:25: warning: unused variable 'result' [-Wunused-variable]
+     u32 input1, input2, result;
+                         ^
+../src/helloworld.c:26:17: warning: variable 'input2' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, result;
+                 ^
+../src/helloworld.c:26:9: warning: variable 'input1' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, result;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5076	    288	   3156	   8520	   2148	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:45:07 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:26:25: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, result;
+                         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5672	    288	   3152	   9112	   2398	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:45:49 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:35: error: 'input' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&GPIO_0, 1, input);    //Write the led value
+                                   ^
+../src/helloworld.c:98:35: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:26:25: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+     u32 input1, input2, result;
+                         ^
+make: *** [src/helloworld.o] Error 1
+02:45:57 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5800	    288	   3152	   9240	   2418	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:48:26 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5800	    288	   3152	   9240	   2418	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:49:37 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5728	    288	   3152	   9168	   23d0	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:52:09 **** Auto Build of configuration Debug for project MB3_software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MB3_software_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: MB3_software.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB3_software_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "MB3_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MB3_software.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5704	    288	   3152	   9144	   23b8	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+02:52:12 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5704	    288	   3152	   9144	   23b8	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
