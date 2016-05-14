@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+<Index Version="1" Minor="0">
+	<Repository value="/media/psf/Home/Development/ect_ua/UserRepository/Repository">
+	</Repository>
+	<IP>
+		<VLNV value="user.org:user:circuit:1.0">
+		</VLNV>
+		<DisplayName value="circuit_v1_0">
+		</DisplayName>
+		<Description value="circuit_v1_0">
+		</Description>
+		<CoreRevision value="6">
+		</CoreRevision>
+		<ComponentPath value="circuito_c/circuito_c.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:circuitp:1.0">
+		</VLNV>
+		<DisplayName value="circuitp">
+		</DisplayName>
+		<Description value="circuitp">
+		</Description>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="circuito_p/circuito_p.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:clock_divider:1.0">
+		</VLNV>
+		<DisplayName value="clock_divider_v1_0">
+		</DisplayName>
+		<Description value="clock_divider_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="clock_divider/clock_divider.srcs/sources_1/imports/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:MyC:1.0">
+		</VLNV>
+		<DisplayName value="MyC_v1_0">
+		</DisplayName>
+		<Description value="MyC_v1_0">
+		</Description>
+		<ManuallyDisabled value="true">
+		</ManuallyDisabled>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="Counter32bit/Counter32bit.srcs/sources_1/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:My_Conc:1.0">
+		</VLNV>
+		<DisplayName value="My_Conc_v1_0">
+		</DisplayName>
+		<Description value="My_Conc_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="CustomL/CustomL.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:EightDisplayControl:1.0">
+		</VLNV>
+		<DisplayName value="EightDisplayControl_v1_0">
+		</DisplayName>
+		<Description value="EightDisplayControl_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="DisplayControl/DisplayControl.srcs/sources_1/imports/extras/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:EightDisplayControl32inputs:1.0">
+		</VLNV>
+		<DisplayName value="EightDisplayControl32inputs_v1_0">
+		</DisplayName>
+		<Description value="EightDisplayControl32inputs_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="DisplayControl32inputs/DisplayControl32inputs.srcs/sources_1/imports/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:DC32:1.0">
+		</VLNV>
+		<DisplayName value="DC32_v1_0">
+		</DisplayName>
+		<Description value="DC32_v1_0">
+		</Description>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="DisplayControl32inputs/DisplayControl32inputs.srcs/sources_1/imports/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:hw:1.0">
+		</VLNV>
+		<DisplayName value="hw_v1_0">
+		</DisplayName>
+		<Description value="hw_v1_0">
+		</Description>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="HammingWeightV3/hammingweight_v3/hammingweight_v3.srcs/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:iterative_sorter:1.0">
+		</VLNV>
+		<DisplayName value="iterative_sorter_v1_0">
+		</DisplayName>
+		<Description value="iterative_sorter_v1_0">
+		</Description>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="iterative_sorter_fsm/iterative_sorter_fsm.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:Max_circuit:1.0">
+		</VLNV>
+		<DisplayName value="Max_circuit_v1_0">
+		</DisplayName>
+		<Description value="Max_circuit_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="Max_circuit/Max_circuit.srcs/sources_1/imports/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:MaxNetworkExam:1.0">
+		</VLNV>
+		<DisplayName value="MaxNetworkExam_v1_0">
+		</DisplayName>
+		<Description value="MaxNetworkExam_v1_0">
+		</Description>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="MaxNetworkExam/MaxNetworkExam.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:Min_circuit:1.0">
+		</VLNV>
+		<DisplayName value="Min_circuit_v1_0">
+		</DisplayName>
+		<Description value="Min_circuit_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="Min_Circuit/Min_Circuit.srcs/sources_1/imports/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:mux2p:1.0">
+		</VLNV>
+		<DisplayName value="mux_v1_0">
+		</DisplayName>
+		<Description value="mux_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="Mux2P/Mux2P.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:mux:1.0">
+		</VLNV>
+		<DisplayName value="mux_v1_0">
+		</DisplayName>
+		<Description value="mux_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="Mux8P/Mux8P.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:resetCircuit:1.0">
+		</VLNV>
+		<DisplayName value="resetCircuit_v1_0">
+		</DisplayName>
+		<Description value="resetCircuit_v1_0">
+		</Description>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="resetCircuit/resetCircuit.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:ROM_Reader1:1.0">
+		</VLNV>
+		<DisplayName value="ROM_Reader1_v1_0">
+		</DisplayName>
+		<Description value="ROM_Reader1_v1_0">
+		</Description>
+		<CoreRevision value="4">
+		</CoreRevision>
+		<ComponentPath value="ROM_Reader/rom_reader/rom_reader.srcs/sources_1/imports/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:Unroll_ROM_last:1.0">
+		</VLNV>
+		<DisplayName value="Unroll_ROM_last_v1_0">
+		</DisplayName>
+		<Description value="Unroll_ROM_last_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="ROM_Reader/rom_reader/rom_reader.srcs/sources_1/imports/edia/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository/Unroll_ROM_last/Unroll_ROM_last.srcs/sources_1/imports/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="user.org:user:smart_mux:1.0">
+		</VLNV>
+		<DisplayName value="smart_mux_v1_0">
+		</DisplayName>
+		<Description value="smart_mux_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="SmartMux/SmartMux.srcs/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:TopCounter32:1.0">
+		</VLNV>
+		<DisplayName value="TopCounter32_v1_0">
+		</DisplayName>
+		<Description value="TopCounter32_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="TopCounter32/TopCounter32.srcs/sources_1/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+	<IP>
+		<VLNV value="ua.pt:user:TopUnr:1.0">
+		</VLNV>
+		<DisplayName value="TopUnr_v1_0">
+		</DisplayName>
+		<Description value="TopUnr_v1_0">
+		</Description>
+		<CoreRevision value="2">
+		</CoreRevision>
+		<ComponentPath value="Unroll/Unroll.srcs/sources_1/new/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+	</IP>
+</Index>
+

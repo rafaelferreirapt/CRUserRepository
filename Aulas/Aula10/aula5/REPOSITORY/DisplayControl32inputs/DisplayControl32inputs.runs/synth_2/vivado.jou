@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Apr 10 12:41:07 2016
+# Process ID: 3348
+# Current directory: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/DisplayControl32inputs/DisplayControl32inputs.runs/synth_2
+# Command line: vivado.exe -log DC32.vds -mode batch -messageDb vivado.pb -notrace -source DC32.tcl
+# Log file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/DisplayControl32inputs/DisplayControl32inputs.runs/synth_2/DC32.vds
+# Journal file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/DisplayControl32inputs/DisplayControl32inputs.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source DC32.tcl -notrace

@@ -10,12 +10,12 @@
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
@@ -55,32 +55,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="hdl/MP3_Design.vhd"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_xbar_0/MP3_Design_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_xlconstant_0_0/MP3_Design_xlconstant_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_xlconcat_0_0/MP3_Design_xlconcat_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_xlslice_1_0/MP3_Design_xlslice_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_xlslice_0_0/MP3_Design_xlslice_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_BinToBCD16_0_0/MP3_Design_BinToBCD16_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_DC32_0_0/MP3_Design_DC32_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_axi_gpio_0_0/MP3_Design_axi_gpio_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_rst_clk_wiz_1_100M_0/MP3_Design_rst_clk_wiz_1_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_clk_wiz_1_0/MP3_Design_clk_wiz_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_mdm_1_0/MP3_Design_mdm_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_microblaze_0_axi_periph_0/MP3_Design_microblaze_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_lmb_bram_0/MP3_Design_lmb_bram_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_ilmb_bram_if_cntlr_0/MP3_Design_ilmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_dlmb_bram_if_cntlr_0/MP3_Design_dlmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_ilmb_v10_0/MP3_Design_ilmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_dlmb_v10_0/MP3_Design_dlmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_microblaze_0_0/MP3_Design_microblaze_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="hdl/MP3_Design.hwdef"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_auto_pc_1/MP3_Design_auto_pc_1.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="MP3_Design_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="ip/MP3_Design_auto_pc_0/MP3_Design_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="MP3_Design.bmm"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="hw_handoff/MP3_Design_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="MP3_Design.bd" FileRelPathName="hw_handoff/MP3_Design.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/MP3_Design/hdl/MP3_Design_wrapper.vhd">
         <FileInfo>

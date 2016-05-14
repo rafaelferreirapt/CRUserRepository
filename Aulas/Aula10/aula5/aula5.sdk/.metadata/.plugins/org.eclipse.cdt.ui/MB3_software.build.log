@@ -1,0 +1,13 @@
+10:44:09 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 0.055 s in the future
+Invoking: MicroBlaze Print Size
+mb-size MB3_software.elf  |tee "MB3_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4916	    288	   3156	   8360	   20a8	MB3_software.elf
+Finished building: MB3_software.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+10:44:10 Build Finished (took 402ms)
+
