@@ -387,3 +387,13 @@ If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx 
 02:48:27 INFO  : Processor reset is completed for microblaze_0
 02:52:13 INFO  : Processor reset is completed for microblaze_0
 02:54:29 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+06:11:30 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.sdk/temp_xsdb_launch_script.tcl
+06:11:33 INFO  : XSDB server has started successfully.
+06:11:34 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.sdk/MP3_Design_wrapper.hdf.
+06:11:34 INFO  : Checking for hwspec changes in the project MP3_Design_wrapper_hw_platform_2.
+06:12:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:12:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:12:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505293A" && level==0} -index 0' command is executed.
+06:12:33 INFO  : FPGA configured successfully with bitstream "/media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex4/ex4.sdk/MP3_Design_wrapper_hw_platform_0/download.bit"
+06:12:45 INFO  : Processor reset is completed for microblaze_0
+06:14:59 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

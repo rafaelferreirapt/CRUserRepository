@@ -1,11 +1,6 @@
-02:52:12 **** Incremental Build of configuration Debug for project MB3_software ****
+06:12:40 **** Incremental Build of configuration Debug for project MB3_software ****
 make all 
-Invoking: MicroBlaze Print Size
-mb-size MB3_software.elf  |tee "MB3_software.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   5704	    288	   3152	   9144	   23b8	MB3_software.elf
-Finished building: MB3_software.elf.size
- 
+make: Nothing to be done for `all'.
 
-02:52:12 Build Finished (took 184ms)
+06:12:40 Build Finished (took 99ms)
 

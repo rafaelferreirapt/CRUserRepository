@@ -10,9 +10,32 @@ void outbyte(char c);
 XGpio GPIO_0;
 XGpio_Config GPIO_0_conf;
 
+
+void printCharArray10(unsigned int n)
+{
+	int number[10] = {0};
+	int number_i = 9;
+
+	while(n!=0){
+		if(n/10 == 0 && n%10 == 0){
+			break;
+		}
+		number[number_i] = n%10;
+		number_i = number_i - 1;
+		n = n/10;
+	}
+
+	int j = number_i+1;
+
+	for(; j<10; j++){
+		outbyte(number[j] + '0');
+	}
+
+	print("\n");
+}
+
 int main()
 {
-	char c;
 
 	GPIO_0_conf.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
 	GPIO_0_conf.DeviceId = XPAR_GPIO_0_DEVICE_ID;
@@ -25,12 +48,12 @@ int main()
     init_platform();
 
     unsigned int array[] = {
-    		0x00000006,
-    		0x00000005,
-    		0x00000002,
-    		0x00000004,
-    		0x00000001,
-    		0x00000003,
+    		63,
+    		5,
+    		22,
+    		4,
+    		1,
+    		3,
     };
 
     int array_length = 6;
@@ -56,11 +79,7 @@ int main()
 			break;
 		}
 
-		// como se imprime um numero inteiro na consola?
-		c = (char)(array[i]+'0');
-		outbyte(c);
-		print("\n");
-		// duvida
+		printCharArray10(array[i]);
 
 	    XGpio_DiscreteWrite(&GPIO_0, 1, array[i]);
 	    MB_Sleep(2000);

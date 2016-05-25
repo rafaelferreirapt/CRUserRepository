@@ -1787,3 +1787,6 @@ mb-size MB3_software.elf  |tee "MB3_software.elf.size"
    5704	    288	   3152	   9144	   23b8	MB3_software.elf
 Finished building: MB3_software.elf.size
  
+06:12:40 **** Incremental Build of configuration Debug for project MB3_software ****
+make all 
+make: Nothing to be done for `all'.

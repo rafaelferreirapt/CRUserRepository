@@ -539,3 +539,6 @@ If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx 
 10:44:53 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
 10:44:53 ERROR : Disconnect target failed.
 10:46:52 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+06:16:38 INFO  : Launching XSDB server: xsdb -n -interactive /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex5/aula5.sdk/temp_xsdb_launch_script.tcl
+06:16:39 INFO  : XSDB server has started successfully.
+06:16:40 INFO  : Processing command line option -hwspec /media/psf/Home/Development/ect_ua/UserRepository/Aulas/Aula10/ex5/aula5.sdk/MP3_Design_wrapper.hdf.

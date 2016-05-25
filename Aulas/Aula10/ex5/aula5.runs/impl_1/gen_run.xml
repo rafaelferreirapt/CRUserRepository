@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1463245753">
-  <File Type="PA-TCL" Name="MP3_Design_wrapper.tcl"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MP3_Design_wrapper_postroute_physopt.dcp"/>
-  <File Type="INIT-TIMING" Name="MP3_Design_wrapper_timing_summary_init.rpt"/>
-  <File Type="OPT-DCP" Name="MP3_Design_wrapper_opt.dcp"/>
-  <File Type="OPT-DRC" Name="MP3_Design_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="MP3_Design_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="MP3_Design_wrapper.hwdef"/>
-  <File Type="OPT-TIMING" Name="MP3_Design_wrapper_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="MP3_Design_wrapper_pwropt.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="MP3_Design_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="MP3_Design_wrapper_drc_physopted.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="MP3_Design_wrapper_power_summary_routed.pb"/>
+  <File Type="PHYSOPT-DCP" Name="MP3_Design_wrapper_physopt.dcp"/>
+  <File Type="ROUTE-PWR" Name="MP3_Design_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="MP3_Design_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MP3_Design_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="MP3_Design_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="MP3_Design_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MP3_Design_wrapper_route_status.pb"/>
   <File Type="PWROPT-DRC" Name="MP3_Design_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="MP3_Design_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="MP3_Design_wrapper_placed.dcp"/>
+  <File Type="BITSTR-SYSDEF" Name="MP3_Design_wrapper.sysdef"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MP3_Design_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PLACE-IO" Name="MP3_Design_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="MP3_Design_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="MP3_Design_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="MP3_Design_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="MP3_Design_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="MP3_Design_wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="MP3_Design_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-TIMING" Name="MP3_Design_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MP3_Design_wrapper.hwdef"/>
   <File Type="PLACE-TIMING" Name="MP3_Design_wrapper_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="MP3_Design_wrapper_timing_summary_init.rpt"/>
+  <File Type="BITSTR-MSK" Name="MP3_Design_wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="MP3_Design_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PLACE-DCP" Name="MP3_Design_wrapper_placed.dcp"/>
+  <File Type="BITSTR-NKY" Name="MP3_Design_wrapper.nky"/>
+  <File Type="PLACE-UTIL" Name="MP3_Design_wrapper_utilization_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MP3_Design_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="OPT-DRC" Name="MP3_Design_wrapper_drc_opted.rpt"/>
+  <File Type="RDI-RDI" Name="MP3_Design_wrapper.vdi"/>
+  <File Type="PWROPT-TIMING" Name="MP3_Design_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="BITSTR-MMI" Name="MP3_Design_wrapper.mmi"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="MP3_Design_wrapper_postplace_pwropt.dcp"/>
+  <File Type="OPT-DCP" Name="MP3_Design_wrapper_opt.dcp"/>
+  <File Type="BITSTR-RBT" Name="MP3_Design_wrapper.rbt"/>
+  <File Type="PLACE-UTIL-PB" Name="MP3_Design_wrapper_utilization_placed.pb"/>
+  <File Type="BITSTR-BMM" Name="MP3_Design_wrapper_bd.bmm"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MP3_Design_wrapper_postroute_physopt.dcp"/>
+  <File Type="PA-TCL" Name="MP3_Design_wrapper.tcl"/>
+  <File Type="PWROPT-DCP" Name="MP3_Design_wrapper_pwropt.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="MP3_Design_wrapper_timing_summary_routed.pb"/>
+  <File Type="BG-DRC" Name="MP3_Design_wrapper.drc"/>
+  <File Type="BG-BGN" Name="MP3_Design_wrapper.bgn"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MP3_Design_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MP3_Design_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="MP3_Design_wrapper_routed.dcp"/>
+  <File Type="PLACE-CLK" Name="MP3_Design_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="MP3_Design_wrapper_control_sets_placed.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MP3_Design_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MP3_Design_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MP3_Design_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MP3_Design_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MP3_Design_wrapper_methodology_drc_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MP3_Design_wrapper_timing_summary_postroute_physopted.rpt"/>
   <File Type="BG-BIT" Name="MP3_Design_wrapper.bit"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="MP3_Design_wrapper_timing_summary_routed.rpt"/>
   <File Type="BG-BIN" Name="MP3_Design_wrapper.bin"/>
   <File Type="ROUTE-SIMILARITY" Name="MP3_Design_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="MP3_Design_wrapper.msk"/>
-  <File Type="ROUTE-CLK" Name="MP3_Design_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="MP3_Design_wrapper.rbt"/>
-  <File Type="BITSTR-NKY" Name="MP3_Design_wrapper.nky"/>
-  <File Type="BITSTR-BMM" Name="MP3_Design_wrapper_bd.bmm"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MP3_Design_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="MP3_Design_wrapper.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MP3_Design_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="BG-DRC" Name="MP3_Design_wrapper.drc"/>
-  <File Type="ROUTE-TIMING-PB" Name="MP3_Design_wrapper_timing_summary_routed.pb"/>
-  <File Type="BITSTR-MMI" Name="MP3_Design_wrapper.mmi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MP3_Design_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BGN" Name="MP3_Design_wrapper.bgn"/>
-  <File Type="ROUTE-TIMING-RPX" Name="MP3_Design_wrapper_timing_summary_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="MP3_Design_wrapper.sysdef"/>
-  <File Type="ROUTE-STATUS-PB" Name="MP3_Design_wrapper_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="MP3_Design_wrapper_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="MP3_Design_wrapper_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="MP3_Design_wrapper_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="MP3_Design_wrapper_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MP3_Design_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="MP3_Design_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="MP3_Design_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="MP3_Design_wrapper_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="MP3_Design_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="MP3_Design_wrapper_routed.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="MP3_Design_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="MP3_Design_wrapper_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="MP3_Design_wrapper_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="MP3_Design_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MP3_Design_wrapper_postroute_physopt_bb.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/MP3_Design/MP3_Design.bd">
