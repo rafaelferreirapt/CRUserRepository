@@ -13,6 +13,8 @@
 <booleanAttribute key="com.xilinx.sdk.gdb.launch.RunPSPostConfig" value="false"/>
 <stringAttribute key="com.xilinx.sdk.gdb.launch.TargetDevice" value="Auto Detect"/>
 <stringAttribute key="com.xilinx.sdk.gdb.launch.TargetPeer" value="Local"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.HOST" value="localhost"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.PORT" value="1234"/>
 <booleanAttribute key="org.eclipse.cdt.debug.mi.core.REMOTE_TCP" value="true"/>
 <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.xilinx.sdk.debug.core.XMDDebuggerId"/>

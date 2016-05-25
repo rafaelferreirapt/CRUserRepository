@@ -1,0 +1,94 @@
+#include "platform.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "microblaze_sleep.h"
+
+char inbyte(void);
+void outbyte(char c);
+
+//declare an XGpio and XGpio instance
+XGpio GPIO_0;
+XGpio_Config GPIO_0_conf;
+
+
+char* toCharArray(unsigned int n, unsigned int base)
+{
+  char number[10] = {0};
+  int number_i = 9;
+
+  if(base==10){
+    while(n!=0){
+      number[number_i--] = n%10 + '0';
+      n = n/10;
+    }
+  }else{
+    // not implemented
+  }
+
+  return number;
+}
+
+int main()
+{
+	char c;
+
+	GPIO_0_conf.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
+	GPIO_0_conf.DeviceId = XPAR_GPIO_0_DEVICE_ID;
+	GPIO_0_conf.InterruptPresent = XPAR_GPIO_0_INTERRUPT_PRESENT;
+	GPIO_0_conf.IsDual = XPAR_GPIO_0_IS_DUAL;
+
+	//Initialize the XGpio instance
+	XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
+
+    init_platform();
+
+    unsigned int array[] = {
+    		63,
+    		5,
+    		22,
+    		4,
+    		1,
+    		3,
+    };
+
+    int array_length = 6;
+
+	for(int i=0; i<10; i++){
+		if(i==array_length){
+			break;
+		}
+		for(int j=i+1; j<10; j++){
+			if(i==array_length-1){
+				break;
+			}
+			if(array[i]>array[j]){
+				int tmp = array[i];
+				array[i] = array[j];
+				array[j] = tmp;
+			}
+		}
+	}
+
+	for(int i=0; i<8; i++){
+		if(i==array_length){
+			break;
+		}
+
+		char *arr = toCharArray(array[i], 10);
+
+		for(int i=0; i<10; i++){
+			if(array[i]!=0){
+				outbyte(arr[i]);
+				print("\n");
+			}
+		}
+
+	    XGpio_DiscreteWrite(&GPIO_0, 1, array[i]);
+	    MB_Sleep(2000);
+	}
+
+    print("\nThe program has been terminated\n\r");
+    cleanup_platform();
+
+    return 0;
+}
